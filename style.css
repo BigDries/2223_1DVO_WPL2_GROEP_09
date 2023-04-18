@@ -1,6 +1,14 @@
 
+/* info page */
+img
+{
+  width: 150px;
+  height: 150px;
+}
+
 /* carousel */
-.carousel-container {
+.carousel-container 
+{
     width: 500px;
     height: 500px;
     position: relative;
@@ -9,14 +17,16 @@
     flex-direction: column;
   }
   
-  .carousel {
+  .carousel 
+  {
     width: 500px;
     height: 500px;
     position: relative;
     margin-bottom: 25px;
   }
   
-  .carousel-item {
+  .carousel-item 
+  {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -25,42 +35,50 @@
     background-size: cover;
   }
   
-  .item1 {
-    background-image: url('your-image-url-here');
+  .item1 
+  {
+    background-image: url('testphoto.png');
     transform: rotate(0deg) translateX(250px) rotate(0deg);
   }
   
-  .item2 {
-    background-image: url('your-image-url-here');
+  .item2 
+  {
+    background-image: url('testphoto.png');
     transform: rotate(72deg) translateX(250px) rotate(-72deg);
   }
   
-  .item3 {
-    background-image: url('your-image-url-here');
+  .item3 
+  {
+    background-image: url('testphoto.png');
     transform: rotate(144deg) translateX(250px) rotate(-144deg);
   }
   
-  .item4 {
-    background-image: url('your-image-url-here');
+  .item4 
+  {
+    background-image: url('testphoto.png');
     transform: rotate(216deg) translateX(250px) rotate(-216deg);
   }
   
-  .item5 {
-    background-image: url('your-image-url-here');
+  .item5 
+  {
+    background-image: url('testphoto.png');
     transform: rotate(288deg) translateX(250px) rotate(-288deg);
   }
   
-  .buttons-container {
+  .buttons-container 
+  {
     display: flex;
     align-items: center;
   }
   
-  .position-buttons-container {
+  .position-buttons-container 
+  {
     display: flex;
     gap: 25px;
   }
   
-  .position-button {
+  .position-button 
+  {
     padding: 8px 16px;
     font-size: 14px;
     border: 1px solid #ccc;
