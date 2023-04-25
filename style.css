@@ -1,12 +1,46 @@
+/*-------------------------------------------------- Header -----------------------------------------------------*/
 
-/* info page */
-img
+
+/*-------------------------------------------------- footer --------------------------------------------------*/
+.Footer img
 {
-  width: 150px;
-  height: 150px;
+  width: 27.5rem;
+  height: auto;
+  margin: 75px;
 }
 
-/* carousel */
+.Footer h2
+{
+  font-size: 3.125rem;
+  font-family: 'Courier New', Courier, monospace; /* verander naar Cheddar */
+}
+/*-------------------------------------------------- info ----------------------------------------------------*/
+.container img
+{
+  width: 35rem;
+  height: 27rem;
+  border-radius: 2rem;
+}
+
+span
+{
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace; /* verander naar Bebas */
+}
+
+h1
+{
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace; /* verander naar Cheddar */
+}
+
+.Team img
+{
+  width: 250px;
+  height: 450px;
+  margin: 20px;
+}
+/*-------------------------------------------------- carousel -----------------------------------------------------*/
 .carousel-container 
 {
     width: 500px;
