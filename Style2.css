@@ -1,0 +1,146 @@
+/* Navbar */
+.top-nav {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 10rem;
+    background: gray;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: white;
+    }
+    
+    .top-nav i {
+    padding: 0.2rem;
+    margin: 0.5rem;
+    font-size: 20pt;
+    }
+    
+    img.logo {
+    height: 40px;
+    }
+    
+    img.profile {
+    margin: 0.5rem;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    border-radius: 99999px;
+    object-fit: contain;
+    }
+    
+    
+    /* Filter */
+    .filter-menu {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background: #313437;
+    color: white;
+    }
+    
+    .filter-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #f1c765;
+    margin-bottom: 1rem;
+    }
+    
+    .filter-menu-dropdowns-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: max-content;
+    }
+    
+    
+    
+    /* Results */
+    .results {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    }
+    
+    .results .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    }
+    
+    .results .items .item {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: white;
+    }
+    
+    /* Products */
+    .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    }
+    
+    .slider img {
+    width: 60%;
+    }
+    
+    .slider :nth-child(1), .slider :nth-child(3) {
+    flex: 1;
+    }
+    
+    .product-slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    }
+    
+    
+    /* Footer */
+    .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background: #313437;
+    
+    color: white;
+    }
+    
+    .divider {
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: max-content;
+    border-bottom: 4px solid #F1c765;
+    }
+    
+    .text-with-icon {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    }
+    
+    .icon-row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .footer-info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    }
+  
