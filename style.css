@@ -338,6 +338,16 @@ display: flex;
   margin-bottom: 5rem;
 }
 
+.col-6 span
+{
+  text-align: center;
+}
+
+.col-12 h1
+{
+  text-align: right;
+}
+
 /* img 1 */
 .container img
 {
