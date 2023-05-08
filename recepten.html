@@ -24,7 +24,7 @@
         <div class="row">
             <!-- BORD -->
             <div id="recepten_bord1" class="col-lg-3 col-xs-12 offset-lg-1 text-center text-lg-start">
-                <img src="assets/recepten_bord1.png" alt="bord met gerecht 1">
+                <img id="recepten_bord" src="assets/recepten_pasta_tomaat.png" alt="bord met gerecht 1">
             </div>
             <!-- TITEL EN ALLERGENEN -->
             <div class="col-lg-5 col-12">
@@ -37,19 +37,25 @@
                     <div class="col-lg-7 col-12 text-center text-lg-start">
                         <div id="recepten_allergenen" class="row">
                             <div class="col-2 text-end">
-                                <img class="iconen-allergenen" src="assets/recepten_veggie.png"
+                                <img id="icon_allergie1" class="iconen-allergenen" src="assets/recepten_veggie.png"
                                      alt="Vegetarisch recept">
                             </div>
                             <div class="col-4 text-start">
-                                <p>Vegan</p>
+                                <p id="allergie1">Vegan</p>
                             </div>
                             <div class="col-2 text-end">
-                                <img class="iconen-allergenen" src="assets/recepten_lactose.png"
+                                <img id="icon_allergie2" class="iconen-allergenen" src="assets/recepten_lactose.png"
                                      alt="opgepast voor lactose">
                             </div>
                             <div class="col-4 text-start">
-                                <p>Lactose</p>
+                                <p id="allergie2">Lactose</p>
                             </div>
+                           <!-- <div class="col-2 text-end">
+                                <img id="icon_allergie3" class="iconen-allergenen" src="" alt="">
+                            </div>
+                            <div class="col-4 text-start">
+                                <p id="allergie3"></p>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -77,65 +83,76 @@
             </div>
         </div>
         <!-- 2e RIJ MET CAROUSEL ANDERE RECEPTEN -->
-        <div class="row">
+        <div class="row recepten_andere_gerechten">
             <div class="col-12 col-lg-8 offset-lg-1">
-                <div id="recepten_carroucel" class="row text-center mt-lg-5">
+                <div class="row text-center mt-lg-5">
                     <!-- ARROW LEFT -->
-                    <div class="col-1 my-auto icon-arrow">
-                        <img src="assets/arrow-left.png" alt="pijltje terug">
+                    <div class="col-1 my-auto icon-arrow-left">
+                        <img src="assets/recepten_arrow-left.png" alt="pijltje terug">
                     </div>
                     <!-- CAROUSEL ITEMS -->
                     <div class="col-10 my-auto">
-                        <div class="row slick-track">
-                            <div class="col-5 col-lg-3 text-center slick-item">
-                                <div class="recepten_carroucel_item">
-                                    <img src="assets/recepten_bord1.png" alt="pasta carbonara">
+                        <div class="row recepten_carousel">
+                            <div id="item_pasta_tomaat" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_tomaat.png" alt="pasta tomaat">
+                                    <p>Pasta Tomaat</p>
+                                </div>
+                            </div>
+                            <div id="item_pasta_carbonara" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta-carbonara.png" alt="pasta carbonara">
                                     <p>Pasta Carbonara</p>
                                 </div>
                             </div>
-                            <div class="col-5 col-lg-3 text-center slick-item">
-                                <div class="recepten_carroucel_item">
-                                    <img src="assets/recepten_bord1.png" alt="pasta carbonara">
-                                    <p>Pasta Carbonara</p>
+                            <div id="item_pasta_buffalo" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_buffalo.png" alt="pasta carbonara">
+                                    <p>Pasta Buffalo</p>
                                 </div>
                             </div>
-                            <div class="col-5 col-lg-3 text-center slick-item">
-                                <div class="recepten_carroucel_item">
-                                    <img src="assets/recepten_bord1.png" alt="pasta carbonara">
-                                    <p>Pasta Carbonara</p>
+                            <div id="item_pasta_napolitana" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_napolitana.png" alt="pasta carbonara">
+                                    <p>Pasta Napolitana</p>
                                 </div>
                             </div>
-                            <div class="col-5 col-lg-3 text-center slick-item">
-                                <div class="recepten_carroucel_item">
-                                    <img src="assets/recepten_bord1.png" alt="pasta carbonara">
-                                    <p>Pasta Carbonara</p>
+                            <div id="item_pasta_vierkazen" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_vier_kazen.png" alt="pasta carbonara">
+                                    <p>Pasta Vier Kazen</p>
                                 </div>
                             </div>
-                            <!-- <div class="col-5 col-lg-3 text-center slick-item">
-                                <div class="recepten_carroucel_item">
-                                    <img src="assets/recepten_bord1.png" alt="pasta carbonara">
-                                    <p>Pasta Carbonara</p>
+                            <div id="item_pasta_spekshrooms" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_spek_en_shrooms.png" alt="pasta carbonara">
+                                    <p>Pasta Spek en Shrooms</p>
                                 </div>
-                            </div> -->
+                            </div>
+                            <div id="item_pasta_tomaatmozarella" class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                <div class="recepten_carousel_item">
+                                    <img src="assets/recepten_pasta_tomaat-mozarella.png" alt="pasta carbonara">
+                                    <p>Pasta Tomaat Mozarella</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- ARROW RIGHT -->
-                        <div class="col-1 my-auto icon-arrow">
-                            <img src="assets/arrow-right.png" alt="pijltje verder">
-                        </div>
+                    </div>
+                    <!-- ARROW RIGHT -->
+                    <div class="col-1 my-auto icon-arrow-right">
+                        <img src="assets/recepten_arrow-right.png" alt="pijltje verder">
                     </div>
                 </div>
             </div>
         </div>
         <!-- 3e RIJ MET BEREIDING -->
         <div class="row">
-            <div id="recepten_bereiding" class="col-lg-8 offset-lg-1 col-11">
+            <div id="recepten_bereiding" class="col-11 col-lg-8 offset-lg-1">
                 <div id="recepten_bereiding_stappen">
                     <ol>
-                        <li><p>Doe de Busta vegan bolognaisesaus in een ruime pot en warm de saus op tot hij lichtjes
-                            kookt.
-                            Roer af en toe in de pot om aanbranden te voorkomen.</p></li>
-                        <li><p>Kruid de saus naar keuze als deze begint te koken. (Aanbevolen: spaghettimix, paprika,
-                            basilicum en look.</p></li>
+                        <li><p>Doe de Busta vegan bolognesesaus in een ruime pot en warm de saus op tot hij
+                            lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</p></li>
+                        <li><p>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: spaghettimix,
+                            paprika, basilicum en look.)</p></li>
                         <li><p>Voeg de pasta toe aan de kokende saus.</p></li>
                         <li><p>Laat gedurende een halve minuut doorkoken.</p></li>
                         <li><p>Serveer en geniet!</p></li>
@@ -146,8 +163,6 @@
     </div>
 </main>
 <footer>
-
 </footer>
 </body>
 </html>
-
