@@ -53,11 +53,25 @@ else {
     })
 }
 
-let pastaCarbonara = document.getElementById("item_pasta_carbonara");
 
-pastaCarbonara.addEventListener('click', functie1)
+let pastaTomaat = document.getElementById("item_pasta_tomaat");
+pastaTomaat.addEventListener('click', functie1)
 function functie1(){
+    document.getElementById("recepten_bord").src = "assets/recepten_pasta_tomaat.png";
+    document.getElementById("recepten_titel").innerHTML="<h1>Pasta Tomaat</h1>";
+    document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
+    document.getElementById("allergie1").innerHTML="<p>Vegan</p>"
+    document.getElementById("icon_allergie2").src = "assets/recepten_veggie.png";
+    document.getElementById("allergie2").innerHTML = "<p>Lactose</p>";
+}
+
+let pastaCarbonara = document.getElementById("item_pasta_carbonara");
+pastaCarbonara.addEventListener('click', functie2)
+function functie2(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta-carbonara.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta carbonara</h1>";
-    document.getElementById()
+    document.getElementById("icon_allergie1").src = "assets/recepten_lactose.png";
+    document.getElementById("allergie1").innerHTML="<p>Lactose</p>"
+    document.getElementById("icon_allergie2").style.display = "none";
+    document.getElementById("allergie2").style.display = "none";
 }
