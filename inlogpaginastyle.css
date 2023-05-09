@@ -3,10 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto, Arial, sans-serif;
-    background-color: #2A2929;
-}
-body {
-    padding: 15rem;
+    background-image: url("bustabackground.png");
+    background-size: cover;
+    backdrop-filter: blur(5px);
 }
 
 
@@ -14,6 +13,54 @@ form {
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
+    font-size: 20px;
+}
+label {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.0);
+    padding: 10px;
+}
+
+input {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+button {
+    background-color: #f1c765;
+    color: #000000;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#forgotpassword {
+    font-size: 10px;
+    text-decoration-line: underline;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+
+
+
+/*
+label p {
+    color: #2A2929;
+}
+
+image {
+    height: 40px;
+    width: 40px;
 }
 /*
 form {
