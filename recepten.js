@@ -58,6 +58,6 @@ let pastaCarbonara = document.getElementById("item_pasta_carbonara");
 pastaCarbonara.addEventListener('click', functie1)
 function functie1(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta-carbonara.png";
-    document.getElementById("recepten_titel").innerHTML="Pasta carbonara";
+    document.getElementById("recepten_titel").innerHTML="<h1>Pasta carbonara</h1>";
     document.getElementById()
 }
