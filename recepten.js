@@ -73,7 +73,7 @@ function functie1(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_tomaat.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta Tomaat</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
-    document.getElementById("allergie1").innerHTML="<p>Vegan</p>"
+    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
     document.getElementById("icon_allergie2").style.display = "block";
     document.getElementById("icon_allergie2").src = "assets/recepten_lactose.png";
     document.getElementById("allergie2").style.display = "block";
@@ -87,11 +87,10 @@ function functie2(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta-carbonara.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta carbonara</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_lactose.png";
-    document.getElementById("allergie1").innerHTML="<p>Lactose</p>"
+    document.getElementById("allergie1").innerHTML="<p>Lactose</p>";
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta Tagliatelli</p>" + "<p>Busta carbonara saus</p>" + "<p>Spekjes</p>" + "<p>Extra geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
-
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
@@ -149,10 +148,12 @@ pastaTomaatMozarella.addEventListener('click', functie7)
 function functie7(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_tomaat-mozarella.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta tomaat mozarella</h1>";
-    document.getElementById("icon_allergie1").src = "assets/recepten_lactose.png";
-    document.getElementById("allergie1").innerHTML="<p>Lactose</p>";
-    document.getElementById("icon_allergie2").style.display = "none";
-    document.getElementById("allergie2").style.display = "none";
+    document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
+    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
+    document.getElementById("icon_allergie2").src = "assets/recepten_lactose.png";
+    document.getElementById("icon_allergie2").style.display = "block";
+    document.getElementById("allergie2").innerHTML = "<p>Lactose</p>";
+    document.getElementById("allergie2").style.display = "block";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta tagliatelle</p>" + "<p>Busta napolitana saus</p>" + "<p>Verse tomaten</p>" + "<p>Verse mozarella</p>" + "<p>Kruiding naar keuze</p>";
 }
 

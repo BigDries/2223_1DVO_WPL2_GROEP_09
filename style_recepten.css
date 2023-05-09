@@ -197,7 +197,7 @@ body{
     }
     #recepten_ingredienten{
         border-radius: 1rem;
-        margin: auto;
+        margin: 2rem auto 0 auto;
     }
 
 /* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */

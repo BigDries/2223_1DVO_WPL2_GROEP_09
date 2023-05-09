@@ -19,47 +19,130 @@
 </nav>
 <main id="recepten_main">
     <div class="container-fluid">
-        <!-- 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS -->
+        <!-- SECTIE VAN CARROUSEL -->
         <div class="row">
-            <!-- BORD -->
-            <div id="recepten_bord1" class="col-lg-3 col-xs-12 offset-lg-1 text-center text-lg-start">
-                <img id="recepten_bord" src="assets/recepten_pasta_tomaat.png" alt="bord met gerecht 1">
-            </div>
-            <!-- TITEL EN ALLERGENEN -->
-            <div class="col-lg-5 col-12">
+            <div class="col-lg-9 col-12">
+                <!-- 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS -->
                 <div class="row">
-                    <!-- TITEL -->
-                    <div id="recepten_titel" class="col-12 mt-lg-5 text-center text-lg-start">
-                        <h1>Pasta tomaat</h1>
+                    <!-- BORD -->
+                    <div id="recepten_bord1" class="col-lg-3 col-xs-12 offset-lg-1 text-center text-lg-start">
+                        <img id="recepten_bord" src="assets/recepten_pasta_tomaat.png" alt="bord met gerecht 1">
                     </div>
-                    <!-- ALLERGENEN -->
-                    <div class="col-lg-7 col-12 text-center text-lg-start">
-                        <div id="recepten_allergenen" class="row">
-                            <div class="col-2 text-end">
-                                <img id="icon_allergie1" class="iconen-allergenen" src="assets/recepten_veggie.png"
-                                     alt="Vegetarisch recept">
+                    <!-- TITEL EN ALLERGENEN -->
+                    <div class="col-lg-5 col-12">
+                        <div class="row">
+                            <!-- TITEL -->
+                            <div id="recepten_titel" class="col-12 mt-lg-5 text-center text-lg-start">
+                                <h1>Pasta tomaat</h1>
                             </div>
-                            <div class="col-4 text-start">
-                                <p id="allergie1">Vegan</p>
+                            <!-- ALLERGENEN -->
+                            <div class="col-lg-7 col-12 text-center text-lg-start">
+                                <div id="recepten_allergenen" class="row">
+                                    <div class="col-2 text-end">
+                                        <img id="icon_allergie1" class="iconen-allergenen"
+                                             src="assets/recepten_veggie.png"
+                                             alt="Vegetarisch recept">
+                                    </div>
+                                    <div class="col-4 text-start">
+                                        <p id="allergie1">Vegan</p>
+                                    </div>
+                                    <div class="col-2 text-end">
+                                        <img id="icon_allergie2" class="iconen-allergenen"
+                                             src="assets/recepten_lactose.png"
+                                             alt="opgepast voor lactose">
+                                    </div>
+                                    <div class="col-4 text-start">
+                                        <p id="allergie2">Lactose</p>
+                                    </div>
+                                    <div class="col-2 text-end">
+                                        <img id="icon_allergie3" class="iconen-allergenen" src="" alt="">
+                                    </div>
+                                    <div class="col-4 text-start">
+                                        <p id="allergie3"></p>
+                                    </div>
+                                    <div class="col-2 text-end">
+                                        <img id="icon_allergie4" class="iconen-allergenen" src="" alt="">
+                                    </div>
+                                    <div class="col-4 text-start">
+                                        <p id="allergie4"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 text-end">
-                                <img id="icon_allergie2" class="iconen-allergenen" src="assets/recepten_lactose.png"
-                                     alt="opgepast voor lactose">
+                        </div>
+                    </div>
+                </div>
+                <!-- 2e RIJ MET CAROUSEL ANDERE RECEPTEN -->
+                <div class="row recepten_andere_gerechten">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row text-center mt-lg-5">
+                            <!-- ARROW LEFT -->
+                            <div class="col-1 my-auto icon-arrow-left">
+                                <img src="assets/recepten_arrow-left.png" alt="pijltje terug">
                             </div>
-                            <div class="col-4 text-start">
-                                <p id="allergie2">Lactose</p>
+                            <!-- CAROUSEL ITEMS -->
+                            <div class="col-10 my-auto">
+                                <div class="row recepten_carousel">
+                                    <div id="item_pasta_tomaat"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_tomaat.png" alt="pasta tomaat">
+                                            <p>Pasta Tomaat</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_carbonara"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta-carbonara.png" alt="pasta carbonara">
+                                            <p>Pasta Carbonara</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_buffalo"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_buffalo.png" alt="pasta buffalo">
+                                            <p>Pasta Buffalo</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_napolitana"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_napolitana.png" alt="pasta napolitana">
+                                            <p>Pasta Napolitana</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_vierkazen"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_vier_kazen.png" alt="pasta vier kazen">
+                                            <p>Pasta Vier Kazen</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_spekshrooms"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_spek_en_shrooms.png" alt="pasta spek en shrooms">
+                                            <p>Pasta Spek en Shrooms</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_tomaatmozarella"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_tomaat-mozarella.png" alt="pasta tomaat mozarella">
+                                            <p>Pasta Tomaat Mozarella</p>
+                                        </div>
+                                    </div>
+                                    <div id="item_pasta_arrabiata"
+                                         class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
+                                        <div class="recepten_carousel_item">
+                                            <img src="assets/recepten_pasta_arrabiata.png" alt="pasta arrabiata">
+                                            <p>Pasta Arrabiata</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2 text-end">
-                                <img id="icon_allergie3" class="iconen-allergenen" src="" alt="">
-                            </div>
-                            <div class="col-4 text-start">
-                                <p id="allergie3"></p>
-                            </div>
-                            <div class="col-2 text-end">
-                                <img id="icon_allergie4" class="iconen-allergenen" src="" alt="">
-                            </div>
-                            <div class="col-4 text-start">
-                                <p id="allergie4"></p>
+                            <!-- ARROW RIGHT -->
+                            <div class="col-1 my-auto icon-arrow-right">
+                                <img src="assets/recepten_arrow-right.png" alt="pijltje verder">
                             </div>
                         </div>
                     </div>
@@ -91,82 +174,7 @@
                 </div>
             </div>
         </div>
-        <!-- 2e RIJ MET CAROUSEL ANDERE RECEPTEN -->
-        <div class="row recepten_andere_gerechten">
-            <div class="col-12 col-lg-8 offset-lg-1">
-                <div class="row text-center mt-lg-5">
-                    <!-- ARROW LEFT -->
-                    <div class="col-1 my-auto icon-arrow-left">
-                        <img src="assets/recepten_arrow-left.png" alt="pijltje terug">
-                    </div>
-                    <!-- CAROUSEL ITEMS -->
-                    <div class="col-10 my-auto">
-                        <div class="row recepten_carousel">
-                            <div id="item_pasta_tomaat"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_tomaat.png" alt="pasta tomaat">
-                                    <p>Pasta Tomaat</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_carbonara"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta-carbonara.png" alt="pasta carbonara">
-                                    <p>Pasta Carbonara</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_buffalo"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_buffalo.png" alt="pasta buffalo">
-                                    <p>Pasta Buffalo</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_napolitana"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_napolitana.png" alt="pasta napolitana">
-                                    <p>Pasta Napolitana</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_vierkazen"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_vier_kazen.png" alt="pasta vier kazen">
-                                    <p>Pasta Vier Kazen</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_spekshrooms"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_spek_en_shrooms.png" alt="pasta spek en shrooms">
-                                    <p>Pasta Spek en Shrooms</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_tomaatmozarella"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_tomaat-mozarella.png" alt="pasta tomaat mozarella">
-                                    <p>Pasta Tomaat Mozarella</p>
-                                </div>
-                            </div>
-                            <div id="item_pasta_arrabiata"
-                                 class="col-6 col-sm-4 col-xl-3 text-center recepten_carousel_product">
-                                <div class="recepten_carousel_item">
-                                    <img src="assets/recepten_pasta_arrabiata.png" alt="pasta arrabiata">
-                                    <p>Pasta Arrabiata</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ARROW RIGHT -->
-                    <div class="col-1 my-auto icon-arrow-right">
-                        <img src="assets/recepten_arrow-right.png" alt="pijltje verder">
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- 3e RIJ MET BEREIDING -->
         <div class="row">
             <div id="recepten_bereiding" class="col-11 col-lg-8 offset-lg-1">
