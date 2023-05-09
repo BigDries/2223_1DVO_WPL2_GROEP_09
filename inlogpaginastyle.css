@@ -3,21 +3,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto, Arial, sans-serif;
-    background-image: url("bustabackground.png");
-    background-size: cover;
-    backdrop-filter: blur(5px);
 }
 
+. containerafbeelding .backgroundimage {
+    height: 40.65rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 
+.formtotaal {
+    margin-top: 20rem;
+}
 form {
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #DCDBDB;
     padding: 20px;
     font-size: 20px;
 }
 label {
     color: #000000;
-    background-color: rgba(255, 255, 255, 0.0);
+    background-color: #DCDBDB;
     padding: 10px;
 }
 
