@@ -47,10 +47,9 @@ body{
     }
 /* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
     .iconen-allergenen {
-        width: 2rem;
-        height: fit-content;
+        width: fit-content;
+        height: 2rem;
     }
-
     #recepten_bord1 img {
         width: 100%;
         height: fit-content;
@@ -63,15 +62,25 @@ body{
     #recepten_ingredienten h2{
         font-size: 20pt;
     }
-    #recepten-ingredienten-titel{
+    #recepten-ingredienten-review-titel{
         padding: 1rem 0;
     }
     #recepten_ingredienten h2:hover{
         text-decoration: underline;
     }
+    #recepten-no-decoration:hover{
+        text-decoration: none;
+    }
     #recepten_ingredienten ul li{
         list-style-type: none;
     }
+    #icon_allergie3, #allergie3, #icon_allergie4, #allergie4{
+        display: none;
+    }
+    #recepten_review_inhoud{
+        display: none;
+    }
+
 /* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
     .icon-arrow-left img,
     .icon-arrow-right img{
