@@ -58,12 +58,16 @@ reviews.addEventListener("click", changeToReview);
 function changeToReview(){
     document.getElementById("recepten_ingredienten_lijst").style.display = "none";
     document.getElementById("recepten_review_inhoud").style.display = "block";
+    document.getElementById("recepten_review_titel").style.textDecoration = "underline";
+    document.getElementById("recepten_ingredienten_titel").style.textDecoration = "none";
 }
 let ingredienten = document.getElementById("recepten_ingredienten_titel");
 ingredienten.addEventListener("click", changeToIngredienten);
 function changeToIngredienten(){
     document.getElementById("recepten_ingredienten_lijst").style.display = "block";
     document.getElementById("recepten_review_inhoud").style.display = "none";
+    document.getElementById("recepten_review_titel").style.textDecoration = "none";
+    document.getElementById("recepten_ingredienten_titel").style.textDecoration = "underline";
 }
 
 
@@ -73,7 +77,7 @@ function functie1(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_tomaat.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta Tomaat</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
-    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
+    document.getElementById("allergie1").innerHTML="<p>Veggie</p>";
     document.getElementById("icon_allergie2").style.display = "block";
     document.getElementById("icon_allergie2").src = "assets/recepten_lactose.png";
     document.getElementById("allergie2").style.display = "block";
@@ -99,7 +103,7 @@ function functie3(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_buffalo.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta Buffalo</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
-    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
+    document.getElementById("allergie1").innerHTML="<p>Veggie</p>";
     document.getElementById("icon_allergie2").src = "assets/recepten_lactose.png";
     document.getElementById("icon_allergie2").style.display="block";
     document.getElementById("allergie2").innerHTML="<p>Lactose</p>";
@@ -113,7 +117,7 @@ function functie4(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_napolitana.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta napolitana</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
-    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
+    document.getElementById("allergie1").innerHTML="<p>Veggie</p>";
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta farfalle</p>" + "<p>Busta napolitana saus</p>" + "<p>Geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
@@ -149,7 +153,7 @@ function functie7(){
     document.getElementById("recepten_bord").src = "assets/recepten_pasta_tomaat-mozarella.png";
     document.getElementById("recepten_titel").innerHTML="<h1>Pasta tomaat mozarella</h1>";
     document.getElementById("icon_allergie1").src = "assets/recepten_veggie.png";
-    document.getElementById("allergie1").innerHTML="<p>Vegan</p>";
+    document.getElementById("allergie1").innerHTML="<p>Veggie</p>";
     document.getElementById("icon_allergie2").src = "assets/recepten_lactose.png";
     document.getElementById("icon_allergie2").style.display = "block";
     document.getElementById("allergie2").innerHTML = "<p>Lactose</p>";

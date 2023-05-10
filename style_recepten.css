@@ -62,6 +62,9 @@ body{
     #recepten_ingredienten h2{
         font-size: 20pt;
     }
+    #recepten_ingredienten_titel{
+        text-decoration: underline;
+    }
     #recepten-ingredienten-review-titel{
         padding: 1rem 0;
     }
@@ -79,6 +82,17 @@ body{
     }
     #recepten_review_inhoud{
         display: none;
+    }
+    #recepten_review_score h1 {
+        width: 100%;
+        background-color: #bb6148;
+        border-radius: 1rem;
+        padding: 1rem 0;
+    }
+
+    #recepten_review_getuigenis{
+        margin-top: 2rem;
+        font-size: 18pt;
     }
 
 /* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
