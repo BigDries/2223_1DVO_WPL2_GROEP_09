@@ -2,6 +2,7 @@
 const form = document.querySelector('form');
 const error = document.querySelector('.error');
 */
+/*
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const username = form.username.value;
@@ -12,4 +13,7 @@ form.addEventListener('submit', (event) => {
     } else {
         error.textContent = 'Invalid username or password';
     }
-});
+}
+
+ */
+

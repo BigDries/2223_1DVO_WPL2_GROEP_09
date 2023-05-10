@@ -11,35 +11,37 @@
 </head>
 <body>
 
-<div class="containerafbeelding">
-    <img class="backgroundimage" src="assets/bustabackground.png" alt="Achtergrond Busta logo">
-</div>
-
-
 <div class="formtotaal">
     <form action="http://localhost:63342/style.css/homepage.html?_ijt=muiq5b3g01731lq50lu25486uq&_ij_reload=RELOAD_ON_SAVE">
-        <label id="username">Gebruikersnaam / E-mail</label>
-        <input type="text" placeholder="Gebruikersnaam / E-mail" name="username" required>
+        <label for="username">Gebruikersnaam / E-mail</label>
+        <input type="text" placeholder="Gebruikersnaam / E-mail" name="username" id="username" required>
 
-        <label id="password">Wachtwoord</label>
-        <input type="password" placeholder="Wachtwoord" name="password" required>
+        <label for="password">Wachtwoord</label>
+        <input type="password" placeholder="Wachtwoord" name="password" id="password" required>
 
-        <label id="forgotpassword">Wachtwoord vergeten</label>
-
+        <a id="forgotpassword" href="#">Wachtwoord vergeten</a>
 
         <button type="submit">Log in</button>
 
-        <label id="connectwith">--- Inloggen via ---</label>
+        <label id="connectwith">-------- Inloggen via --------</label>
 
         <div class="image-container">
-            <img src="assets/appleicon-01.png" alt="Apple Icon">
-            <img src="assets/googleicon-02.png" alt="Google Icon">
-            <img src="assets/facebookicon-03.png" alt="Facebook Icon">
-        </div>
+            <a href="https://www.icloud.com/">
+                <img src="assets/appleicon-01.png" alt="Apple Icon">
+            </a>
 
+            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
+            <img src="assets/googleicon-02.png" alt="Google Icon">
+            </a>
+
+            <a href="https://www.facebook.com/">
+            <img src="assets/facebookicon-03.png" alt="Facebook Icon">
+            </a>
+
+        </div>
     </form>
 </div>
 
-
 </body>
 </html>
+

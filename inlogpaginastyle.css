@@ -4,86 +4,82 @@
     box-sizing: border-box;
     font-family: roboto, Arial, sans-serif;
 }
-
-. containerafbeelding .backgroundimage {
-    height: 40.65rem;
-    width: 100%;
+body {
+    background-image: url("assets/bustabackground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 45.65rem;
     position: absolute;
-    z-index: -1;
 }
 
 .formtotaal {
-    margin-top: 20rem;
+    margin: 5rem 10rem 5rem 35rem;
+    /*
+    margin-top: 5rem;
+    margin-left: 35rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+     */
 }
+
 form {
     border-radius: 25px;
     background-color: #DCDBDB;
     padding: 20px;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 label {
+    display: block;
     color: #000000;
     background-color: #DCDBDB;
-    padding: 10px;
+    padding: 1rem;
 }
 
 input {
     color: #000000;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 25px;
+    border-radius: 15px;
+    border: none;
     padding: 10px;
+    text-align: center;
 }
 
 button {
     background-color: #f1c765;
     color: #000000;
-    border-radius: 25px;
+
+}
+
+.formtotaal button[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    width: 270px;
+    border-radius: 15px;
+    border: none;
     padding: 10px;
+    text-align: center;
 }
 
 #forgotpassword {
-    font-size: 10px;
+    color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 30px;
+    padding-left: 9.3rem;
+    font-size: 12px;
     text-decoration-line: underline;
 }
 
 .image-container {
     display: flex;
+    margin-right: 5.2rem;
+    margin-left: 5.2rem;
 }
 
 .image-container img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
-}
-
-
-
-
-/*
-label p {
-    color: #2A2929;
-}
-
-image {
-    height: 40px;
-    width: 40px;
-}
-/*
-form {
-    width: 500px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-}
-
-
-
-
-
-.form-container {
-
-    width: 500px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
 }
