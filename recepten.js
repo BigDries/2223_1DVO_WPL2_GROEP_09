@@ -53,6 +53,7 @@ else {
     })
 }
 
+
 let reviews = document.getElementById("recepten_review_titel");
 reviews.addEventListener("click", changeToReview);
 function changeToReview(){
@@ -71,6 +72,7 @@ function changeToIngredienten(){
 }
 
 
+
 let pastaTomaat = document.getElementById("item_pasta_tomaat");
 pastaTomaat.addEventListener('click', functie1)
 function functie1(){
@@ -86,6 +88,7 @@ function functie1(){
     document.getElementById("recepten_review_score").innerHTML= "<h1>4,3</h1>";
     document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat\">Schrijf review</a></p>";
     document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Heerlijke pasta en snel klaar! </br> Heerlijk om na het werk thuis te komen en na 10 minuten al klaar te zijn met koken. Extra pluspunt: de kinderen vinden het ook heel lekker!</p>" + "<p>~ Janne Doe</p>";
+    document.getElementById("recepten_bereiding_stappen").innerHTML= "<ol> <li>Doe de Busta vegan bolognesesaus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: spaghettimix, paprika, basilicum en look.)</li>" + "<li>Voeg de pasta toe aan de kokende saus.</li>" + "<li>Laat gedurende een halve minuut doorkoken.</li>" + "<li>Serveer en geniet!</li>";
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
@@ -100,7 +103,8 @@ function functie2(){
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta Tagliatelli</p>" + "<p>Busta carbonara saus</p>" + "<p>Spekjes</p>" + "<p>Extra geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
     document.getElementById("recepten_review_score").innerHTML= "<h1>3,8</h1>";
     document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta carbonara\">Schrijf review</a></p>";
-    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik eet al 10 jaar vegetarisch dus moest even het recept aanpassen maar de saus was super lekker!</br> Ik zou het iedereen aanraden.</p>" + "<p>~ Tom Aaten</p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik eet al 10 jaar vegetarisch dus moest even het recept aanpassen, maar de saus was super lekker!</br> Ik zou het iedereen aanraden.</p>" + "<p>~ Tom Aaten</p>";
+    document.getElementById("recepten_bereiding_stappen").innerHTML= "<ol> <li>Doe de Busta carbonarasaus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: peper, zout en muskaatnoot.)</li>" + "<li>Bak de spekjes in een tweede pan tot ze krokant zijn</li>" + "<li>Voeg de pasta toe aan de saus als die licht aan het koken is.</li>" + "<li>Laat gedurende een halve minuut doorkoken.</li>" + "<li>Voeg ook de spekjes toe aan de saus als ze krokant zijn. Roer ze door de saus</li>" + "<li>Serveer en geniet!</li>";
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
@@ -117,7 +121,7 @@ function functie3(){
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta spaghetti</p>" + "<p>Busta vegan bolognese</p>" + "<p>verse kerstomaten</p>" + "<p>Verse mozarella</p>" + "<p>Kruiding naar keuze</p>";
     document.getElementById("recepten_review_score").innerHTML= "<h1>4,8</h1>";
     document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta buffalo\">Schrijf review</a></p>";
-    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>De eerste keer dat ik dit maakte was ik direct verkocht! Super lekkere maaltijd en snel klaar.</br>Pasta buffalo staat nu wekelijks op tafel bij ons.</p>" + "<p>~ Peter Selie</p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>De eerste keer dat ik dit maakte, was ik direct verkocht! Super lekkere maaltijd en snel klaar.</br> Pasta buffalo staat nu wekelijks op tafel bij ons.</p>" + "<p>~ Peter Selie</p>";
 }
 
 let pastaNapolitana = document.getElementById("item_pasta_napolitana");
@@ -163,7 +167,7 @@ function functie6(){
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta tageliatelle</p>" + "<p>Busta pesto</p>" + "<p>Spekjes</p>" + "<p>Champignons</p>" + "<p>Kruiding naar keuze</p>";
     document.getElementById("recepten_review_score").innerHTML= "<h1>4,5</h1>";
     document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta spek en shrooms\">Schrijf review</a></p>";
-    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik ben normaal geen fan van champignons maar voor dit gerecht maak ik graag een uitzondering.</br>Super lekker!</p>" + "<p>~ Lizzy Briers</p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik ben normaal geen fan van champignons maar voor dit gerecht maak ik graag een uitzondering.</br> Super lekker!</p>" + "<p>~ Lizzy Briers</p>";
 
 }
 

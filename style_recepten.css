@@ -160,9 +160,7 @@ body{
         margin: auto;
     }
     #recepten_bereiding_stappen ol li{
-        font-size: 15pt;
-    }
-    #recepten_bereiding_stappen p{
+        font-size: 18pt;
         margin-bottom: 2rem;
     }
     #recepten_bereiding_stappen::-webkit-scrollbar{
