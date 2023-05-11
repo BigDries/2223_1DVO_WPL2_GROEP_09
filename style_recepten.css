@@ -89,9 +89,18 @@ body{
         border-radius: 1rem;
         padding: 1rem 0;
     }
-
+    #recepten_review_knoppen p{
+        background-color: #f1c765;
+        border-radius: 1rem;
+        padding: 0.35rem 0;
+        color: #313438;
+    }
+    #recepten_review_knoppen p a{
+        color: #313438;
+        text-decoration: none;
+    }
     #recepten_review_getuigenis{
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 18pt;
     }
 

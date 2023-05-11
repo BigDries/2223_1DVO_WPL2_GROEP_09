@@ -83,6 +83,9 @@ function functie1(){
     document.getElementById("allergie2").style.display = "block";
     document.getElementById("allergie2").innerHTML = "<p>Lactose</p>";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta spaghetti</p>" + "<p>Busta vegan bolognese</p>" + "<p>Geraspte mozarella</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,3</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Heerlijke pasta en snel klaar! </br> Heerlijk om na het werk thuis te komen en na 10 minuten al klaar te zijn met koken. Extra pluspunt: de kinderen vinden het ook heel lekker!</p>" + "<p>~ Janne Doe</p>";
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
@@ -95,6 +98,9 @@ function functie2(){
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta Tagliatelli</p>" + "<p>Busta carbonara saus</p>" + "<p>Spekjes</p>" + "<p>Extra geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>3,8</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta carbonara\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik eet al 10 jaar vegetarisch dus moest even het recept aanpassen maar de saus was super lekker!</br> Ik zou het iedereen aanraden.</p>" + "<p>~ Tom Aaten</p>";
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
@@ -109,6 +115,9 @@ function functie3(){
     document.getElementById("allergie2").innerHTML="<p>Lactose</p>";
     document.getElementById("allergie2").style.display="block";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta spaghetti</p>" + "<p>Busta vegan bolognese</p>" + "<p>verse kerstomaten</p>" + "<p>Verse mozarella</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,8</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta buffalo\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>De eerste keer dat ik dit maakte was ik direct verkocht! Super lekkere maaltijd en snel klaar.</br>Pasta buffalo staat nu wekelijks op tafel bij ons.</p>" + "<p>~ Peter Selie</p>";
 }
 
 let pastaNapolitana = document.getElementById("item_pasta_napolitana");
@@ -121,6 +130,9 @@ function functie4(){
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta farfalle</p>" + "<p>Busta napolitana saus</p>" + "<p>Geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,4</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta napolitana\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik ben een echte fan van Busta. De pasta is super snel klaar en hun recepten zijn super makkelijk!</p>" + "<p>~ Kim Kommer</p>";
 }
 
 let pastaVierKazen = document.getElementById("item_pasta_vierkazen");
@@ -133,6 +145,10 @@ function functie5(){
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta penne</p>" + "<p>Busta vier kazen saus</p>" + "<p>Hespenblokjes</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,7</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta vier kazen\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Heerlijk om na een drukke werkdag thuis te kunnen komen en niet meer dan 10 minuten te moeten besteden aan het klaarmaken van deze maaltijd. Mijn vriend en ik zijn verkocht!</p>" + "<p>~ Bas Silicum</p>";
+
 }
 
 let pastaSpekShrooms = document.getElementById("item_pasta_spekshrooms");
@@ -145,6 +161,10 @@ function functie6(){
     document.getElementById("icon_allergie2").style.display = "none";
     document.getElementById("allergie2").style.display = "none";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta tageliatelle</p>" + "<p>Busta pesto</p>" + "<p>Spekjes</p>" + "<p>Champignons</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,5</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta spek en shrooms\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik ben normaal geen fan van champignons maar voor dit gerecht maak ik graag een uitzondering.</br>Super lekker!</p>" + "<p>~ Lizzy Briers</p>";
+
 }
 
 let pastaTomaatMozarella = document.getElementById("item_pasta_tomaatmozarella");
@@ -159,6 +179,10 @@ function functie7(){
     document.getElementById("allergie2").innerHTML = "<p>Lactose</p>";
     document.getElementById("allergie2").style.display = "block";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta tagliatelle</p>" + "<p>Busta napolitana saus</p>" + "<p>Verse tomaten</p>" + "<p>Verse mozarella</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,1</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat mozarella\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Het is al even lekker als dat het eruit ziet. Heel lekker en makkelijk te bereiden.</p>" + "<p>~ Miguel Celen</p>";
+
 }
 
 let pastaArrabiata = document.getElementById("item_pasta_arrabiata");
@@ -173,4 +197,8 @@ function functie8(){
     document.getElementById("allergie2").innerHTML = "<p>Pikant</>";
     document.getElementById("allergie2").style.display = "block";
     document.getElementById("recepten_ingredienten_lijst_items").innerHTML = "<p>Busta penne</p>" + "<p>Busta arrabiata saus</p>" + "<p>Geraspte kaas</p>" + "<p>Kruiding naar keuze</p>";
+    document.getElementById("recepten_review_score").innerHTML= "<h1>4,0</h1>";
+    document.getElementById("recepten_review_knoppen").innerHTML= "<p>Bekijk alle</p>" + "<p><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta arrabiata\">Schrijf review</a></p>";
+    document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Ik houd van pikant!! Deze pasta arrabiata is echt perfect voor mij! Ik ben geen keukenprincess maar ik heb geen probleem om dit klaar te maken.</p>" + "<p>~ Shania Stassen</p>";
+
 }
