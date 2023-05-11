@@ -21,7 +21,7 @@ h3{
     font-family: "bebas-neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25pt;
+    font-size: 18pt;
 }
 p{
     font-size: 18pt;
@@ -89,15 +89,18 @@ body{
         border-radius: 1rem;
         padding: 1rem 0;
     }
-    #recepten_review_knoppen p{
-        background-color: #f1c765;
+    .knop {
+        background-color: #F1C765;
         border-radius: 1rem;
-        padding: 0.35rem 0;
         color: #313438;
     }
-    #recepten_review_knoppen p a{
+    #recepten_review_knoppen h3{
+        padding: 0.5rem 0;
+    }
+    .knop a{
         color: #313438;
         text-decoration: none;
+        font-family: bebas-neue, sans-serif;
     }
     #recepten_review_getuigenis{
         margin-top: 1rem;
