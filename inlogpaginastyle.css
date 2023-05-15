@@ -83,3 +83,17 @@ button {
     height: 80px;
     margin-right: 10px;
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("assets/bustabackground.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+    }
+
+}
+
+
+
