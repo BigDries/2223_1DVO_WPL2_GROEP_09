@@ -155,10 +155,9 @@ body{
     #recepten_bereiding_stappen{
         overflow: auto;
         height: 90%;
-        margin: 5% 0;
+        margin-top: 2.5%;
     }
     #recepten_bereiding_stappen ol{
-        height: 110%;
         width: 90%;
         margin: auto;
     }

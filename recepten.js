@@ -89,6 +89,12 @@ function functie1(){
     document.getElementById("recepten_review_knoppen").innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat\">Schrijf review</a></h3>";
     document.getElementById("recepten_review_getuigenis").innerHTML= "<p>Heerlijke pasta en snel klaar! </br> Heerlijk om na het werk thuis te komen en na 10 minuten al klaar te zijn met koken. Extra pluspunt: de kinderen vinden het ook heel lekker!</p>" + "<p>~ Janne Doe</p>";
     document.getElementById("recepten_bereiding_stappen").innerHTML= "<ol> <li>Doe de Busta vegan bolognesesaus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: spaghettimix, paprika, basilicum en look.)</li>" + "<li>Voeg de pasta toe aan de kokende saus.</li>" + "<li>Laat gedurende 5 minuten doorkoken.</li>" + "<li>Serveer met de geraspte mozzarella en geniet!</li>";
+    document.getElementById("recepten_bord").style.position= "relative";
+    document.getElementById("recepten_bord").style.top= "-10rem";
+    document.getElementById("recepten_bord").style.left= "3rem";
+    document.getElementById("recepten_bord").style.transform= "translateY(10rem) translateX(-3rem) r";
+    document.getElementById("recepten_bord").style.transition= "all .75s ease";
+
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
