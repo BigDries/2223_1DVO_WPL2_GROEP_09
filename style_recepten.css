@@ -50,9 +50,12 @@ body{
         width: fit-content;
         height: 2rem;
     }
-    #recepten_bord1 img {
+    #recepten_bord1 img, #recepten_bord1_slide_out img {
         width: 100%;
         height: fit-content;
+    }
+    #recepten_bord1_slide_out{
+        display: none;
     }
     #recepten_ingredienten{
         background-color: #313437;
@@ -201,10 +204,10 @@ body{
 
 /* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
 
-    #recepten_bord1{
+    #recepten_bord1, #recepten_bord1_slide_out{
         border: 3px black;
     }
-    #recepten_bord1 img {
+    #recepten_bord1 img, #recepten_bord1_slide_out img {
         width: 50%;
         height: fit-content;
     }
@@ -247,3 +250,4 @@ body{
     }
 
 }
+
