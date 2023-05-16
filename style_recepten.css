@@ -54,7 +54,7 @@ body{
         width: 100%;
         height: fit-content;
     }
-    #recepten_bord1_slide_out{
+    #recepten_bord_slide_out{
         display: none;
     }
     #recepten_ingredienten{

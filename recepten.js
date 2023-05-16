@@ -71,23 +71,24 @@ function changeToIngredienten(){
     document.getElementById("recepten_ingredienten_titel").style.textDecoration = "underline";
 }
 
-var recepten_bord = document.getElementById("recepten_bord");
-var recepten_titel = document.getElementById("recepten_titel");
-var icon_allergie1 = document.getElementById("icon_allergie1");
-var allergie1 = document.getElementById("allergie1");
-var icon_allergie2 = document.getElementById("icon_allergie2");
-var allergie2 = document.getElementById("allergie2");
-var recepten_ingredienten_lijst_items = document.getElementById("recepten_ingredienten_lijst_items");
-var recepten_review_score = document.getElementById("recepten_review_score");
-var recepten_review_knoppen = document.getElementById("recepten_review_knoppen");
-var recepten_review_getuigenis = document.getElementById("recepten_review_getuigenis");
-var recepten_bereiding_stappen = document.getElementById("recepten_bereiding_stappen");
+let recepten_bord = document.getElementById("recepten_bord");
+let recepten_titel = document.getElementById("recepten_titel");
+let icon_allergie1 = document.getElementById("icon_allergie1");
+let allergie1 = document.getElementById("allergie1");
+let icon_allergie2 = document.getElementById("icon_allergie2");
+let allergie2 = document.getElementById("allergie2");
+let recepten_ingredienten_lijst_items = document.getElementById("recepten_ingredienten_lijst_items");
+let recepten_review_score = document.getElementById("recepten_review_score");
+let recepten_review_knoppen = document.getElementById("recepten_review_knoppen");
+let recepten_review_getuigenis = document.getElementById("recepten_review_getuigenis");
+let recepten_bereiding_stappen = document.getElementById("recepten_bereiding_stappen");
+let recepten_bord_slide_out = document.getElementById("recepten_bord_slide_out");
+
 
 let pastaTomaat = document.getElementById("item_pasta_tomaat");
 pastaTomaat.addEventListener('click', functie1)
 function functie1(){
     recepten_bord.src = "assets/recepten_pasta_tomaat.png";
-    //document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_tomaat.png";
     recepten_titel.innerHTML="<h1>Pasta Tomaat</h1>";
     icon_allergie1.src = "assets/recepten_veggie.png";
     allergie1.innerHTML="<p>Veggie</p>";
@@ -95,27 +96,42 @@ function functie1(){
     icon_allergie2.src = "assets/recepten_lactose.png";
     allergie2.style.display = "block";
     allergie2.innerHTML = "<p>Lactose</p>";
+
     recepten_ingredienten_lijst_items.innerHTML = "<p>Busta spaghetti</p>" + "<p>Busta vegan bolognese</p>" + "<p>Geraspte mozarella</p>" + "<p>Kruiding naar keuze</p>";
     recepten_review_score.innerHTML= "<h1>4,3</h1>";
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat\">Schrijf review</a></h3>";
     recepten_review_getuigenis.innerHTML= "<p>Heerlijke pasta en snel klaar! </br> Heerlijk om na het werk thuis te komen en na 10 minuten al klaar te zijn met koken. Extra pluspunt: de kinderen vinden het ook heel lekker!</p>" + "<p>~ Janne Doe</p>";
     recepten_bereiding_stappen.innerHTML= "<ol> <li>Doe de Busta vegan bolognesesaus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: spaghettimix, paprika, basilicum en look.)</li>" + "<li>Voeg de pasta toe aan de kokende saus.</li>" + "<li>Laat gedurende 5 minuten doorkoken.</li>" + "<li>Serveer met de geraspte mozzarella en geniet!</li>";
+
     recepten_bord.style.position= "relative";
     recepten_bord.style.top= "-10rem";
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all .75s ease";
+
     setTimeout(function(){
         recepten_bord.style = null;
     },750);
+
+    recepten_bord_slide_out.style.display= "block";
+    recepten_bord_slide_out.style.position= "relative";
+    recepten_bord_slide_out.style.top= "-16.3rem";
+    recepten_bord_slide_out.style.marginBottom= "-16.3rem";
+    recepten_bord_slide_out.style.zIndex= "-1";
+
+    recepten_bord_slide_out.style.transform= "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all .75sec ease";
+
+    setTimeout(function(){
+        recepten_bord_slide_out.src= "assets/recepten_pasta_tomaat.png";
+        }, 750);
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
 pastaCarbonara.addEventListener('click', functie2)
 function functie2(){
     recepten_bord.src = "assets/recepten_pasta-carbonara.png";
-    // document.getElementById("recepten_titel").innerHTML="<h1>Pasta carbonara</h1>";
     icon_allergie1.src = "assets/recepten_lactose.png";
     allergie1.innerHTML="<p>Lactose</p>";
     icon_allergie2.style.display = "none";
@@ -131,16 +147,28 @@ function functie2(){
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all .75s ease";
+    recepten_bord_slide_out.style.transform= "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all .75sec ease";
+
     setTimeout(function(){
         recepten_bord.style = null;
     },750);
+
+    recepten_bord_slide_out.style.display= "block";
+    recepten_bord_slide_out.style.position= "relative";
+    recepten_bord_slide_out.style.top= "-16.3rem";
+    recepten_bord_slide_out.style.marginBottom= "-16.3rem";
+    recepten_bord_slide_out.style.zIndex= "-1";
+
+    setTimeout(function(){
+        recepten_bord_slide_out.src= "assets/recepten_pasta-carbonara.png";
+    }, 750);
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
 pastaBuffalo.addEventListener('click', functie3)
 function functie3(){
     recepten_bord.src = "assets/recepten_pasta_buffalo.png";
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_buffalo.png";
     recepten_titel.innerHTML="<h1>Pasta Buffalo</h1>";
     icon_allergie1.src = "assets/recepten_veggie.png";
     allergie1.innerHTML="<p>Veggie</p>";
@@ -168,7 +196,6 @@ let pastaNapolitana = document.getElementById("item_pasta_napolitana");
 pastaNapolitana.addEventListener('click', functie4)
 function functie4(){
     recepten_bord.src = "assets/recepten_pasta_napolitana.png";
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_napolitana.png";
     recepten_titel.innerHTML="<h1>Pasta napolitana</h1>";
     icon_allergie1.src = "assets/recepten_veggie.png";
     allergie1.innerHTML="<p>Veggie</p>";
@@ -194,7 +221,6 @@ let pastaVierKazen = document.getElementById("item_pasta_vierkazen");
 pastaVierKazen.addEventListener('click', functie5)
 function functie5(){
     recepten_bord.src = "assets/recepten_pasta_vier_kazen.png";
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_vier_kazen.png";
     recepten_titel.innerHTML="<h1>Pasta vier kazen</h1>";
     icon_allergie1.src = "assets/recepten_lactose.png";
     allergie1.innerHTML="<p>Lactose</p>";
@@ -220,7 +246,6 @@ let pastaSpekShrooms = document.getElementById("item_pasta_spekshrooms");
 pastaSpekShrooms.addEventListener('click', functie6)
 function functie6(){
     recepten_bord.src = "assets/recepten_pasta_spek_en_shrooms.png";
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_spek_en_shrooms.png";
     recepten_titel.innerHTML="<h1>Pasta spek en shrooms</h1>";
     icon_allergie1.src = "assets/recepten_lactose.png";
     allergie1.innerHTML="<p>Lactose</p>";
@@ -246,7 +271,6 @@ let pastaTomaatMozarella = document.getElementById("item_pasta_tomaatmozarella")
 pastaTomaatMozarella.addEventListener('click', functie7)
 function functie7(){
     recepten_bord.src = "assets/recepten_pasta_tomaat-mozarella.png";
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_tomaat-mozarella.png";
     recepten_titel.innerHTML="<h1>Pasta tomaat mozzarella</h1>";
     icon_allergie1.src = "assets/recepten_veggie.png";
     allergie1.innerHTML="<p>Veggie</p>";
@@ -274,7 +298,6 @@ let pastaArrabiata = document.getElementById("item_pasta_arrabiata");
 pastaArrabiata.addEventListener('click', functie8)
 function functie8(){
     recepten_bord.src = "assets/recepten_pasta_arrabiata.png"
-    // document.getElementById("recepten_bord_slide_out").src = "assets/recepten_pasta_arrabiata.png";
     recepten_titel.innerHTML="<h1>Pasta arrabiata</h1>";
     icon_allergie1.src = "assets/recepten_lactose.png";
     allergie1.innerHTML="<p>Lactose</p>";
