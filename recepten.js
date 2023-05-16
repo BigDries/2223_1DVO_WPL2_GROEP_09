@@ -107,19 +107,18 @@ function functie1(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
 
-    recepten_bord_slide_out.style.display= "block";
-    recepten_bord_slide_out.style.rotate= "-20deg";
-    recepten_bord_slide_out.style.transform = "translateX(-20rem)";
-    recepten_bord_slide_out.style.transition= "translateX .75s ease";
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
     setTimeout(function(){
         recepten_bord.style = null;
         recepten_bord_slide_out.src= "assets/recepten_pasta_tomaat.png";
         recepten_bord_slide_out.style = null;
-        // recepten_bord_slide_out.style= null;
-    }, 1000);
+    }, 1500);
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
@@ -141,19 +140,18 @@ function functie2(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
 
-    recepten_bord_slide_out.style.opacity= "1";
-    recepten_bord_slide_out.style.rotate= "-20deg";
-    recepten_bord_slide_out.style.transform = "translateX(-20rem)";
-    recepten_bord_slide_out.style.transition= "all .75s ease";
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
     setTimeout(function(){
         recepten_bord.style = null;
-        recepten_bord_slide_out.src= "assets/recepten_pasta_tomaat.png";
+        recepten_bord_slide_out.src= "assets/recepten_pasta-carbonara.png";
         recepten_bord_slide_out.style = null;
-        // recepten_bord_slide_out.style= null;
-    }, 1000);
+    }, 1500);
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
@@ -172,15 +170,24 @@ function functie3(){
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta buffalo\">Schrijf review</a></h3>";
     recepten_review_getuigenis.innerHTML= "<p>De eerste keer dat ik dit maakte, was ik direct verkocht! Super lekkere maaltijd en snel klaar.</br> Pasta buffalo staat nu wekelijks op tafel bij ons.</p>" + "<p>~ Peter Selie</p>";
     recepten_bereiding_stappen.innerHTML= "<ol> <li>Doe de Busta vegan bolognese in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: spaghttimix; basilicum, paprika.)</li>" + "<li>Was de kerstomaten in water en snij deze daarna in 2.</li>" + "<li>Voeg de pasta toe aan de saus als die licht aan het koken is.</li>" + "<li>Laat de pasta gedurende 5 minuten doorkoken.</li>" + "<li>Breek de Mozzarella in stukken.</li>" + "<li>Als de saus klaar is, haal deze dan van de hittebron en voeg de tomaten stukjes eraan toe. Roer de tomaten onder de saus.</li>" + "<li>Schep de pasta met saus en tomaten op een bord en strooi de stukken mozzarella erover heen.</li>" + "<li>Serveer en geniet!</li> </ol>";
+
     recepten_bord.style.position= "relative";
     recepten_bord.style.top= "-10rem";
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_buffalo.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }
 
 let pastaNapolitana = document.getElementById("item_pasta_napolitana");
@@ -202,10 +209,18 @@ function functie4(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_napolitana.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }
 
 let pastaVierKazen = document.getElementById("item_pasta_vierkazen");
@@ -227,10 +242,18 @@ function functie5(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_vier_kazen.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }
 
 let pastaSpekShrooms = document.getElementById("item_pasta_spekshrooms");
@@ -252,13 +275,21 @@ function functie6(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_spek_en_shrooms.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }
 
-let pastaTomaatMozarella = document.getElementById("item_pasta_tomaatmozarella");
+let pastaTomaatMozarella = document.getElementById("item_pasta_tomaatmozzarella");
 pastaTomaatMozarella.addEventListener('click', functie7)
 function functie7(){
     recepten_bord.src = "assets/recepten_pasta_tomaat-mozarella.png";
@@ -279,10 +310,18 @@ function functie7(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_mozzarella.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }
 
 let pastaArrabiata = document.getElementById("item_pasta_arrabiata");
@@ -306,8 +345,16 @@ function functie8(){
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
-    recepten_bord.style.transition= "all .75s ease";
+    recepten_bord.style.transition= "all 1.5s ease-out";
+
+    recepten_bord_slide_out.style.opacity= "0";
+    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.transform = "translateX(-30rem)";
+    recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
+        recepten_bord_slide_out.src= "assets/recepten_pasta_arrabiata.png";
+        recepten_bord_slide_out.style = null;
+    }, 1500);
 }

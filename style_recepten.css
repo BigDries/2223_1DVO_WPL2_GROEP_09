@@ -82,8 +82,8 @@ header nav ul li p{
 /*-------------- FOOTER ---------------*/
 
 
-/* BIG SCREEN */
-@media screen and (max-width: 2000px) {
+/*-------------- BIG SCREEN -----------*/
+
 /* RECEPTEN BIG SCREEN */
     #recepten_body {
         background-color: #ECECEC;
@@ -103,10 +103,10 @@ header nav ul li p{
         height: fit-content;
     }
     #recepten_bord_slide_out{
-        opacity: 0;
+        opacity: 1;
         position: relative;
-        top: -16.3rem;
-        margin-bottom: -16.3rem;
+        top: -18rem;
+        margin-bottom: -18rem;
         z-index: -1;
     }
     #recepten_ingredienten{
@@ -232,9 +232,9 @@ header nav ul li p{
         background-color: #313438;
         border-radius: 10px;
     }
-}
 
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 992px){
 /* RECEPTEN MOBILE SCREEN */
     #recepten_body {
         background-color: #ECECEC;
