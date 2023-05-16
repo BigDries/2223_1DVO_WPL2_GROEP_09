@@ -110,7 +110,9 @@ function functie1(){
     recepten_bord.style.transition= "all .75s ease";
 
     recepten_bord_slide_out.style.display= "block";
-    recepten_bord_slide_out.classList.add('slide_out');
+    recepten_bord_slide_out.style.rotate= "-20deg";
+    recepten_bord_slide_out.style.transform = "translateX(-20rem)";
+    recepten_bord_slide_out.style.transition= "all .75s ease";
 
     setTimeout(function(){
         recepten_bord.style = null;

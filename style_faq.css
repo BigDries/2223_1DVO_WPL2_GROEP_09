@@ -29,6 +29,56 @@ p{
 body{
     margin: 0 auto;
 }
+/*-------------- NAVIGATIE ------------*/
+header nav{
+    margin: 25px;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li p{
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 20px 0 20px;
+    padding: 1rem;
+    font-weight: 300;
+    color: #000000;
+    font-size: 25px;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #2A2929;
+    min-width: 160px;
+}
+.dropdown-content a{
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover {
+    color: #F1C765;
+    font-weight: 800;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* BIG SCREEN */
 
