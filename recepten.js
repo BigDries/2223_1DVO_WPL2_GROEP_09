@@ -83,6 +83,7 @@ let recepten_review_knoppen = document.getElementById("recepten_review_knoppen")
 let recepten_review_getuigenis = document.getElementById("recepten_review_getuigenis");
 let recepten_bereiding_stappen = document.getElementById("recepten_bereiding_stappen");
 let recepten_bord_slide_out = document.getElementById("recepten_bord_slide_out");
+let recepten_bord1_slide_out = document.getElementById("recepten_bord1_slide_out");
 
 
 let pastaTomaat = document.getElementById("item_pasta_tomaat");
@@ -109,6 +110,7 @@ function functie1(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -142,6 +144,7 @@ function functie2(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -178,6 +181,7 @@ function functie3(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -211,6 +215,7 @@ function functie4(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -244,6 +249,7 @@ function functie5(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -277,6 +283,7 @@ function functie6(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -305,6 +312,7 @@ function functie7(){
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat mozarella\">Schrijf review</a></h3>";
     recepten_review_getuigenis.innerHTML= "<p>Het is al even lekker als dat het eruit ziet. Heel lekker en makkelijk te bereiden.</p>" + "<p>~ Miguel Celen</p>";
     recepten_bereiding_stappen.innerHTML= "<ol> <li>Doe de Busta napolitana saus in een ruime pot die ook in de oven mag en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Was de tomaten en snij deze in grove stukken.</li>" + "<li>Breek de mozzarella in grove stukken.</li>" + "<li>Voeg de pasta toe aan de saus als die licht aan het koken is. Kruid de saus ook met kruiden naar keuze.</br>(Aanbevolen: spaghettimix, basilicum, paprika.)</li>" + "<li>Haal na 3 minuten de pot met pasta en saus van de hittebron.</li>" + "<li>Roer de tomaten door de saus en stooi de mozarella erboven op. </li>" + "<li>Zet de pot 5 minuten in een voorverwarmde oven op 180°</li></ol>";
+
     recepten_bord.style.position= "relative";
     recepten_bord.style.top= "-10rem";
     recepten_bord.style.left= "6rem";
@@ -312,6 +320,7 @@ function functie7(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
@@ -319,7 +328,7 @@ function functie7(){
 
     setTimeout(function(){
         recepten_bord.style = null;
-        recepten_bord_slide_out.src= "assets/recepten_pasta_mozzarella.png";
+        recepten_bord_slide_out.src= "assets/recepten_pasta_mozarella.png";
         recepten_bord_slide_out.style = null;
     }, 1500);
 }
@@ -340,6 +349,7 @@ function functie8(){
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta arrabiata\">Schrijf review</a></h3>";
     recepten_review_getuigenis.innerHTML= "<p>Ik houd van pikant! Deze pasta arrabiata is echt perfect voor mij! Ik ben geen keukenprincess maar ik heb geen probleem om dit klaar te maken.</p>" + "<p>~ Shania Stassen</p>";
     recepten_bereiding_stappen.innerHTML= "<ol> <li>Doe de Busta arrabiata saus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus met kruiding naar keuze.</br>(Aanbevolen: spaghettimix, basilicum en paprika)</li>" + "<li>Voeg de penne toe aan de saus wanneer die begint te koken.</li>" + "<li>Laat de penne 5 minuten doorkoken </li>" + "<li>Serveer met geraspte kaas en geniet!</li> </ol>";
+
     recepten_bord.style.position= "relative";
     recepten_bord.style.top= "-10rem";
     recepten_bord.style.left= "6rem";
@@ -347,6 +357,7 @@ function functie8(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all 1.5s ease-out";
 
+    recepten_bord_slide_out.style.visibility= "visible";
     recepten_bord_slide_out.style.opacity= "0";
     recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";

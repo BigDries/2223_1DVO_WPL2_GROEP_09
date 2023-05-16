@@ -102,12 +102,16 @@ header nav ul li p{
         width: 100%;
         height: fit-content;
     }
+
     #recepten_bord_slide_out{
         opacity: 1;
         position: relative;
         top: -101%;
         margin-bottom: -18rem;
         z-index: -1;
+    }
+    #recepten_bord1_slide_out{
+        visibility: hidden;
     }
     #recepten_ingredienten{
         background-color: #313437;
@@ -232,17 +236,8 @@ header nav ul li p{
         background-color: #313438;
         border-radius: 10px;
     }
-}
-/*-- @media screen and (max-width: 1500px) {
-    #recepten_bord_slide_out{
-        top:
-    }
-}
-@media screen and (max-width: 1080px){
-    #recepten_bord_slide_out{
-        top: -90%;
-    }
-} */
+
+
 @media screen and (max-width: 992px){
 /* RECEPTEN MOBILE SCREEN */
     #recepten_body {
@@ -255,7 +250,6 @@ header nav ul li p{
         background-position-x: -7rem;
         background-position-y: -10rem;
     }
-
     #recepten_body #recepten_main{
         margin-top: 2rem;
     }
@@ -273,10 +267,12 @@ header nav ul li p{
         height: fit-content;
     }
     #recepten_bord_slide_out{
-        top: -73%;
+        top: -116%;
+        visibility: hidden;
     }
+
     #recepten-titel{
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
     .iconen-allergenen {
         width: 1.5rem;
@@ -314,5 +310,6 @@ header nav ul li p{
     }
 
 }
+
 
 
