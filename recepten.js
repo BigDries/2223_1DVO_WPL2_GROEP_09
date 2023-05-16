@@ -110,7 +110,7 @@ function functie1(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -143,7 +143,7 @@ function functie2(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -179,7 +179,7 @@ function functie3(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -212,7 +212,7 @@ function functie4(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -245,7 +245,7 @@ function functie5(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -278,7 +278,7 @@ function functie6(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -313,7 +313,7 @@ function functie7(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
@@ -348,7 +348,7 @@ function functie8(){
     recepten_bord.style.transition= "all 1.5s ease-out";
 
     recepten_bord_slide_out.style.opacity= "0";
-    recepten_bord_slide_out.style.rotate= "10deg";
+    recepten_bord_slide_out.style.rotate= "20deg";
     recepten_bord_slide_out.style.transform = "translateX(-30rem)";
     recepten_bord_slide_out.style.transition= "all 1.5s ease-in";
 
