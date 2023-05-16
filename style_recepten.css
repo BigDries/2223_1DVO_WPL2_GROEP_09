@@ -29,6 +29,10 @@ p{
 body{
     margin: 0 auto;
 }
+/*-------------- NAVIGATIE ------------*/
+
+/*-------------- FOOTER ---------------*/
+
 
 /* BIG SCREEN */
 @media screen and (max-width: 2000px) {
@@ -56,6 +60,15 @@ body{
     }
     #recepten_bord_slide_out{
         display: none;
+        position: relative;
+        top: -16.3rem;
+        margin-bottom: -16.3rem;
+        z-index: -1;
+    }
+    .slide_out{
+        rotate: 20deg;
+        transform: translateX(-20rem);
+        transition: all .75s ease .75s;
     }
     #recepten_ingredienten{
         background-color: #313437;

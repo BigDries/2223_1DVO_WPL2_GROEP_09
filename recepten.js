@@ -96,7 +96,6 @@ function functie1(){
     icon_allergie2.src = "assets/recepten_lactose.png";
     allergie2.style.display = "block";
     allergie2.innerHTML = "<p>Lactose</p>";
-
     recepten_ingredienten_lijst_items.innerHTML = "<p>Busta spaghetti</p>" + "<p>Busta vegan bolognese</p>" + "<p>Geraspte mozarella</p>" + "<p>Kruiding naar keuze</p>";
     recepten_review_score.innerHTML= "<h1>4,3</h1>";
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3 class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta tomaat\">Schrijf review</a></h3>";
@@ -110,22 +109,15 @@ function functie1(){
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all .75s ease";
 
+    recepten_bord_slide_out.style.display= "block";
+    recepten_bord_slide_out.classList.add('slide_out');
+
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
-
-    recepten_bord_slide_out.style.display= "block";
-    recepten_bord_slide_out.style.position= "relative";
-    recepten_bord_slide_out.style.top= "-16.3rem";
-    recepten_bord_slide_out.style.marginBottom= "-16.3rem";
-    recepten_bord_slide_out.style.zIndex= "-1";
-
-    recepten_bord_slide_out.style.transform= "translateX(-30rem)";
-    recepten_bord_slide_out.style.transition= "all .75sec ease";
-
-    setTimeout(function(){
         recepten_bord_slide_out.src= "assets/recepten_pasta_tomaat.png";
-        }, 750);
+        recepten_bord_slide_out.style = null;
+        // recepten_bord_slide_out.style= null;
+    }, 1000);
 }
 
 let pastaCarbonara = document.getElementById("item_pasta_carbonara");
@@ -141,28 +133,24 @@ function functie2(){
     recepten_review_knoppen.innerHTML= "<h3 class='knop'><a href='#'>Bekijk alle</a></h3>" + "<h3  class='knop'><a href=\"mailto:chayenne.leys@student.pxl.be?subject=Review pasta carbonara\">Schrijf review</a></h3>";
     recepten_review_getuigenis.innerHTML= "<p>Ik eet al 10 jaar vegetarisch dus moest even het recept aanpassen, maar de saus was super lekker!</br> Ik zou het iedereen aanraden.</p>" + "<p>~ Tom Aaten</p>";
     recepten_bereiding_stappen.innerHTML= "<ol> <li>Doe de Busta carbonarasaus in een ruime pot en warm de saus op tot hij lichtjes kookt. Roer af en toe in de pot om aanbranden te voorkomen.</li>" + "<li>Kruid de saus naar keuze als deze begint te koken.</br>(Aanbevolen: peper, zout en muskaatnoot.)</li>" + "<li>Bak de spekjes in een tweede pan tot ze krokant zijn</li>" + "<li>Voeg de pasta toe aan de saus als die licht aan het koken is.</li>" + "<li>Laat gedurende 5 minuten doorkoken.</li>" + "<li>Voeg ook de spekjes toe aan de saus als ze krokant zijn. Roer ze door de saus</li>" + "<li>Serveer en geniet!</li> </ol>";
+
     recepten_bord.style.position= "relative";
     recepten_bord.style.top= "-10rem";
     recepten_bord.style.left= "6rem";
     recepten_bord.style.rotate= "10deg";
     recepten_bord.style.transform= "translateY(10.9rem) translateX(-4.2rem) rotate(-10deg)";
     recepten_bord.style.transition= "all .75s ease";
-    recepten_bord_slide_out.style.transform= "translateX(-30rem)";
-    recepten_bord_slide_out.style.transition= "all .75sec ease";
+
+    recepten_bord_slide_out.style.display= "block";
+    recepten_bord_slide_out.style.transform = "translateX(-20rem)";
+    recepten_bord_slide_out.style.transition = "all .75s linear";
 
     setTimeout(function(){
         recepten_bord.style = null;
-    },750);
-
-    recepten_bord_slide_out.style.display= "block";
-    recepten_bord_slide_out.style.position= "relative";
-    recepten_bord_slide_out.style.top= "-16.3rem";
-    recepten_bord_slide_out.style.marginBottom= "-16.3rem";
-    recepten_bord_slide_out.style.zIndex= "-1";
-
-    setTimeout(function(){
         recepten_bord_slide_out.src= "assets/recepten_pasta-carbonara.png";
-    }, 750);
+        recepten_bord_slide_out.style = null;
+        // recepten_bord_slide_out.style= null;
+    }, 1000);
 }
 
 let pastaBuffalo = document.getElementById("item_pasta_buffalo");
