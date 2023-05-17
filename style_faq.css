@@ -36,7 +36,7 @@ body {
 }
 
 /*-------------- NAVIGATIE ------------*/
-header nav {
+nav {
     margin: 25px;
     font-size: 15pt;
     display: flex;
@@ -45,53 +45,69 @@ header nav {
     border-radius: 100px;
     background-color: #ffffff;
 }
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+#logo_homelink{
+    width: 80%;
+    height: fit-content;
 }
-
-header nav ul li p {
-    display: inline-block;
+nav a{
     text-decoration: none;
-    margin: 30px 20px 0 20px;
-    padding: 1rem;
-    font-weight: 300;
-    color: #000000;
-    font-size: 25px;
-    font-family: bebas-neue, sans-serif;
+    color: #313437;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2A2929;
+    left: -2rem;
+    background-color: #313437;
+    border-radius: 0 0 1rem 1rem;
     min-width: 160px;
 }
-
 .dropdown-content a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-family: bebas-neue, sans-serif;
 }
-
 .dropdown-content a:hover {
     color: #F1C765;
-    font-weight: 800;
+    font-weight: 400;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+#winkelmand{
+    width: 30%;
+    height: fit-content;
+}
+#default_user_image{
+    crop: rect(20px 0 10px 0);
+    width: 40%;
+    clip-path: circle(50%);
+    object-fit: fill;
+}
+#hamburger{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
+    }
+    #hamburger img{
+        width: 40%;
+    }
+    #default_user_image{
+        width: 40%;
+    }
+    .big_screen{
+        display: none;
+    }
+
+}
 /*------------------------------------- MAIN ------------------------------------*/
 
 /*FAQ's BIG SCREEN*/

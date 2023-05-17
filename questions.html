@@ -17,49 +17,81 @@
 </head>
 
 <body id="questions_body">
-<header>
-    <div class="container-fluid">
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="assets/logo_multicolor"></a></li>
-                <li>
-                    <div class="dropdown">
-                        <p>Info</p>
-                        <div class="dropdown-content">
-                            <a href="Info.html">Busta</a>
-                            <a href="Info.html">Het team</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <p>producten</p>
-                        <div class="dropdown-content">
-                            <a href="producten.html">pasta</a>
-                            <a href="producten.html">rijst</a>
-                            <a href="producten.html">sauzen</a>
-                            <a href="producten.html">gerechten</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="recepten.html"></a></li>
-                <li>
-                    <div class="dropdown">
-                        <p>Account</p>
-                        <div class="dropdown-content">
-                            <a href="#">Persoonlijke instellingen</a>
-                            <a href="#">Bestellingen</a>
-                            <a href="#">Betalingsmethode</a>
-                            <a href="#">log out</a>
-                            <a href="#">Help</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
 
+<nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div id="hamburger" class="col-4">
+                <div class="dropdown">
+                    <img src="assets/hamburger_menu.png" alt="Hamburger menu">
+                    <div class="dropdown-content">
+                        <a href="Info.html"><h2>Info</h2></a>
+                        <a href="Info.html">Busta</a>
+                        <a href="Info.html">Het team</a>
+                        <a href="producten.html"><h2>Producten</h2></a>
+                        <a href="producten.html">pasta</a>
+                        <a href="producten.html">rijst</a>
+                        <a href="producten.html">sauzen</a>
+                        <a href="producten.html">gerechten</a>
+                        <a href="recepten.html"><h2>Recepten</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-6">
+                <div class="row text-center align-items-center">
+                    <div class="col-12 col-md-3 py-1">
+                        <a href="index.html"><img id="logo_homelink" src="assets/Logo_multicolor.png"
+                                                  alt="Busta logo link to homepage"></a>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <div class="dropdown">
+                            <h2>Info</h2>
+                            <div class="dropdown-content">
+                                <a href="Info.html">Busta</a>
+                                <a href="Info.html">Het team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3  big_screen">
+                        <div class="dropdown">
+                            <h2>producten</h2>
+                            <div class="dropdown-content">
+                                <a href="producten.html">pasta</a>
+                                <a href="producten.html">rijst</a>
+                                <a href="producten.html">sauzen</a>
+                                <a href="producten.html">gerechten</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <a href="recepten.html"><h2>Recepten</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3 text-end">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6 text-end big_screen">
+                        <img id="winkelmand" src="assets/winkelmand.png" alt="Winkelmand">
+                    </div>
+                    <div class="col-12 col-md-6 ingelogd text-end">
+                        <div class="dropdown">
+                            <img id="default_user_image" src="assets/default-user-image.png" alt="default user image">
+                            <div class="dropdown-content">
+                                <a href="#">Persoonlijke instellingen</a>
+                                <a href="#">Bestellingen</a>
+                                <a href="#">Betalingsmethode</a>
+                                <a href="#" id="log_out">log out</a>
+                                <a href="#">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</header>
+</nav>
+
+<!-------------------------------------------------------- MAIN ------------------------------------------------------->
 <main id="questions_main">
     <div class="container-xxl">
         <div class="row">
@@ -180,7 +212,8 @@
                 </div>
                 <div id="vragen_contact_knop" class="row text-center mt-5">
                     <p>Is uw vraag niet beantwoord?</p>
-                    <h2><a class="knop" href="mailto:chayenne.leys@student.pxl.be?subject=Ik heb een vraag">Contacteer ons!</a></h2>
+                    <h2><a class="knop" href="mailto:chayenne.leys@student.pxl.be?subject=Ik heb een vraag">Contacteer
+                        ons!</a></h2>
                 </div>
             </div>
         </div>
@@ -188,7 +221,6 @@
     </div>
 </main>
 <!----------------------------------------------------Background waves ------------------------------------------------>
-
 <div class="background-waves container-fluid">
     <div class="row">
         <svg id="background_waves_rood" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717.17 169.11">
