@@ -143,6 +143,7 @@ padding-left: 17%;
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-direction: column;
 }
 
 .fa-angle-right {
@@ -157,21 +158,9 @@ padding-left: 17%;
     color: #F1C965;
     background-color: #313437;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.text-center {
+    margin: 0 auto;
+}
 
 .icon-arrow-left img,
 .icon-arrow-right img{
@@ -225,18 +214,41 @@ padding-left: 17%;
         height: 81%;
     }
     #oprichter {
-        width: 80%;
+        width: 50%;
         height: auto;
+        margin-top: -1rem;
     }
     .recepten_carousel_item {
         width: 10rem;
+    }
+    #intro h2 {
+        margin-left: 2rem;
     }
 }
 @media screen and (max-width: 567px) {
     #intro p {
         font-size: 15px;
     }
-    .knop h2{
+    #intro h2{
        font-size: 15px;
+        display: inline-block;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+    #video h2 {
+        font-size: 15px;
+        display: inline-block;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+    }
+    .recepten_carousel_item{
+
+        border-radius: 1.75rem;
+        padding: 2rem 1rem;
+        width: 8rem;
+        height: auto;
+    }
+    #oprichter {
+        width: 80%;
+        height: auto;
+        margin-top: -1rem;
     }
 }
