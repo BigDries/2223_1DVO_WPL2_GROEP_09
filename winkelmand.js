@@ -1,3 +1,4 @@
+//----------------- VUILBAKJE --------------------
 let removeItem = document.getElementsByClassName("winkelmand_remove");
 for (let i = 0; i < removeItem.length; i++) {
     let button = removeItem[i];
@@ -7,32 +8,44 @@ for (let i = 0; i < removeItem.length; i++) {
         updateCartTotal()
     })
 }
-
-let aantalInput = document.getElementsByClassName("winkelmand_hoeveelheid_number")[0];
+//------------------- AANTALLEN --------------------
+let aantalInput = document.getElementsByClassName("winkelmand_hoeveelheid_nummer")[0];
 for (let i = 0; i < aantalInput.length; i++) {
     let input = aantalInput[i];
-    input.addEventListener = input.addEventListener("change", function (event) {
-        let input = event.target;
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1;
-        }
+    aantalInput.addEventListener("change", function (event) {
+        input = event.target;
+        console.log(input)
         updateCartTotal()
-    });
+    })
 }
 
+//---------------------PRODUCT TOEVOEGEN -----------------------------
+let productButton= document.getElementsByClassName("product_item");
+for (let i = 0; i < productButton.length; i++) {
+    let button= productButton[i];
+    button.addEventListener("click", function (event){
+        let button= event.target
+        let productNaam= button.getElementsByClassName("product_benaming")[0].innerText;
+
+    })
+    updateCartTotal()
+}
+
+
+//-------------------- UPDATE TOTALE PRIJS -----------------------
 function updateCartTotal() {
     let winkelmandContainer = document.getElementsByClassName("winkelmand_items")[0];
-    let winkelmandRij = winkelmandContainer.getElementsByClassName("winkelmand_rij")[0];
+    let winkelmandRij = winkelmandContainer.getElementsByClassName("winkelmand_rij");
+    //let winkelmandRij = document.getElementsByClassName("winkelmand_rij");
     let totaal = 0;
     for (let i = 0; i < winkelmandRij.length; i++) {
         let winkelmandItem = winkelmandRij[i];
         let prijsElement = winkelmandItem.getElementsByClassName("winkelmand_prijs_nummer")[0];
         let hoeveelheidElement = winkelmandItem.getElementsByClassName("winkelmand_hoeveelheid_number")[0];
-        let prijs = parseInt(prijsElement.innerText.replace("€", ""));
+        let prijs = parseFloat(prijsElement.innerText.replace("€", ""));
         let hoeveelheid = hoeveelheidElement.value;
         totaal = totaal + (prijs * hoeveelheid);
     }
-    console.log(totaal);
-    //totaal= Math.round(totaal * 100)/100;
+    totaal= totaal.toFixed(2);
     document.getElementsByClassName('totale_prijs')[0].innerText = "€" + totaal;
 }

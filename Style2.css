@@ -82,6 +82,9 @@ nav a{
     width: 30%;
     height: fit-content;
 }
+.product_benaming, .product_prijs{
+    display: none;
+}
 #default_user_image{
     crop: rect(20px 0 10px 0);
     width: 40%;
