@@ -46,7 +46,7 @@ nav {
     background-color: #ffffff;
 }
 #logo_homelink{
-    width: 80%;
+    width: 60%;
     height: fit-content;
 }
 nav a{
@@ -79,7 +79,9 @@ nav a{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+.nav_item{
+    font-size: 20pt;
+}
 #winkelmand{
     width: 30%;
     height: fit-content;
