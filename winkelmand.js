@@ -20,5 +20,5 @@ function updateCartTotal() {
         var hoeveelheid = hoeveelheidElement.value;
         totaal = totaal + (prijs * hoeveelheid);
     }
-    document.getElementsByClassName('totale_prijs')[0].innerHTML = "€" + totaal;
+    document.getElementsByClassName('totale_prijs')[0].innerHTML = "<p>€</p>" + totaal;
 }
