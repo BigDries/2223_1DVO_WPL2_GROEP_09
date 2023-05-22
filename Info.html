@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--------------------------------------------------------------------------------------- head ------------------------------------------------------------------------------------------->
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="bootstrap-reboot.min.css">
         <link rel="stylesheet" href="bootstrap-grid.min.css">
         <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
+
         <script src="https://kit.fontawesome.com/84ff77f7b8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/atw2cul.css">
     </head>
-
-    <header></header>
-    
     <body>
-    <!-- Navbar -->
-        <!--Info-->
+    <!--------------------------------------------------------------------------------------- Navbar --------------------------------------------------------------------------------------->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><p>home</p></a></li>
+                <li><div class="dropdown">
+                        <p>Info</p>
+                        <div class="dropdown-content">
+                            <a href="Info.html">Busta</a>
+                            <a href="Info.html">Het team</a>
+                        </div>
+                    </div>
+                </li>
+                <li><div class="dropdown">
+                    <p>producten</p>
+                    <div class="dropdown-content">
+                        <a href="producten.html">pasta</a>
+                        <a href="producten.html">rijst</a>
+                        <a href="producten.html">sauzen</a>
+                        <a href="producten.html">gerechten</a>
+                    </div>
+                </div>
+                </li>
+                <li><a href="recepten.html"></a></li>
+                <li><div class="dropdown">
+                    <p>Account</p>
+                    <div class="dropdown-content">
+                        <a href="#">Persoonlijke instellingen</a>
+                        <a href="#">Bestellingen</a>
+                        <a href="#">Betalingsmethode</a>
+                        <a href="#">log out</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <!------------------------------------------------------------------------------------ Info ----------------------------------------------------------------------------------->
         <div class="container">
             <h1>Missie</h1>
             <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6 col-md-12">
                     <img src="assets/Busta_logo.png" alt="Busta logo">
                 </div>
 
-                <div class="col-6">
+                <div class="col-xl-6 col-md-12">
                     <span>  
                         We willen dat onze klanten tijd uitsparen met het klaarmaken van pasta en rijst 
                         maar toch dezelfde kwaliteit kunnen blijven aanbieden als wanneer ze zelf verse pasta zouden maken.
@@ -32,7 +68,7 @@
                 </div>
 
                 <div class="row-2">
-                    <div class="col-12">
+                    <div class="col-xl-12 col-12">
                         <h1>Visie & waarden</h1>
                         <span>
                             Binnen 5 jaar willen we drie keer zo veel naamsbekendheid.
@@ -45,43 +81,53 @@
 
                 <h1>Het team</h1>
                 <div class="row-3">
-                    <div class="col-4">
+                    <div class="col-4 col-xs-12">
                         <img src="assets/Team1.png" alt="Busta team 1">
+                    </div>
+                    <div class="col-4 col-xs-12">
                         <img src="assets/Team2.png" alt="Busta team 2">
+                    </div>
+                    <div class="col-4 col-xs-12">
                         <img src="assets/Team3.png" alt="Busta team 3">
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="Background">
-            <img src="assets/background1.png">
-        </div>
-        <!----------------------------------------------------------Footer---------------------------------------------------------------------->
+        <!--
+            <div class="Background">
+                <img src="assets/background1.png">
+            </div>
+        -->
+        <!--------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------------------------->
         <div class="Footer">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12">
                     <img src="assets/Logo multicolor.png">
                 </div>
-
-                <div class="col-3">
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <h1>Contact</h1>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>+32 0474/ 09 42 26</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>12002476@student.pxl.be</li>
-                    </ul>
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                    <a href="https://twitter.com/?lang=nl"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-                    <a href="https://nl.linkedin.com/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                </div>
+                    <p>+32(0)13 35 10 09</p>
+                    <p>info@dlisfood.com</p>
 
-                <div class="col-3">
+                    <ul class="fa-ul">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="https://twitter.com/?lang=nl"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        <a href="https://nl.linkedin.com/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <h1>Adresgegevens</h1>
                     <p>Turnhoutsebaan 49 <br> 3290 Diest <br>België</p>
                 </div>
+            </div>
 
-                <div class="col-3">
+            <div class="row">
+                <div class="col-12">
                     <iframe class="maps_footer"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.253791178956!2d5.252837715713043!3d51.12222657957369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c131dd2c49d32b%3A0x7c89864fb08b7bc6!2sMartelarenstraat%2014%2C%203970%20Leopoldsburg!5e0!3m2!1snl!2sbe!4v1670860372385!5m2!1snl!2sbe"></iframe>
                 </div>
