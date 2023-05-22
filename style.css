@@ -12,8 +12,7 @@ body
   background-color: #ECECEC;
 }
 /*-------------------------------------------------------------------------------------- Nav -------------------------------------------------------------------------------------------------*/
-header nav 
-{
+nav {
   margin: 25px;
   font-size: 15pt;
   display: flex;
@@ -22,58 +21,53 @@ header nav
   border-radius: 100px;
   background-color: #ffffff;
 }
-
-header nav ul 
-{
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
+#logo_homelink{
+  width: 80%;
+  height: fit-content;
 }
-
-header nav ul li p 
-{
-  display: inline-block;
+nav a{
   text-decoration: none;
-  margin: 30px 20px 0 20px;
-  padding: 1rem;
-  font-weight: 300;
-  color: #000000;
-  font-size: 25px;
-  font-family: bebas-neue, sans-serif;
+  color: #313437;
 }
-
-.dropdown 
-{
+.dropdown {
   position: relative;
   display: inline-block;
 }
-
-.dropdown-content 
-{
+.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2A2929;
+  left: -2rem;
+  background-color: #313437;
+  border-radius: 0 0 1rem 1rem;
   min-width: 160px;
 }
-
-.dropdown-content a 
-{
-  color: rgb(255, 255, 255);
+.dropdown-content a {
+  color: #fff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   font-family: bebas-neue, sans-serif;
 }
-
-.dropdown-content a:hover 
-{
+.dropdown-content a:hover {
   color: #F1C765;
-  font-weight: 800;
+  font-weight: 400;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown:hover .dropdown-content 
-{
-  display: block;
+#winkelmand{
+  width: 30%;
+  height: fit-content;
+}
+#default_user_image{
+  crop: rect(20px 0 10px 0);
+  width: 40%;
+  clip-path: circle(50%);
+  object-fit: fill;
+}
+#hamburger{
+  display: none;
 }
 /*-------------------------------------------------------------------------- info --------------------------------------------------------------------------------------------------------------------------*/
 /* flex page */
@@ -128,7 +122,7 @@ h1
   margin-bottom: 5rem;
 }
 /*-------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
-/* footerbox */
+/*-- footerbox --*/
 .Footer
 {
   border-radius:  1.563rem 1.563rem 0rem 0rem;
@@ -140,7 +134,7 @@ h1
   display: flex;
 }
 
-/* size busta logo */
+/*-- size busta logo --*/
 .Footer img
 {
   width: 23rem;
@@ -148,7 +142,7 @@ h1
   margin-top: 18%;
 }
 
-/* H1 text + underlinement */
+/*-- H1 text + underlinement --*/
 .Footer h1
 {
   font-size: 3.125rem;
@@ -161,7 +155,7 @@ h1
   padding-bottom: 0.313rem;
 }
 
-/* text */
+/*-- text --*/
 .Footer p
 {
   font-family: bebas-neue, sans-serif;
@@ -169,7 +163,7 @@ h1
   text-align: center;
 }
 
-/* icons */
+/*-- icons --*/
 .Footer ul i
 {
   margin: 2rem;
@@ -179,15 +173,15 @@ h1
   color: white;
 }
 
-/* maps */
+/*-- maps --*/
 .maps_footer
 {
-  width: 500px;
-  height: 300px;
+  width: 31.25rem;
+  height: 18.75rem;
   border-radius: 1.563rem;
 }
 
-/* aanvoeging footerwaves */
+/*-- aanvoeging footerwaves --*/
 /*
 .Background img
 {
@@ -198,25 +192,13 @@ h1
 } */
 
 /*------------------------------------------------------------------------- responsive -------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 414px)
+@media screen and (max-width: 415px)
 { 
-  /*-------------------------------------- nav --------------------------------------*/
-  header nav 
-  {
-    margin: 20px;
-  }
-
-  header nav ul li p 
-  {
-    padding: 0.5rem;
-    font-size: 15px;
-  }
-  
   /*------------------------------------ info page ----------------------------------*/
   /*-- img 1 --*/
   .container img
   {
-    width: 25rem;
+    width: 24.5rem;
     height: 17rem;
     border-radius: 2rem;
     margin-bottom: 3rem;
@@ -245,9 +227,10 @@ h1
   .row-3
   {
     flex-direction: column;
+    margin-left: 65px;
   }
 
-  /*--------------------------------------- footer -------------------------*/
+  /*--------------------------------------- footer --------------------------------------------*/
   .Footer
   {
     flex-direction: column;
@@ -266,7 +249,7 @@ h1
     /*-- underlinement yellow + placement --*/
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    margin-top: 25px;
+    margin-top: 1.563rem;
   }
 
   /* text */
@@ -286,7 +269,23 @@ h1
   .maps_footer
   {
     border-radius: 0.5rem;
-    width: 300px;
-    height: 250px;
+    width: 18.75rem;
+    height: 15.625rem;
   }
 }
+
+/*-------------------------------------- nav --------------------------------------*/
+  @media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
+    }
+    #hamburger img{
+        width: 40%;
+    }
+    #default_user_image{
+        width: 40%;
+    }
+    .big_screen{
+        display: none;
+    }
+  }
