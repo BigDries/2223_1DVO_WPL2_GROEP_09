@@ -1,4 +1,4 @@
-/* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,18 +13,13 @@ body {
 }
 
 .formtotaal {
-    margin: 5rem 10rem 5rem 35rem;
-    /*
-    margin-top: 5rem;
-    margin-left: 35rem;
-    margin-right: 10rem;
-    margin-bottom: 5rem;
-     */
-/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 form {
-
     border-radius: 25px;
     background-color: #DCDBDB;
     padding: 20px;
@@ -53,7 +48,6 @@ input {
 button {
     background-color: #f1c765;
     color: #000000;
-
 }
 
 .formtotaal button[type="submit"] {
@@ -74,12 +68,10 @@ button {
     border: none;
     padding: 10px;
     text-align: center;
-
     background-color: #313437;
     color: #f1c765;
     text-decoration-line: underline;
 }
-
 
 #forgotpassword {
     color: black;
@@ -92,8 +84,8 @@ button {
 
 .image-container {
     display: flex;
-    margin-right: 5.2rem;
-    margin-left: 5.2rem;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .image-container img {
@@ -103,11 +95,6 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-
-    .formtotaal {
-        margin: 0;
-    }
-
     form {
         padding: 10px;
         font-size: 16px;
@@ -132,8 +119,7 @@ button {
     }
 
     .image-container {
-        margin-right: 2rem;
-        margin-left: 2rem;
+        margin-top: 10px;
     }
 
     .image-container img {
@@ -142,126 +128,64 @@ button {
         margin-right: 5px;
     }
 }
+
 /* TELEFOON FORMAAT */
-/*
 @media screen and (max-width: 760px) {
+    body {
+        overflow: hidden;
+    }
+
     .formtotaal {
-        margin: 5rem 1rem 5rem 2rem;
+        margin: 5rem;
+        height: calc(100vh - 10rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 20px;
+        font-size: 16px;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    label {
+        padding: 0.5rem;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #forgotpassword {
+        padding-left: 0.5rem;
+        padding-bottom: 10px;
+    }
+
+    .image-container {
+        margin-top: 10px;
+    }
+
+    .image-container img {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
     }
 }
 
-@media screen and (max-width: 760px) {
-    .body {
-        height: 50rem;
-        margin: auto;
-        background-image: url("assets/busta.png");
-    }
-}
+
 
 /* IPAD FORMAAT */
 /*
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .formtotaal {
-        margin: 5rem 1rem 5rem 2rem;
+        margin: 5rem 10rem;
     }
-}
-
-@media screen and (max-width: 900px) {
-    .body {
-        height: 50rem;
-        margin: auto;
-        background-image: url("assets/busta.png");
-    }
-}
-
-/* IPAD FORMAAT */
-/*
-@media screen and (max-width: 1200px),(min-width: 900px) {
-    .formtotaal {
-        margin: 5rem 8.5rem 5rem 8.5rem;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .body {
-        height: 40rem;
-        margin: auto;
-        background-image: url("assets/busta.png");
-    }
-}
-
-
-
-*/
-body {
-    background-image: url("assets/bustabackground.png");
-    background-repeat: no-repeat;
-    background-size: 100% 45.65rem;
-    position: absolute;
-}
-
-.container {
-    height: 100vh;
-}
-
-.form-container {
-    max-width: 400px;
-    background-color: #DCDBDB;
-    padding: 20px;
-    margin: auto;
-}
-
-.form-container form {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    display: block;
-    color: #000000;
-    background-color: #DCDBDB;
-    padding: 1rem;
-}
-
-input {
-    color: #000000;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 15px;
-    border: none;
-    padding: 10px;
-    text-align: center;
-}
-
-button {
-    background-color: #f1c765;
-    color: #000000;
-}
-
-#forgotpassword {
-    color: black;
-    padding-top: 0.5rem;
-    padding-bottom: 30px;
-    padding-left: 9.3rem;
-    font-size: 12px;
-    text-decoration-line: underline;
-}
-
-#connectwith {
-     color: black;
-     font-size: 14px;
-     margin-top: 1.5rem;
-     margin-bottom: 0.5rem;
- }
-
-.image-container {
-    display: flex;
-    justify-content: center;
-}
-
-.image-container img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
 }

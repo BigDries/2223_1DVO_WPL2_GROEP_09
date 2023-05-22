@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, Arial, sans-serif;
+}
+
+.container {
+    padding: 15px;
+}
+
+.custom-button {
+    background-color: #f1c765;
+    border-color: #f1c765;
+    color: #000000;
+}
+
+.custom-button:hover {
+    background-color: #313437;
+    color: #f1c765;
+    text-decoration-line: underline;
+}
