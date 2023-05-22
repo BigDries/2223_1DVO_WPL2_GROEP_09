@@ -32,6 +32,7 @@
     object-fit: contain;
     }
     */
+/*-------------- NAVIGATIE ------------*/
 nav {
     margin: 25px;
     font-size: 15pt;
@@ -61,6 +62,11 @@ nav a{
     border-radius: 0 0 1rem 1rem;
     min-width: 160px;
 }
+#dropdown-content-winkelmand{
+    background-color: #fff;
+    min-width: 20rem;
+    left: -10rem;
+}
 .dropdown-content a {
     color: #fff;
     padding: 12px 16px;
@@ -78,11 +84,21 @@ nav a{
 .nav_item{
     font-size: 20pt;
 }
-#winkelmand{
+#winkelmand_img{
     width: 30%;
     height: fit-content;
 }
-.product_benaming, .product_prijs{
+.winkelmand_prijs p{
+    font-size: 10pt;
+}
+.winkelmand_hoeveelheid input{
+    width: 130%;
+}
+.winkelmand_remove img{
+    width: 80%;
+    height: fit-content;
+}
+.product_prijs, .product_benaming{
     display: none;
 }
 #default_user_image{
@@ -108,6 +124,15 @@ nav a{
         display: none;
     }
 
+}
+.knop {
+    background-color: #F1C765;
+    border-radius: 1rem;
+    color: #313438;
+    text-decoration: none;
+    font-family: bebas-neue, sans-serif;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
 }
     
     /* Filter */
