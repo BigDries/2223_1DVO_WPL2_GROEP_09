@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script defer src="questions.js"></script>
+    <script defer src="winkelmand.js"></script>
 </head>
 
 <body id="questions_body">
@@ -71,7 +72,41 @@
             <div class="col-4 col-md-2 text-end">
                 <div class="row justify-content-end align-items-center">
                     <div class="col-md-6 text-end big_screen">
-                        <img id="winkelmand" src="assets/winkelmand.png" alt="Winkelmand">
+                        <div class="dropdown" id="winkelmand">
+                            <img id="winkelmand_img" src="assets/winkelmand.png" alt="Winkelmand">
+                            <div class="dropdown-content pt-4" id="dropdown-content-winkelmand">
+                                <div class="row text-center">
+                                    <h2>Winkelmand</h2>
+                                </div>
+                                <div class="winkelmand_items">
+                                <div class="row pt-3 pb-3 winkelmand_rij">
+                                    <div class="col-2 winkelmand_foto">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="col-3 winkelmand_naam">
+                                        <p></p>
+                                    </div>
+                                    <div class="col-2 winkelmand_prijs">
+                                        <p>€15,49</p>
+                                    </div>
+                                    <div class="col-2 winkelmand_hoeveelheid">
+                                        <input type="number" value="1" min="1" max="99">
+                                    </div>
+                                    <div class="col-2 winkelmand_remove">
+                                        <img src="assets/delete.png" alt="delete">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Totaal: </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p><b class="totale_prijs"></b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 ingelogd text-end">
                         <div class="dropdown">
@@ -121,12 +156,11 @@
                             </div>
                         </div>
                         <div class="row antwoord">
-                            <p>Direct na extrusie wordt onze pasta al dente gekookt, wat de enzymen - die vitamine C
-                                en andere voedingsstoffen afbreken en smaak- en geurafwijkingen veroorzaken-
-                                deactiveert. Aansluitend wordt de pasta snel afgekoeld en IQF diepgevroren. Zo gaan er
-                                nauwelijks
-                                vitamines en mineralen verloren. Meer zelfs: door onze pasta in te vriezen zijn er
-                                geen kunstmatige bewaarmethodes nodig, iets wat vaak wel wordt toegepast bij verse pasta
+                            <p>Direct na extrusie wordt onze pasta al dente gekookt, wat de enzymen - die vitamine C en
+                                andere voedingsstoffen afbreken en smaak- en geurafwijkingen veroorzaken- deactiveert.
+                                Aansluitend wordt de pasta snel afgekoeld en IQF diepgevroren. Zo gaan er nauwelijks
+                                vitamines en mineralen verloren. Meer zelfs: door onze pasta in te vriezen zijn er geen
+                                kunstmatige bewaarmethodes nodig, iets wat vaak wel wordt toegepast bij verse pasta
                                 .</p>
                         </div>
                     </div>

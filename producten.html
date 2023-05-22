@@ -1,227 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Products</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link
-rel="stylesheet" href="Style2.css"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"
-/>
+    <meta charset="UTF-8">
+    <title>Busta | Products</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/atw2cul.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 flex flex-col gap-4">
 
 
 <!-- Navbar -->
-<nav class="w-11/12 mx-auto rounded-full flex flex-row justify-between p-2 mt-4 bg-white">
-<div class="lg:hidden h-12 w-12 flex items-center justify-center"><i class="fa-solid fa-bars text-xl"></i></div>
+<!-- <nav class="w-11/12 mx-auto rounded-full flex flex-row justify-between p-2 mt-4 bg-white">
+    <div class="lg:hidden h-12 w-12 flex items-center justify-center"><i class="fa-solid fa-bars text-xl"></i></div>
 
-<div class="hidden lg:flex flex-row items-center gap-8">
-<img class="h-12 pl-8" src="/assets/busta.png" alt="profile">
-<div class="h-full w-[2px] bg-gray-500"></div>
-<div class="flex flex-row gap-4 text-xl font-medium">
-<span>Info</span>
-<span>Producten</span>
-<span>Recepten</span>
-</div>
-</div>
+    <div class="hidden lg:flex flex-row items-center gap-8">
+        <img class="h-12 pl-8" src="/assets/Logo_multicolor.png" alt="profile">
+        <div class="h-full w-[2px] bg-gray-500"></div>
+        <div class="flex flex-row gap-4 text-xl font-medium">
+            <span>Info</span>
+            <span>Producten</span>
+            <span>Recepten</span>
+        </div>
+    </div>
 
-<img class="lg:hidden h-12" src="/assets/busta.png" alt="logo">
+    <img class="lg:hidden h-12" src="/assets/busta.png" alt="logo">
 
-<div class="flex flex-row items-center gap-8">
-<div class="hidden lg:flex flex-row gap-4 text-xl font-medium">
-<span>Login</span>
-<span><i class="fa-solid fa-cart-shopping"></i></span>
-</div>
-<img class="w-12 h-12 rounded-full" src="/assets/Mask%20Group%2015.png" alt="profile">
-</div>
+    <div class="flex flex-row items-center gap-8">
+        <div class="hidden lg:flex flex-row gap-4 text-xl font-medium">
+            <span>Login</span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+        <img class="w-12 h-12 rounded-full" src="/assets/Mask%20Group%2015.png" alt="profile">
+    </div>
+</nav> -->
+<nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div id="hamburger" class="col-4">
+                <div class="dropdown">
+                    <img src="assets/hamburger_menu.png" alt="Hamburger menu">
+                    <div class="dropdown-content">
+                        <a href="Info.html"><h2>Info</h2></a>
+                        <a href="Info.html">Busta</a>
+                        <a href="Info.html">Het team</a>
+                        <a href="producten.html"><h2>Producten</h2></a>
+                        <a href="producten.html">pasta</a>
+                        <a href="producten.html">rijst</a>
+                        <a href="producten.html">sauzen</a>
+                        <a href="producten.html">gerechten</a>
+                        <a href="recepten.html"><h2>Recepten</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-6">
+                <div class="row text-center align-items-center">
+                    <div class="col-12 col-md-3 py-1">
+                        <a href="index.html"><img id="logo_homelink" src="assets/Logo_multicolor.png"
+                                                  alt="Busta logo link to homepage"></a>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <div class="dropdown">
+                            <h2 class="nav_item">Info</h2>
+                            <div class="dropdown-content">
+                                <a href="Info.html">Busta</a>
+                                <a href="Info.html">Het team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3  big_screen">
+                        <div class="dropdown">
+                            <h2 class="nav_item">producten</h2>
+                            <div class="dropdown-content">
+                                <a href="producten.html">pasta</a>
+                                <a href="producten.html">rijst</a>
+                                <a href="producten.html">sauzen</a>
+                                <a href="producten.html">gerechten</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <a href="recepten.html"><h2 class="nav_item">Recepten</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 text-end">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6 text-end big_screen">
+                        <img id="winkelmand" src="assets/winkelmand.png" alt="Winkelmand">
+                    </div>
+                    <div class="col-12 col-md-6 ingelogd text-end">
+                        <div class="dropdown">
+                            <img id="default_user_image" src="assets/default-user-image.png" alt="default user image">
+                            <div class="dropdown-content">
+                                <a href="#">Persoonlijke instellingen</a>
+                                <a href="#">Bestellingen</a>
+                                <a href="#">Betalingsmethode</a>
+                                <a href="#" id="log_out">log out</a>
+                                <a href="#">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </nav>
 
 <div class="w-11/12 mx-auto flex flex-col gap-4 lg:gap-12 lg:grid lg:grid-cols-[400px_1fr]">
-<!-- Filter -->
-<div class="w-full">
-<div class="bg-gray-800 text-white rounded-xl p-8">
-<div class="flex flex-row justify-between items-center border-b-4 pb-2 border-[#f1c765]">
-<h1 class="text-2xl font-black">Filter</h1>
-<i class="fa-solid fa-x"></i>
-</div>
+    <!-- Filter -->
+    <div class="w-full">
+        <div class="bg-gray-800 text-white rounded-xl p-8">
+            <div class="flex flex-row justify-between items-center border-b-4 pb-2 border-[#f1c765]">
+                <h1 class="text-2xl font-black">Filter</h1>
+                <i class="fa-solid fa-x"></i>
+            </div>
 
-<div class="flex flex-col gap-2">
-<div class="flex flex-col gap-1">
-<div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
-<h3 class="text-xl font-medium">Pasta</h3>
-<i class="fa-solid fa-chevron-down"></i>
-</div>
+            <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                    <div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
+                        <h3 class="text-xl font-medium">Pasta</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
 
-<div class="flex flex-col gap-1">
-<div class="flex flex-row gap-2 items-center">
-<input id="short-pasta" type="checkbox">
-<label for="short-pasta">Korte pasta's</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="long-pasta" type="checkbox">
-<label for="long-pasta">Lange pasta's</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="noodle" type="checkbox">
-<label for="noodle">Noodles</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Lasagnebladen" type="checkbox">
-<label for="Lasagnebladen">Lasagnebladen</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Gevulde-pasta" type="checkbox">
-<label for="Gevulde-pasta">Gevulde pasta</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Glutenvrije-pasta's" type="checkbox">
-<label for="Glutenvrije-pasta's">Glutenvrije pasta's</label>
-</div>
-<div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
-<h3 class="text-xl font-medium">Sauzen</h3>
-<i class="fa-solid fa-chevron-down"></i>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Pasta-sauzen" type="checkbox">
-<label for="Pasta-sauzen">Pasta sauzen</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Culinaire-sauzen" type="checkbox">
-<label for="Culinaire-sauzen">Culinaire sauzen</label>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Lactosevrije-sauzen" type="checkbox">
-<label for="Lactosevrije-sauzen">Lactosevrije sauzen</label>
-</div>
-<div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
-<h3 class="text-xl font-medium">Rijst</h3>
-<i class="fa-solid fa-chevron-down"></i>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Rijst" type="checkbox">
-<label for="Rijst">Rijst</label>
-</div>
-<div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
-<h3 class="text-xl font-medium">Gerechten</h3>
-<i class="fa-solid fa-chevron-down"></i>
-</div>
-<div class="flex flex-row gap-2 items-center">
-<input id="Ready-to-eat" type="checkbox">
-<label for="Ready-to-eat">Ready to eat</label>
-</div>
-</div>
+                    <div class="flex flex-col gap-1">
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="short-pasta" type="checkbox">
+                            <label for="short-pasta">Korte pasta's</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="long-pasta" type="checkbox">
+                            <label for="long-pasta">Lange pasta's</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="noodle" type="checkbox">
+                            <label for="noodle">Noodles</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Lasagnebladen" type="checkbox">
+                            <label for="Lasagnebladen">Lasagnebladen</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Gevulde-pasta" type="checkbox">
+                            <label for="Gevulde-pasta">Gevulde pasta</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Glutenvrije-pasta's" type="checkbox">
+                            <label for="Glutenvrije-pasta's">Glutenvrije pasta's</label>
+                        </div>
+                        <div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
+                            <h3 class="text-xl font-medium">Sauzen</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Pasta-sauzen" type="checkbox">
+                            <label for="Pasta-sauzen">Pasta sauzen</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Culinaire-sauzen" type="checkbox">
+                            <label for="Culinaire-sauzen">Culinaire sauzen</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Lactosevrije-sauzen" type="checkbox">
+                            <label for="Lactosevrije-sauzen">Lactosevrije sauzen</label>
+                        </div>
+                        <div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
+                            <h3 class="text-xl font-medium">Rijst</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Rijst" type="checkbox">
+                            <label for="Rijst">Rijst</label>
+                        </div>
+                        <div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
+                            <h3 class="text-xl font-medium">Gerechten</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="Ready-to-eat" type="checkbox">
+                            <label for="Ready-to-eat">Ready to eat</label>
+                        </div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
 
-<!-- Results -->
-<div class="w-full">
-<h1 class="text-4xl font-black mt-4 mb-2">Resultaat</h1>
+    <!-- Results -->
+    <div class="w-full">
+        <h1 class="text-4xl font-black mt-4 mb-2">Resultaat</h1>
 
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/penne-S.png" alt="">
-</a>
+            <a class="" href="">
+                <img class="p-4" src="/assets/penne-S.png" alt="">
+            </a>
 
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/fusilli.png" alt="">
-</a>
+            <a class="" href="">
+                <img class="rounded-lg p-4" src="/assets/fusilli.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/farfalle.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/farfalle.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/macaroni.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/macaroni.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/spaghetti.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/spaghetti.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/tagii.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/tagii.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/tarwe noods.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/tarwe noods.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/noodles.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/noodles.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/bolon.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/bolon.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/carbonara.png" alt="">
-</a>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/carbonara.png" alt="">
+            </a>
 
-<a class="" href="">
-<img class="rounded-xl p-4" src="/assets/rijst-S.png" alt="">
-</a>
-</div>
-</div>
+            <a class="rounded-xl" href="">
+                <img class="rounded-xl p-4" src="/assets/rijst-S.png" alt="">
+            </a>
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->
 <footer class="bg-gray-800 py-8 text-white rounded-t-xl">
-<div class="w-10/12 mx-auto flex flex-col lg:grid lg:grid-cols-4 lg:gap-8 lg:items-start items-center gap-2">
-<div class="flex flex-col items-center gap-2">
-<img class="w-10/12 lg:w-[400px]" src="/assets/busta.png" alt="">
-</div>
+    <div class="w-10/12 mx-auto flex flex-col lg:grid lg:grid-cols-4 lg:gap-8 lg:items-start items-center gap-2">
+        <div class="flex flex-col items-center gap-2">
+            <img class="w-10/12 lg:w-[400px]" src="/assets/Logo_multicolor.png" alt="">
+        </div>
 
-<div class="flex flex-col items-center gap-2">
-<h1 class="text-4xl font-black border-b-4 pb-2 border-[#f1c765] mb-4 mt-8 lg:mt-0">Contact</h1>
+        <div class="flex flex-col items-center gap-2">
+            <h1 class="text-4xl font-black border-b-4 pb-2 border-[#f1c765] mb-4 mt-8 lg:mt-0">Contact</h1>
 
-<div class="flex flex-row gap-2 items-center text-xl">
-<i class="fa-solid fa-phone"></i>
-<p class="text-2xl">Phone Number</p>
-</div>
+            <div class="flex flex-row gap-2 items-center text-xl">
+                <i class="fa-solid fa-phone"></i>
+                <p class="text-2xl">Phone Number</p>
+            </div>
 
-<div class="flex flex-row gap-2 items-center text-xl">
-<i class="fa-solid fa-envelope"></i>
-<p class="text-2xl">Email</p>
-</div>
+            <div class="flex flex-row gap-2 items-center text-xl">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="text-2xl">Email</p>
+            </div>
 
-<div class="flex flex-row text-4xl gap-4 mt-8">
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-linkedin"></i>
-</div>
-</div>
+            <div class="flex flex-row text-4xl gap-4 mt-8">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
 
-<div class="flex flex-col items-center gap-2">
-<h1 class="text-4xl font-black border-b-4 pb-2 border-[#f1c765] mb-4 mt-8 lg:mt-0">Adres</h1>
+        <div class="flex flex-col items-center gap-2">
+            <h1 class="text-4xl font-black border-b-4 pb-2 border-[#f1c765] mb-4 mt-8 lg:mt-0">Adres</h1>
 
-<address class="text-xl text-center mb-8">
-Turnhoutsebaan 49, <br>
-3290 Diest, <br>
-Belgie
-</address>
-</div>
+            <address class="text-xl text-center mb-8">
+                Turnhoutsebaan 49, <br>
+                3290 Diest, <br>
+                Belgie
+            </address>
+        </div>
 
-<div class="flex flex-col items-center gap-2">
-<iframe class="w-full lg:h-64"
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.2110645593198!2d5.039797077552078!3d50.9937717480943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c138a9a020c553%3A0xe2b0a0847d94bd5!2sTurnhoutsebaan%2049%2C%203294%20Diest!5e0!3m2!1sen!2sbe!4v1682693025975!5m2!1sen!2sbe"
-width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+        <div class="flex flex-col items-center gap-2">
+            <iframe class="w-full lg:h-64"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.2110645593198!2d5.039797077552078!3d50.9937717480943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c138a9a020c553%3A0xe2b0a0847d94bd5!2sTurnhoutsebaan%2049%2C%203294%20Diest!5e0!3m2!1sen!2sbe!4v1682693025975!5m2!1sen!2sbe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-</div>
+    </div>
 </footer>
 
 
