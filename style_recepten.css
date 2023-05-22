@@ -1,285 +1,474 @@
 /*ALGEMEEN*/
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Roboto, Verdana, sans-serif;
 }
-h1{
+
+h1 {
     font-family: "cheddar-gothic-rough", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50pt;
 }
-h2{
+
+h2 {
     font-family: "bebas-neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 35pt;
 }
-h3{
+
+h3 {
     font-family: "bebas-neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25pt;
-}
-p{
     font-size: 18pt;
 }
-body{
+
+p {
+    font-size: 18pt;
+}
+
+body {
     margin: 0 auto;
 }
 
-/* BIG SCREEN */
-@media screen and (max-width: 2000px) {
-/* RECEPTEN BIG SCREEN */
-    #recepten_body {
-        background-color: #ECECEC;
-        background-image: url("assets/background-gele_ellipse.png");
-        background-size: 40rem;
-        background-repeat: no-repeat;
-        background-position-x: -15rem;
-        background-position-y: -17rem;
-    }
+/*---------------------------------------- NAVIGATIE -------------------------------------*/
+nav {
+    margin: 25px;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
 
-    #recepten_main {
-        margin: 5rem 0;
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+#logo_homelink{
+    width: 60%;
+    height: fit-content;
+}
+nav a{
+    text-decoration: none;
+    color: #313437;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -2rem;
+    background-color: #313437;
+    border-radius: 0 0 1rem 1rem;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover {
+    color: #F1C765;
+    font-weight: 400;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav_item{
+    font-size: 20pt;
+}
+#winkelmand{
+    width: 20%;
+    height: fit-content;
+}
+#default_user_image{
+    crop: rect(20px 0 10px 0);
+    width: 20%;
+    clip-path: circle(50%);
+    object-fit: fill;
+}
+#hamburger{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
     }
-/* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
-    .iconen-allergenen {
-        width: 2rem;
-        height: fit-content;
+    #hamburger img{
+        width: 40%;
     }
-
-    #recepten_bord1 img {
-        width: 100%;
-        height: fit-content;
+    #default_user_image{
+        width: 40%;
     }
-    #recepten_ingredienten{
-        background-color: #313437;
-        border-radius: 1.75rem 0 0 1.75rem;
-        color: #fff;
-    }
-    #recepten_ingredienten h2{
-        font-size: 20pt;
-    }
-    #recepten-ingredienten-titel{
-        padding: 1rem 0;
-    }
-    #recepten_ingredienten h2:hover{
-        text-decoration: underline;
-    }
-    #recepten_ingredienten ul li{
-        list-style-type: none;
-    }
-/* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
-    .icon-arrow-left img,
-    .icon-arrow-right img{
-        width: 2rem;
-        height: fit-content;
-        opacity: 0.5;
-    }
-    .icon-arrow-left img:hover,
-    .icon-arrow-right img:hover{
-        opacity: 1;
-    }
-    .recepten_carousel_item{
-        background-color: #d9d9da;
-        border-radius: 1.75rem;
-        padding: 2rem 1rem;
-        height: 13.5rem;
-    }
-    .recepten_carousel_item img{
-        width: 75%;
-        height: fit-content;
-        padding-bottom: 0.5rem;
-    }
-    .recepten_carousel_item p{
-        font-size: 10pt;
-    }
-    /* CAROUSEL*/
-    .recepten_carousel{
-        flex-wrap: nowrap;
-        overflow: auto;
-        scroll-behavior: smooth;
-    }
-    .recepten_carousel_product{
-        overflow-x: auto;
-    }
-    .recepten_carousel::-webkit-scrollbar{
+    .big_screen{
         display: none;
     }
 
-/* 3e RIJ MET BEREIDING */
-    #recepten_bereiding{
-        height: 35rem;
-        margin-top: 5rem;
-        border: 1px solid #313438;
-        border-radius: 1.75rem;
-    }
-    #recepten_bereiding_stappen{
-        overflow: auto;
-        height: 90%;
-        margin: 5% 0;
-    }
-    #recepten_bereiding_stappen ol{
-        height: 110%;
-        width: 90%;
-        margin: auto;
-    }
-    #recepten_bereiding_stappen ol li{
-        font-size: 15pt;
-    }
-    #recepten_bereiding_stappen p{
-        margin-bottom: 2rem;
-    }
-    #recepten_bereiding_stappen::-webkit-scrollbar{
-        width: 0.5rem;
-        border-radius: 10px;
-    }
-    #recepten_bereiding_stappen::-webkit-scrollbar-track{
-        background-color: #d7d7d9;
-        border-radius: 10px;
-    }
-    #recepten_bereiding_stappen::-webkit-scrollbar-thumb{
-        background-color: #313438;
-        border-radius: 10px;
-    }
+}
+/*---------------------------------------------- MAIN --------------------------------*/
+
+/* RECEPTEN BIG SCREEN */
+#recepten_body {
+    background-color: #ECECEC;
+    background-image: url("assets/background-gele_ellipse.png");
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-position-x: -15rem;
+    background-position-y: -17rem;
 }
 
+/* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
+.iconen-allergenen {
+    width: fit-content;
+    height: 2rem;
+}
+
+#recepten_bord1 img, #recepten_bord1_slide_out img {
+    width: 100%;
+    height: fit-content;
+}
+
+#recepten_bord_slide_out {
+    opacity: 1;
+    position: relative;
+    top: -101%;
+    margin-bottom: -18rem;
+    z-index: -1;
+}
+
+#recepten_bord1_slide_out {
+    visibility: hidden;
+}
+
+#recepten_ingredienten {
+    background-color: #313437;
+    border-radius: 1.75rem 0 0 1.75rem;
+    color: #fff;
+}
+
+#recepten_ingredienten h2 {
+    font-size: 20pt;
+}
+
+#recepten_ingredienten_titel {
+    text-decoration: underline;
+}
+
+#recepten-ingredienten-review-titel {
+    padding: 1rem 0;
+}
+
+#recepten_ingredienten h2:hover {
+    text-decoration: underline;
+}
+
+#recepten-no-decoration:hover {
+    text-decoration: none;
+}
+
+#recepten_ingredienten ul li {
+    list-style-type: none;
+}
+
+#icon_allergie3, #allergie3, #icon_allergie4, #allergie4 {
+    display: none;
+}
+
+#recepten_review_inhoud {
+    display: none;
+}
+
+#recepten_review_score h1 {
+    width: 100%;
+    background-color: #bb6148;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+.knop {
+    background-color: #F1C765;
+    border-radius: 1rem;
+    color: #313438;
+}
+
+#recepten_review_knoppen h3 {
+    padding: 0.5rem 0;
+}
+
+.knop a {
+    color: #313438;
+    text-decoration: none;
+    font-family: bebas-neue, sans-serif;
+}
+
+#recepten_review_getuigenis {
+    margin-top: 1rem;
+    font-size: 18pt;
+}
+
+/* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
+.icon-arrow-left img,
+.icon-arrow-right img {
+    width: 2rem;
+    height: fit-content;
+    opacity: 0.5;
+}
+
+.icon-arrow-left img:hover,
+.icon-arrow-right img:hover {
+    opacity: 1;
+}
+
+.recepten_carousel_item {
+    background-color: #d9d9da;
+    border-radius: 1.75rem;
+    padding: 2rem 1rem;
+    height: 13.5rem;
+}
+
+.recepten_carousel_item img {
+    width: 75%;
+    height: fit-content;
+    padding-bottom: 0.5rem;
+}
+
+.recepten_carousel_item p {
+    font-size: 10pt;
+}
+
+/* CAROUSEL*/
+.recepten_carousel {
+    flex-wrap: nowrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.recepten_carousel_product {
+    overflow-x: auto;
+}
+
+.recepten_carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* 3e RIJ MET BEREIDING */
+#recepten_bereiding {
+    height: 35rem;
+    margin-top: 5rem;
+    border: 1px solid #313438;
+    border-radius: 1.75rem;
+    background-color: white;
+}
+
+#recepten_bereiding_stappen {
+    overflow: auto;
+    height: 90%;
+    margin-top: 2.5%;
+}
+
+#recepten_bereiding_stappen ol {
+    width: 90%;
+    margin: auto;
+}
+
+#recepten_bereiding_stappen ol li {
+    font-size: 18pt;
+    margin-bottom: 2rem;
+}
+
+#recepten_bereiding_stappen::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 10px;
+}
+
+#recepten_bereiding_stappen::-webkit-scrollbar-track {
+    background-color: #d7d7d9;
+    border-radius: 10px;
+}
+
+#recepten_bereiding_stappen::-webkit-scrollbar-thumb {
+    background-color: #313438;
+    border-radius: 10px;
+}
+
+
+/*----------------------------------------------- BACKGROUND WAVES ---------------------------------------------------*/
+.background-waves {
+    position: relative;
+    z-index: -1;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+}
+
+#background_waves_blauw {
+    fill: #88a1a7;
+    width: 30%;
+    position: absolute;
+    top: -80%;
+    right: 0;
+}
+
+#background_waves_rood {
+    fill: #bb6148;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+
+#background_waves_geel {
+    fill: #f1c765;
+    width: 25%;
+    position: absolute;
+    top: -150%;
+    right: 17%;
+}
+
+#background_waves_zwart {
+    fill: #313437;
+    width: 100%;
+}
+
+/*----------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
+/* footerbox */
+.Footer {
+    border-radius: 0;
+    padding: 3.125rem;
+    background-color: #313437;
+    color: #fff;
+
+    text-align: center;
+    display: flex;
+}
+
+/* size busta logo */
+.Footer img {
+    width: 23rem;
+    height: auto;
+    margin-top: 18%;
+}
+
+/* H1 text + underlinement */
+.Footer h1 {
+    font-size: 3.125rem;
+    font-family: cheddar-gothic-rough, sans-serif;
+    /*-- underlinement yellow + placement --*/
+    display: inline-block;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    border-bottom: 0.313rem solid #F1C765;
+    padding-bottom: 0.313rem;
+}
+
+/* text */
+.Footer p {
+    font-family: bebas-neue, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* icons */
+.Footer ul i {
+    margin: 2rem;
+    margin-left: -1rem;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* maps */
+.maps_footer {
+    width: 500px;
+    height: 300px;
+    border-radius: 1.563rem;
+}
+
+
+/*---------------------------------- RESPONSIVE -------------------------*/
 @media screen and (max-width: 992px) {
-/* RECEPTEN MOBILE SCREEN */
+    /* RECEPTEN MOBILE SCREEN */
     #recepten_body {
         background-color: #ECECEC;
     }
+
     #recepten_body {
         background-image: url("assets/background-gele_ellipse.png");
-        background-size: 20rem;
+        background-size: 30rem;
         background-repeat: no-repeat;
         background-position-x: -7rem;
         background-position-y: -10rem;
     }
 
-    #recepten_body #recepten_main{
+    #recepten_body #recepten_main {
         margin-top: 2rem;
     }
-    #recepten_body #recepten_main p{
+
+    #recepten_body #recepten_main p {
         font-size: 15pt;
     }
 
-/* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
-
-    #recepten_bord1{
+    /* 1e RIJ MET BORD, TITEL, INGREDIENTEN EN REVIEWS */
+    #recepten_bord1, #recepten_bord1_slide_out {
         border: 3px black;
     }
-    #recepten_bord1 img {
+
+    #recepten_bord1 img, #recepten_bord1_slide_out img {
         width: 50%;
         height: fit-content;
     }
-    #recepten-titel{
-        margin: 2rem 0;
+
+    #recepten_bord_slide_out {
+        top: -116%;
+        visibility: hidden;
     }
+
+    #recepten-titel {
+        margin: 1rem 0;
+    }
+
     .iconen-allergenen {
         width: 1.5rem;
         height: fit-content;
     }
-    #recepten_allergenen{
+
+    #recepten_allergenen {
         margin: 1rem 0;
     }
-    #recepten_ingredienten{
+
+    #recepten_ingredienten {
         border-radius: 1rem;
-        margin: auto;
+        margin: 2rem auto 0 auto;
     }
 
-/* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
-    .recepten_andere_gerechten{
+    /* 2e RIJ MET CAROUSEL ANDERE RECEPTEN */
+    .recepten_andere_gerechten {
         margin-top: 2rem;
     }
-    .recepten_carousel_item{
+
+    .recepten_carousel_item {
         border-radius: 1rem;
         height: 15rem;
     }
+
     .icon-arrow-left img,
-    .icon-arrow-right img{
+    .icon-arrow-right img {
         width: 1rem;
         height: fit-content;
     }
 
-/* 3e RIJ MET BEREIDING */
-    #recepten_bereiding{
+    /* 3e RIJ MET BEREIDING */
+    #recepten_bereiding {
         height: 30rem;
         margin: 2rem auto 0 auto;
         border: 1px solid #313438;
         border-radius: 1rem;
-        overflow:auto;
+        overflow: auto;
     }
 
-}
-
-
-.Footer
-{
-  border-radius:  1.563rem 1.563rem 0rem 0rem;
-  padding: 3.125rem;
-  background-color:#2A2929;
-  color: #fff;
-
-  text-align: center;
-}
-
-/* size busta logo */
-.Footer img
-{
-  width: 23rem;
-  height: auto;
-  margin-top: 18%;
-}
-
-/* H1 text + underlinement */
-.Footer h1
-{
-  font-size: 3.125rem;
-  font-family: cheddar-gothic-rough, sans-serif;
-  /*-- underlinement yellow + placement --*/
-  display: inline-block;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  border-bottom: 0.313rem solid #F1C765;
-  padding-bottom: 0.313rem;
-}
-
-/* text */
-.Footer p
-{
-  font-family: bebas-neue, sans-serif;
-  font-size: 1.5rem;
-  text-align: left;
-  margin-left: 120px;
-}
-
-/* icons */
-.Footer ul i
-{
-  margin: 1rem;
-  margin-top: 3rem;
-  font-size: 2.5rem;
-  color: white;
-}
-
-/* maps */
-.maps_footer
-{
-  width: 28.125rem;
-  height: 21.875rem;
-  border-radius: 1.563rem;
-}
-
-/* aanvoeging footerwaves */
-.Background img
-{
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 25rem; /* placement */
 }
 
