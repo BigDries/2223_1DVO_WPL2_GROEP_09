@@ -40,7 +40,7 @@ else if (getWindowWidth() <= 1200){
 else {
     receptenCarousel.forEach((item, i) =>{
         let containerDimensie = item.getBoundingClientRect();
-        let containerWidth = containerDimensie.width/4;
+        let containerWidth = containerDimensie.width/3;
 
         buttonRight[i].addEventListener('click', () => {
             item.scrollLeft += containerWidth;
