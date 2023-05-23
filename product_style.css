@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, Arial, sans-serif;
+
+}
+
+h1 {
+    font-family: "cheddar-gothic-rough", sans-serif;
+    font-size: 50pt;
+}
+
+h2 {
+    font-family: "bebas neue", sans-serif;
+    font-size: 35pt;
+}
+
+h3 {
+    font-family: "bebas neue", sans-serif;
+    font-size: 25pt;
+}
+
+p {
+    font-family: "roboto", sans-serif;
+    font-size: 25pt;
+}
+body {
+    background-color: #ececec;
+}
+nav {
+    margin: 25px;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+#logo_homelink{
+    width: 60%;
+    height: fit-content;
+}
+nav a{
+    text-decoration: none;
+    color: #313437;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -2rem;
+    background-color: #313437;
+    border-radius: 0 0 1rem 1rem;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover {
+    color: #F1C765;
+    font-weight: 400;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav_item{
+    font-size: 20pt;
+}
+#winkelmand{
+    width: 20%;
+    height: fit-content;
+}
+#default_user_image{
+    crop: rect(20px 0 10px 0);
+    width: 20%;
+    clip-path: circle(50%);
+    object-fit: fill;
+}
+#hamburger{
+    display: none;
+}
+
+
+
+#intro p {
+    margin-top: 3rem;
+    width: 100%;
+    color: #000000;
+    font-size: 15pt;
+}
+#bolon_saus img {
+    width: 500px;
+    height: auto;
+}
+#lactose {
+    margin-top: 3rem;
+    width: 15%;
+    height: auto;
+    border-radius: 1.75rem;
+}
+
+#intro h1 {
+
+  display: inline-block;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 40pt;
+}
+
+
+
+
+
+
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.fa-angle-right {
+    float: right;
+}
+#vaakbesteld {
+    padding-bottom: 5rem;
+}
+
+.knop:hover {
+    text-decoration: underline;
+    color: #F1C965;
+    background-color: #313437;
+}
+.text-center {
+    margin: 0 auto;
+}
+
+.icon-arrow-left img,
+.icon-arrow-right img{
+    width: 2rem;
+    height: fit-content;
+    opacity: 1;
+}
+.icon-arrow-left img:hover,
+.icon-arrow-right img:hover{
+    opacity: 1;
+}
+.recepten_carousel_item{
+
+    border-radius: 1.75rem;
+    padding: 2rem 1rem;
+    width: 20rem;
+    height: auto;
+}
+.recepten_carousel_item img{
+    width: 100%;
+
+    padding-bottom: 0.5rem;
+}
+.recepten_carousel_item h2{
+    font-size: 20pt;
+}
+/* CAROUSEL*/
+.recepten_carousel{
+    flex-wrap: nowrap;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.recepten_carousel_product{
+    overflow-x: auto;
+}
+.recepten_carousel::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#geinspireerd {
+    margin-top: 15rem;
+}
+#info_button {
+    background-color: #bb6148;
+    border: 0px;
+    margin: 3.5rem 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    float: right;
+    font-weight: bold;
+}
+#voegtoe_button {
+    background-color: #f1c765;
+    border: 0px;
+    margin: 3.5rem 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    float: right;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1367px) {
+    .recepten_carousel_item{
+
+        border-radius: 1.75rem;
+        padding: 2rem 1rem;
+        width: 15rem;
+        height: auto;
+    }
+}

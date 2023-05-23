@@ -50,3 +50,11 @@ else {
         })
     })
 }
+function replaceWithVideo() {
+    var image = document.getElementById('image');
+    var video = document.getElementById('videoo');
+
+    image.style.display = 'none';
+    video.style.display = 'block';
+    video.play();
+}

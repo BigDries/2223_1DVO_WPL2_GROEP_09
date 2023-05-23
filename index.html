@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Busta | Home</title>
+    <link rel="icon" href="assets/BvanBusta.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="bootstrap-reboot.min.css">
     <link rel="stylesheet" href="bootstrap-grid.min.css">
     <link rel="stylesheet" href="homepage_style.css">
@@ -14,7 +15,81 @@
 </head>
 
 <body>
+<nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center justify-content-md-between align-items-center">
+            <div id="hamburger" class="col-4">
+                <div class="dropdown">
+                    <img src="assets/hamburger_menu.png" alt="Hamburger menu">
 
+                    <div class="dropdown-content">
+                        <a href="Info.html"><h2>Info</h2></a>
+                        <a href="Info.html">Busta</a>
+                        <a href="Info.html">Het team</a>
+                        <a href="producten.html"><h2>Producten</h2></a>
+                        <a href="producten.html">pasta</a>
+                        <a href="producten.html">rijst</a>
+                        <a href="producten.html">sauzen</a>
+                        <a href="producten.html">gerechten</a>
+                        <a href="recepten.html"><h2>Recepten</h2></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4 col-md-6">
+                <div class="row text-center align-items-center">
+                    <div class="col-12 col-md-3 py-1">
+                        <a href="index.html"><img id="logo_homelink" src="assets/Logo_multicolor.png"
+                                                  alt="Busta logo link to homepage"></a>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <div class="dropdown">
+                            <h2 class="nav_item">Info</h2>
+                            <div class="dropdown-content">
+                                <a href="Info.html">Busta</a>
+                                <a href="Info.html">Het team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3  big_screen">
+                        <div class="dropdown">
+                            <h2 class="nav_item">producten</h2>
+                            <div class="dropdown-content">
+                                <a href="producten.html">pasta</a>
+                                <a href="producten.html">rijst</a>
+                                <a href="producten.html">sauzen</a>
+                                <a href="producten.html">gerechten</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 big_screen">
+                        <a href="recepten.html"><h2 class="nav_item">Recepten</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-3 text-end">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6 text-end big_screen">
+                        <img id="winkelmand" src="assets/winkelmand.png" alt="Winkelmand">
+                    </div>
+                    <div class="col-12 col-md-6 ingelogd text-end">
+                        <div class="dropdown">
+                            <img id="default_user_image" src="assets/default-user-image.png" alt="default user image">
+                            <div class="dropdown-content">
+                                <a href="#">Persoonlijke instellingen</a>
+                                <a href="#">Bestellingen</a>
+                                <a href="#">Betalingsmethode</a>
+                                <a href="#" id="log_out">log out</a>
+                                <a href="#">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 <header id="homepageheader">
     <div class="container-xl" id="backgr">
         <div class="row" id="heroimg">
@@ -38,7 +113,7 @@
                 Deze passie is ontwikkeld en gegroeid in het hartje van Diest. Vanaf klein was hij de grootste pasta fan
                 maar, toen hij de kunst van het deeg ontdekte, was hij pas echt verliefd. Hij richtte het bedrijf op met
                 zijn broer die zijn dromen volop steunde. </p>
-            <h2 class="knop">Lees meer</h2>
+            <h2 onclick="window.location.href = 'info.html';" class="knop">Lees meer</h2>
         </div>
 
     </div>
@@ -49,27 +124,27 @@
         </div>
         <div id="watverkopenwij_product" class="col-xl-3 col-md-6 col-sm-6 col-xs-12  center">
             <img class="row" src="assets/Penne.png" alt="pasta">
-            <h2 class="knop row">Pasta</h2>
+            <h2 onclick="window.location.href = 'producten.html';" class="knop row">Pasta</h2>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12  center">
-            <img class="row"  src="assets/pesto.png" alt="saus">
-            <h2 class="knop row">Saus</h2>
+            <img class="row" src="assets/pesto.png" alt="saus">
+            <h2 onclick="window.location.href = 'producten.html';" class="knop row">Saus</h2>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 center">
-            <img class="row"  src="assets/rijst.png" alt="rijst">
-            <h2 class="knop row">Rijst</h2>
+            <img class="row" src="assets/rijst.png" alt="rijst">
+            <h2 onclick="window.location.href = 'producten.html';" class="knop row">Rijst</h2>
         </div>
         <div class="col-xl-3 col-md-6 col-sm-6 col-xs-12 center">
-            <img class="row"  src="assets/gerechtcolor-10.png" alt="gerechten">
-            <h2 class="knop row">Gerechten</h2>
+            <img class="row" src="assets/gerechtcolor-10.png" alt="gerechten">
+            <h2 onclick="window.location.href = 'producten.html';" class="knop row">Gerechten</h2>
         </div>
 
     </div>
 
 
-  <!--  Vaak besteld op onze website (carousel)   -->
+    <!--  Vaak besteld op onze website (carousel)   -->
 
-    <div class="row recepten_andere_gerechten" >
+    <div class="row recepten_andere_gerechten">
         <div class="col-12">
             <h1>Vaak bestelde gerechten door onze klanten</h1>
         </div>
@@ -82,43 +157,50 @@
                 <!-- CAROUSEL ITEMS -->
                 <div class="col-10 my-auto">
                     <div class="row recepten_carousel">
-                        <div id="item_pasta_tomaat" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_tomaat"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_tomaat.png" alt="pasta tomaat">
                                 <h2 class="center">Pasta Tomaat</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_carbonara" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_carbonara"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta-carbonara.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Carbonara</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_buffalo" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_buffalo"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_buffalo.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Buffalo</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_napolitana" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_napolitana"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_napolitana.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Napolitana</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_vierkazen" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_vierkazen"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_vier_kazen.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Vier Kazen</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_spekshrooms" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_spekshrooms"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_spek_en_shrooms.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Spek en Shrooms</h2>
                             </div>
                         </div>
-                        <div id="item_pasta_tomaatmozarella" class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
+                        <div id="item_pasta_tomaatmozarella"
+                             class="col-6 col-sm-4 col-xl-4 text-center recepten_carousel_product">
                             <div class="recepten_carousel_item">
                                 <img src="assets/recepten_pasta_tomaat-mozarella.png" alt="pasta carbonara">
                                 <h2 class="center">Pasta Tomaat Mozarella</h2>
@@ -137,8 +219,15 @@
     <div class="row justify-content-center" id="video">
         <h1>Video's</h1>
 
-        <div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="vid">
-            <img src="assets/video.png" alt="videoknop">
+        <div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="mediaContainer, vid">
+            <img id=image src="assets/video.png" alt="videoknop" onclick="replaceWithVideo()">
+
+            <iframe id="videoo" style="display: none;" width="916" height="515"
+                    src="https://www.youtube.com/embed/v2WqcHH65NQ"
+                    title="Quick and Easy Spaghetti Bolognese - Family Favourite!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
         </div>
 
 
@@ -151,9 +240,9 @@
                 Wij wensen u veel kookplezier namens Busta. </p>
             <h2 class="knop">Lees meer</h2>
         </div>
-
-
     </div>
+
+</div>
 </div>
 <script src="homepage_script.js"></script>
 </body>
