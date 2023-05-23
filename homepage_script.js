@@ -50,3 +50,25 @@ else {
         })
     })
 }
+function replaceWithVideo() {
+    var image = document.getElementById('image');
+    var video = document.getElementById('videoo');
+
+    image.style.display = 'none';
+    video.style.display = 'block';
+    video.play();
+}
+
+
+
+function underlinenavitem() {
+        let navitem = document.getElementsByClassName('nav_item');
+        navitem.style.textDecoration = 'underline';
+
+}
+function pipi() {
+
+
+let hoverItem = document.getElementsByClassName('hover_nav_item');
+hoverItem.addEventListener('hover',underlinenavitem())
+}
