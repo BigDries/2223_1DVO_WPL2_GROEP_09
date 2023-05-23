@@ -14,10 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script defer src="questions.js"></script>
+    <script defer src="winkelmand.js"></script>
 </head>
 
 <body id="questions_body">
-
+<!---------------------- NAVBAR ----------------------->
 <nav>
     <div class="container-fluid">
         <div class="row justify-content-center justify-content-md-between align-items-center">
@@ -71,7 +72,63 @@
             <div class="col-4 col-md-2 text-end">
                 <div class="row justify-content-end align-items-center">
                     <div class="col-md-6 text-end big_screen">
-                        <img id="winkelmand" src="assets/winkelmand.png" alt="Winkelmand">
+                        <div class="dropdown" id="winkelmand">
+                            <img id="winkelmand_img" src="assets/winkelmand.png" alt="Winkelmand">
+                            <div class="dropdown-content pt-4 dropdown_content_winkelkar" id="dropdown-content-winkelmand">
+                                <div class="row text-center">
+                                    <h2>Winkelmand</h2>
+                                </div>
+                                <div class="winkelmand_items">
+                                    <div class="row pt-3 pb-3 winkelmand_rij">
+                                        <div class="col-2 winkelmand_foto align-middle">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="col-3 winkelmand_naam align-middle">
+                                            <p></p>
+                                        </div>
+                                        <div class="col-2 winkelmand_hoeveelheid align-middle">
+                                            <input class="winkelmand_hoeveelheid_nummer" type="number" value="1" min="1" max="99">
+                                        </div>
+                                        <div class="col-2 winkelmand_prijs">
+                                            <p>€<span class="winkelmand_prijs_nummer"></span></p>
+                                        </div>
+                                        <div class="col-2 winkelmand_remove align-middle">
+                                            <img src="assets/delete.png" alt="delete">
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3 pb-3 winkelmand_rij">
+                                        <div class="col-2 winkelmand_foto align-middle">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="col-3 winkelmand_naam align-middle">
+                                            <p></p>
+                                        </div>
+                                        <div class="col-2 winkelmand_hoeveelheid align-middle">
+                                            <input class="winkelmand_hoeveelheid_number" type="number" value="1" min="1" max="99">
+                                        </div>
+                                        <div class="col-2 winkelmand_prijs">
+                                            <span class="winkelmand_prijs_nummer">€15,49</span>
+                                        </div>
+                                        <div class="col-2 winkelmand_remove align-middle">
+                                            <img src="assets/delete.png" alt="delete">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 text-end">
+                                        <b>Totaal</b>
+                                    </div>
+                                    <div class="col-6 text-end px-4">
+                                        <span class="totale_prijs">€ 0,00</span>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center mt-3">
+                                    <div class="col-10">
+                                        <h2 class="knop">Afronden</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 ingelogd text-end">
                         <div class="dropdown">
@@ -121,12 +178,11 @@
                             </div>
                         </div>
                         <div class="row antwoord">
-                            <p>Direct na extrusie wordt onze pasta al dente gekookt, wat de enzymen - die vitamine C
-                                en andere voedingsstoffen afbreken en smaak- en geurafwijkingen veroorzaken-
-                                deactiveert. Aansluitend wordt de pasta snel afgekoeld en IQF diepgevroren. Zo gaan er
-                                nauwelijks
-                                vitamines en mineralen verloren. Meer zelfs: door onze pasta in te vriezen zijn er
-                                geen kunstmatige bewaarmethodes nodig, iets wat vaak wel wordt toegepast bij verse pasta
+                            <p>Direct na extrusie wordt onze pasta al dente gekookt, wat de enzymen - die vitamine C en
+                                andere voedingsstoffen afbreken en smaak- en geurafwijkingen veroorzaken- deactiveert.
+                                Aansluitend wordt de pasta snel afgekoeld en IQF diepgevroren. Zo gaan er nauwelijks
+                                vitamines en mineralen verloren. Meer zelfs: door onze pasta in te vriezen zijn er geen
+                                kunstmatige bewaarmethodes nodig, iets wat vaak wel wordt toegepast bij verse pasta
                                 .</p>
                         </div>
                     </div>
@@ -240,7 +296,7 @@
     </div>
 </div>
 <!------------------------------------------------------- Footer ------------------------------------------------------>
-<div class="Footer container-fluid">
+<div class="Footer">
     <div class="row">
         <div class="col-12">
             <img src="assets/Logo multicolor.png">
@@ -260,12 +316,14 @@
             </ul>
         </div>
     </div>
+
     <div class="row">
         <div class="col-12">
             <h1>Adresgegevens</h1>
             <p>Turnhoutsebaan 49 <br> 3290 Diest <br>België</p>
         </div>
     </div>
+
     <div class="row">
         <div class="col-12">
             <iframe class="maps_footer"
@@ -273,6 +331,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>

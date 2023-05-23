@@ -65,6 +65,11 @@ nav a{
     border-radius: 0 0 1rem 1rem;
     min-width: 160px;
 }
+#dropdown-content-winkelmand{
+    background-color: #fff;
+    min-width: 20rem;
+    left: -10rem;
+}
 .dropdown-content a {
     color: #fff;
     padding: 12px 16px;
@@ -82,8 +87,18 @@ nav a{
 .nav_item{
     font-size: 20pt;
 }
-#winkelmand{
+#winkelmand_img{
     width: 30%;
+    height: fit-content;
+}
+.winkelmand_prijs p{
+    font-size: 10pt;
+}
+.winkelmand_hoeveelheid input{
+    width: 130%;
+}
+.winkelmand_remove img{
+    width: 80%;
     height: fit-content;
 }
 #default_user_image{
@@ -215,27 +230,30 @@ nav a{
         margin-top: -10rem;
     }
 }
-/*----------------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
-/* footerbox */
-.Footer {
+/*----------------------------------------------------------- FOOTER ----------------------------------------------------------------------------------------------*/
+/*-- footerbox --*/
+.Footer
+{
     border-radius: 0;
     padding: 3.125rem;
-    background-color: #313437;
+    background-color:#313437;
     color: #fff;
 
     text-align: center;
     display: flex;
 }
 
-/* size busta logo */
-.Footer img {
+/*-- size busta logo --*/
+.Footer img
+{
     width: 23rem;
     height: auto;
     margin-top: 18%;
 }
 
-/* H1 text + underlinement */
-.Footer h1 {
+/*-- H1 text + underlinement --*/
+.Footer h1
+{
     font-size: 3.125rem;
     font-family: cheddar-gothic-rough, sans-serif;
     /*-- underlinement yellow + placement --*/
@@ -246,15 +264,17 @@ nav a{
     padding-bottom: 0.313rem;
 }
 
-/* text */
-.Footer p {
+/*-- text --*/
+.Footer p
+{
     font-family: bebas-neue, sans-serif;
     font-size: 1.5rem;
     text-align: center;
 }
 
-/* icons */
-.Footer ul i {
+/*-- icons --*/
+.Footer ul i
+{
     margin: 2rem;
     margin-left: -1rem;
     margin-top: 3rem;
@@ -262,9 +282,54 @@ nav a{
     color: white;
 }
 
-/* maps */
-.maps_footer {
-    width: 500px;
-    height: 300px;
+/*-- maps --*/
+.maps_footer
+{
+    width: 31.25rem;
+    height: 18.75rem;
     border-radius: 1.563rem;
+}
+/*------------------------------------ FOOTER RESPONSIVE -------------------------------*/
+@media screen and (max-width: 415px)
+{ .Footer
+{
+    flex-direction: column;
+}
+
+    .Footer img
+    {
+        margin-top: 5%;
+        width: 20rem;
+    }
+
+    /* H1 text + underlinement */
+    .Footer h1
+    {
+        font-size: 1.5rem;
+        /*-- underlinement yellow + placement --*/
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-top: 1.563rem;
+    }
+
+    /* text */
+    .Footer p
+    {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* icons */
+    .Footer ul i
+    {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .maps_footer
+    {
+        border-radius: 0.5rem;
+        width: 18.75rem;
+        height: 15.625rem;
+    }
 }
