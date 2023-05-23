@@ -197,6 +197,7 @@ function updateCartTotal() {
         let quantity = quantityElement.value
         total = total + (price * quantity)
     }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('totale_prijs')[0].innerText = '€' + total
+    total = Math.round(total * 100) / 100;
+    total= "€" + total;
+    document.getElementsByClassName('totale_prijs')[0].innerHTML = total;
 }
