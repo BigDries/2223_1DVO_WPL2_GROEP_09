@@ -12,28 +12,33 @@ body
   background-color: #ECECEC;
 }
 /*-------------------------------------------------------------------------------------- Nav -------------------------------------------------------------------------------------------------*/
-nav {
+nav 
+{
   margin: 25px;
   font-size: 15pt;
   display: flex;
   justify-content: center;
-
+  z-index: 1;
   border-radius: 100px;
   background-color: #ffffff;
 }
-#logo_homelink{
-  width: 80%;
+#logo_homelink
+{
+  width: 60%;
   height: fit-content;
 }
-nav a{
+nav a
+{
   text-decoration: none;
   color: #313437;
 }
-.dropdown {
+.dropdown 
+{
   position: relative;
   display: inline-block;
 }
-.dropdown-content {
+.dropdown-content 
+{
   display: none;
   position: absolute;
   left: -2rem;
@@ -41,33 +46,59 @@ nav a{
   border-radius: 0 0 1rem 1rem;
   min-width: 160px;
 }
-.dropdown-content a {
+.dropdown-content a 
+{
   color: #fff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   font-family: bebas-neue, sans-serif;
 }
-.dropdown-content a:hover {
+.dropdown-content a:hover 
+{
   color: #F1C765;
   font-weight: 400;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content 
+{
   display: block;
 }
-
-#winkelmand{
-  width: 30%;
+.nav_item
+{
+  font-size: 20pt;
+  margin-top: 1rem;
+}
+#winkelmand
+{
+  width: 20%;
   height: fit-content;
 }
-#default_user_image{
+#default_user_image
+{
   crop: rect(20px 0 10px 0);
-  width: 40%;
+  width: 20%;
   clip-path: circle(50%);
   object-fit: fill;
 }
-#hamburger{
+#hamburger
+{
   display: none;
+}
+
+@media screen and (max-width: 768px) 
+{
+  #hamburger{
+      display: block;
+  }
+  #hamburger img{
+      width: 40%;
+  }
+  #default_user_image{
+      width: 40%;
+  }
+  .big_screen{
+      display: none;
+  }
 }
 /*-------------------------------------------------------------------------- info --------------------------------------------------------------------------------------------------------------------------*/
 /* flex page */
