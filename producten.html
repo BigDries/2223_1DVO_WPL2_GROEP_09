@@ -18,35 +18,11 @@
             referrerpolicy="no-referrer"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="winkelmand.js"></script>
+    <script defer src="producten.js"></script>
 </head>
 
 <body class="bg-gray-100 flex flex-col gap-4">
 
-
-<!-- Navbar -->
-<!-- <nav class="w-11/12 mx-auto rounded-full flex flex-row justify-between p-2 mt-4 bg-white">
-    <div class="lg:hidden h-12 w-12 flex items-center justify-center"><i class="fa-solid fa-bars text-xl"></i></div>
-
-    <div class="hidden lg:flex flex-row items-center gap-8">
-        <img class="h-12 pl-8" src="/assets/Logo_multicolor.png" alt="profile">
-        <div class="h-full w-[2px] bg-gray-500"></div>
-        <div class="flex flex-row gap-4 text-xl font-medium">
-            <span>Info</span>
-            <span>Producten</span>
-            <span>Recepten</span>
-        </div>
-    </div>
-
-    <img class="lg:hidden h-12" src="/assets/busta.png" alt="logo">
-
-    <div class="flex flex-row items-center gap-8">
-        <div class="hidden lg:flex flex-row gap-4 text-xl font-medium">
-            <span>Login</span>
-            <span><i class="fa-solid fa-cart-shopping"></i></span>
-        </div>
-        <img class="w-12 h-12 rounded-full" src="/assets/Mask%20Group%2015.png" alt="profile">
-    </div>
-</nav> -->
 <!---------------------- NAVBAR ----------------------->
 <nav>
     <div class="container-fluid">
@@ -137,7 +113,7 @@
                                 </div>
                                 <div class="row justify-content-center text-center mt-3">
                                     <div class="col-10">
-                                        <h2 class="knop">Afronden</h2>
+                                        <h2 class="knop button_afronden">Afronden</h2>
                                     </div>
                                 </div>
                             </div>
@@ -163,11 +139,11 @@
 </nav>
 <!---------------------------- MAIN ------------------->
 <div class="w-11/12 mx-auto flex flex-col gap-4 lg:gap-12 lg:grid lg:grid-cols-[400px_1fr]">
-    <!-- Filter -->
+    <!------------------------------------- Filter --------------------------------------------->
     <div class="w-full">
-        <div class="bg-gray-800 text-white rounded-xl p-8">
-            <div class="flex flex-row justify-between items-center border-b-4 pb-2 border-[#f1c765]">
-                <h1 class="text-2xl font-black">Filter</h1>
+        <div class="bg-[#313437] text-white rounded-xl p-8">
+            <div class="flex flex-row justify-between items-center border-b-4 pb-2 border-[#f1c765] filter-menu">
+                <h1>Filter</h1>
                 <i class="fa-solid fa-x"></i>
             </div>
 
@@ -202,6 +178,10 @@
                         <div class="flex flex-row gap-2 items-center">
                             <input id="Glutenvrije-pasta's" type="checkbox">
                             <label for="Glutenvrije-pasta's">Glutenvrije pasta's</label>
+                        </div>
+                        <div class="flex flex-row gap-2 items-center">
+                            <input id="volkoren_pasta" type="checkbox">
+                            <label for="volkoren_pasta">volkoren pasta's</label>
                         </div>
                         <div class="flex flex-row justify-between py-2 gap-8 items-center w-max">
                             <h3 class="text-xl font-medium">Sauzen</h3>
@@ -240,76 +220,83 @@
                 </div>
 
             </div>
+            <div class="flex flex-row justify-center items-center mt-3 border-t-4 pt-4 border-[#f1c765]">
+                <h2 class="knop filter_button">Filter</h2>
+            </div>
         </div>
     </div>
 
-    <!-- Results -->
+    <!--------------------------------------------- Results --------------------------------------->
     <div class="w-full">
         <h1 class="text-4xl font-black mt-4 mb-2">Resultaat</h1>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
 
-            <div class="product_item">
+            <div class="product_item korte_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/penne-S.png" alt="">
                 <p class="product_benaming">Penne</p>
                 <p class="product_prijs">€<span>5,49</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item korte_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/fusilli.png" alt="">
                 <p class="product_benaming">Fusilli</p>
                 <p class="product_prijs">€<span>6,89</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item korte_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/farfalle.png" alt="">
                 <p class="product_benaming">Farfalle</p>
                 <p class="product_prijs">€<span>5,99</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item korte_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/macaroni.png" alt="">
                 <p class="product_benaming">Macaroni</p>
                 <p class="product_prijs">€<span>5,49</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item lange_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/spaghetti.png" alt="">
                 <p class="product_benaming">Spaghetti</p>
                 <p class="product_prijs">€<span>3,89</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item lange_pasta volkoren_pasta">
                 <img class="p-1 product_afbeelding" src="/assets/tagii.png" alt="">
                 <p class="product_benaming">Volkoren Tagliatelle</p>
                 <p class="product_prijs">€<span>7,29</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item lange_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/tarwe noods.png" alt="">
                 <p class="product_benaming">Tagliatelle</p>
                 <p class="product_prijs">€<span>5,99</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item lange_pasta glutenvrij">
                 <img class="p-1 product_afbeelding" src="/assets/noodles.png" alt="">
                 <p class="product_benaming">Noodles</p>
                 <p class="product_prijs">€<span>3,89</span></p>
             </div>
-
-            <div class="product_item">
+            <div class="product_item korte_pasta volkoren_pasta">
+                <img class="p-1 product_afbeelding" src="/assets/vk%20mac.png" alt="">
+                <p class="product_benaming">Volkoren Macaroni</p>
+                <p class="product_prijs">€<span>3,89</span></p>
+            </div>
+            <div class="product_item pasta_sauzen">
                 <img class="p-1 product_afbeelding" src="/assets/bolon.png" alt="">
                 <p class="product_benaming">Bolognese</p>
                 <p class="product_prijs">€<span>3,29</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item pasta_sauzen">
                 <img class="p-1 product_afbeelding" src="/assets/carbonara.png" alt="">
                 <p class="product_benaming">Carbonara</p>
                 <p class="product_prijs">€<span>3,29</span></p>
             </div>
 
-            <div class="product_item">
+            <div class="product_item rijst">
                 <img class="p-1 product_afbeelding" src="/assets/rijst-S.png" alt="">
                 <p class="product_benaming">Rijst</p>
                 <p class="product_prijs">€<span>5,49</span></p>
@@ -319,7 +306,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="bg-gray-800 py-8 text-white rounded-t-xl">
+<footer class="bg-[#313437] py-8 text-white rounded-t-xl">
     <div class="w-10/12 mx-auto flex flex-col lg:grid lg:grid-cols-4 lg:gap-8 lg:items-start items-center gap-2">
         <div class="flex flex-col items-center gap-2">
             <img class="w-10/12 lg:w-[400px]" src="/assets/Logo_multicolor.png" alt="">

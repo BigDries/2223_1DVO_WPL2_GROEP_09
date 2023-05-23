@@ -35,40 +35,6 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar */
-/*
-.top-nav {
-    margin-top: 1rem;
-    width: 100%;
-    border-radius: 10rem;
-    background: gray;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background: white;
-    }
-    
-    .top-nav i {
-    padding: 0.2rem;
-    margin: 0.5rem;
-    font-size: 20pt;
-    }
-    
-    img.logo {
-    height: 40px;
-    }
-    
-    img.profile {
-    margin: 0.5rem;
-    width: 50px;
-    height: 50px;
-    background: gray;
-    border-radius: 99999px;
-    object-fit: contain;
-    }
-    */
 /*-------------- NAVIGATIE ------------*/
 nav {
     margin: 25px;
@@ -180,13 +146,10 @@ nav a{
 }
     
     /* Filter */
-    .filter-menu {
-    margin-top: 1rem;
-    padding: 1rem;
-    width: 100%;
-    border-radius: 1rem;
-    background: #313437;
-    color: white;
+
+    .filter-menu h1{
+        font-family: cheddar-gothic-rough, sans-serif;
+        font-size: 25pt;
     }
     
     .filter-menu-header {
@@ -205,7 +168,9 @@ nav a{
     gap: 2rem;
     width: max-content;
     }
-    
+    .filter_button{
+        font-size: 20pt;
+    }
     
     
     /* Results */
