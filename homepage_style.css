@@ -65,6 +65,7 @@ nav a{
     position: absolute;
     left: -2rem;
     background-color: #313437;
+    border: 2px solid #ffffff;
     border-radius: 0 0 1rem 1rem;
     min-width: 160px;
 }
@@ -86,15 +87,26 @@ nav a{
     font-size: 20pt;
  margin-top: 1rem;
 }
+.nav_item:hover{
+    font-size: 20pt;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
 #winkelmand{
     width: 20%;
     height: fit-content;
+    float: right;
 }
 #default_user_image{
     crop: rect(20px 0 10px 0);
-    width: 20%;
+    width: 100%;
+    height: auto;
     clip-path: circle(50%);
     object-fit: fill;
+  margin-top: 0.3rem;
+}
+#dropdown_account {
+ left: -5rem;
 }
 #hamburger{
     display: none;
@@ -209,7 +221,7 @@ padding-left: 17%;
 #watverkopenwij h2 {
 
     display: inline-block;
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
     font-size: 20pt;
 
 }

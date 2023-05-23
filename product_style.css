@@ -219,3 +219,34 @@ nav a{
         height: auto;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+
+
+    #intro h1 {
+
+        display: inline-block;
+        padding: 1rem 5rem 0rem 0rem;
+        font-size: 40pt;
+    }
+    .recepten_carousel_item{
+
+        border-radius: 1.75rem;
+        padding: 2rem 1rem;
+        width: 10rem;
+        height: auto;
+    }
+}
+@media screen and (max-width: 567px) {
+    #geinspireerd {
+        margin-top: 5rem;
+    }
+    .recepten_carousel_item{
+
+        border-radius: 1.75rem;
+        padding: 2rem 1rem;
+        width: 8rem;
+        height: auto;
+    }
+}
