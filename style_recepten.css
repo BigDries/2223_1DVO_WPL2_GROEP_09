@@ -136,7 +136,7 @@ nav a{
 #recepten_bord_slide_out {
     opacity: 1;
     position: relative;
-    top: -101%;
+    top: -85%;
     margin-bottom: -18rem;
     z-index: -1;
     visibility: hidden;

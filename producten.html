@@ -17,8 +17,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="winkelmand.js"></script>
-    <script defer src="producten.js"></script>
+    <!--<script defer src="winkelmand.js"></script>-->
 </head>
 
 <body class="bg-gray-100 flex flex-col gap-4">
@@ -185,12 +184,12 @@
                             <label for="noodle">Noodles</label>
                         </div>
                         <div class="flex flex-row gap-2 items-center">
-                            <input id="Lasagnebladen" type="checkbox">
-                            <label for="Lasagnebladen">Lasagnebladen</label>
+                            <input id="Lasagne" type="checkbox">
+                            <label for="Lasagne">Lasagnebladen</label>
                         </div>
                         <div class="flex flex-row gap-2 items-center">
-                            <input id="Gevulde-pasta" type="checkbox">
-                            <label for="Gevulde-pasta">Gevulde pasta</label>
+                            <input id="gevulde-pasta" type="checkbox">
+                            <label for="gevulde-pasta">Gevulde pasta</label>
                         </div>
                         <div class="flex flex-row gap-2 items-center">
                             <input id="Glutenvrije-pasta's" type="checkbox">
@@ -237,8 +236,8 @@
                 </div>
 
             </div>
-            <div class="flex flex-row justify-center items-center mt-3 border-t-4 pt-4 border-[#f1c765]">
-                <h2 class="knop filter_button">Filter</h2>
+            <div class="flex flex-row justify-center items-center mt-3 border-t-4 pt-4 border-[#f1c765] filter_button">
+                <h2 class="knop">Filter</h2>
             </div>
         </div>
     </div>
@@ -290,24 +289,28 @@
                 <p class="product_benaming">Tagliatelle</p>
                 <p class="product_prijs">€<span>5,99</span></p>
             </div>
-
-            <div class="product_item lange_pasta glutenvrij">
+            <div class="product_item lange_pasta glutenvrij noodles">
                 <img class="p-1 product_afbeelding" src="/assets/noodles.png" alt="">
                 <p class="product_benaming">Noodles</p>
                 <p class="product_prijs">€<span>3,89</span></p>
+            </div>
+            <div class="product_item glutenvrij lasagne">
+                <img class="p-1 product_afbeelding" src="/assets/lasagne.png" alt="">
+                <p class="product_benaming">Lasagne</p>
+                <p class="product_prijs">€<span>5,89</span></p>
             </div>
             <div class="product_item korte_pasta volkoren_pasta">
                 <img class="p-1 product_afbeelding" src="/assets/vk%20mac.png" alt="">
                 <p class="product_benaming">Volkoren Macaroni</p>
                 <p class="product_prijs">€<span>3,89</span></p>
             </div>
-            <div class="product_item pasta_sauzen">
+            <div class="product_item pasta_sauzen culinaire_sauzen lactosevrije_sauzen">
                 <img class="p-1 product_afbeelding" src="/assets/bolon.png" alt="">
                 <p class="product_benaming">Bolognese</p>
                 <p class="product_prijs">€<span>3,29</span></p>
             </div>
 
-            <div class="product_item pasta_sauzen">
+            <div class="product_item pasta_sauzen culinaire_sauzen">
                 <img class="p-1 product_afbeelding" src="/assets/carbonara.png" alt="">
                 <p class="product_benaming">Carbonara</p>
                 <p class="product_prijs">€<span>3,29</span></p>
@@ -372,4 +375,5 @@
 
 
 </body>
+<script defer src="producten.js"></script>
 </html>
