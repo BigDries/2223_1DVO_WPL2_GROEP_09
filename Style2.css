@@ -108,9 +108,6 @@ nav a{
     width: 80%;
     height: fit-content;
 }
-.product_prijs, .product_benaming{
-    display: none;
-}
 #default_user_image{
     crop: rect(20px 0 10px 0);
     width: 40%;
@@ -172,9 +169,11 @@ nav a{
         font-size: 20pt;
     }
     .visible{
+        visibility: visible;
         display: block;
     }
     .invisible{
+        visibility: hidden;
         display: none;
     }
     
