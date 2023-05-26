@@ -48,14 +48,15 @@ function ready() {
         console.log(checkboxRijst.checked);
         console.log(checkboxMaaltijden.checked);
 
+        let checkboxChecked= checkboxKortePasta.checked;
+        console.log(checkboxChecked);
 
         if (checkboxKortePasta.checked) {
             for (let i = 0; i < kortePasta.length; i++) {
                 kortePasta[i].classList.add("visible");
                 kortePasta[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < kortePasta.length; i++) {
                 kortePasta[i].classList.add("invisible");
                 kortePasta[i].classList.remove("visible");
@@ -67,8 +68,7 @@ function ready() {
                 langePasta[i].classList.add("visible");
                 langePasta[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < langePasta.length; i++) {
                 langePasta[i].classList.add("invisible");
                 langePasta[i].classList.remove("visible");
@@ -80,8 +80,7 @@ function ready() {
                 noodles[i].classList.add("visible");
                 noodles[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < noodles.length; i++) {
                 noodles[i].classList.add("invisible");
                 noodles[i].classList.remove("visible");
@@ -93,8 +92,7 @@ function ready() {
                 lasagne[i].classList.add("visible");
                 lasagne[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < lasagne.length; i++) {
                 lasagne[i].classList.add("invisible");
                 lasagne[i].classList.remove("visible");
@@ -106,8 +104,7 @@ function ready() {
                 gevuldePasta[i].classList.add("visible");
                 gevuldePasta[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < gevuldePasta.length; i++) {
                 gevuldePasta[i].classList.add("invisible");
                 gevuldePasta[i].classList.remove("visible");
@@ -119,8 +116,7 @@ function ready() {
                 volkoren[i].classList.add("visible");
                 volkoren[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < volkoren.length; i++) {
                 volkoren[i].classList.add("invisible");
                 volkoren[i].classList.remove("visible");
@@ -132,8 +128,7 @@ function ready() {
                 glutenvrij[i].classList.add("visible");
                 glutenvrij[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < glutenvrij.length; i++) {
                 glutenvrij[i].classList.add("invisible");
                 glutenvrij[i].classList.remove("visible");
@@ -145,8 +140,7 @@ function ready() {
                 pastaSauzen[i].classList.add("visible");
                 pastaSauzen[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < pastaSauzen.length; i++) {
                 pastaSauzen[i].classList.add("invisible");
                 pastaSauzen[i].classList.remove("visible");
@@ -158,8 +152,7 @@ function ready() {
                 lactosevrijeSauzen[i].classList.add("visible");
                 lactosevrijeSauzen[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < lactosevrijeSauzen.length; i++) {
                 lactosevrijeSauzen[i].classList.add("invisible");
                 lactosevrijeSauzen[i].classList.remove("visible");
@@ -171,8 +164,7 @@ function ready() {
                 culinaireSauzen[i].classList.add("visible");
                 culinaireSauzen[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < culinaireSauzen.length; i++) {
                 culinaireSauzen[i].classList.add("invisible");
                 culinaireSauzen[i].classList.remove("visible");
@@ -184,8 +176,7 @@ function ready() {
                 rijst[i].classList.add("visible");
                 rijst[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < rijst.length; i++) {
                 rijst[i].classList.add("invisible");
                 rijst[i].classList.remove("visible");
@@ -197,8 +188,7 @@ function ready() {
                 maaltijd[i].classList.add("visible");
                 maaltijd[i].classList.remove("invisible");
             }
-        }
-        else {
+        } else {
             for (let i = 0; i < maaltijd.length; i++) {
                 maaltijd[i].classList.add("invisible");
                 maaltijd[i].classList.remove("visible");
