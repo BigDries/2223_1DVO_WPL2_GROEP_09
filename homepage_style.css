@@ -30,7 +30,7 @@ body {
   background-color: #ececec;
 }
 
-
+<<<<<<< Jeziah2
 /*-------------- NAVIGATIE ------------*/
 nav {
     margin: 25px;
@@ -109,6 +109,7 @@ nav a{
 
 }
 /*-------------- INTRO ------------*/
+
 .waves {
     position: absolute;
     z-index: -1;
@@ -290,19 +291,6 @@ nav a{
     width: 640px;
     height: 360px;
 }
-
-#mediaContainer img,
-#mediaContainer video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-#videoo {
-    width: 600px;
-    height: 400px;
-}
 @media screen and (max-width: 1200px) {
     #intro p {
         width: 90%;
@@ -322,7 +310,6 @@ nav a{
         margin-left: 2rem;
     }
 }
-@media screen and (max-width: 567px) {
     #intro p {
         font-size: 15px;
     }
@@ -348,8 +335,4 @@ nav a{
         height: auto;
         margin-top: -1rem;
     }
-    #videoo {
-        width: 300px;
-        height: auto;
-    }
-}
+

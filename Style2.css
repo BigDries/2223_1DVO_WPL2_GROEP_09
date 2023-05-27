@@ -1,45 +1,155 @@
-/* Navbar */
-.top-nav {
-    margin-top: 1rem;
-    width: 100%;
-    border-radius: 10rem;
-    background: gray;
-    
+/*ALGEMEEN*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "cheddar-gothic-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+}
+
+h2 {
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35pt;
+}
+
+h3 {
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+}
+
+p {
+    font-size: 18pt;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*-------------- NAVIGATIE ------------*/
+nav {
+    margin: 25px;
+    font-size: 15pt;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background: white;
-    }
-    
-    .top-nav i {
-    padding: 0.2rem;
-    margin: 0.5rem;
+    justify-content: center;
+
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+#logo_homelink{
+    width: 60%;
+    height: fit-content;
+}
+nav a{
+    text-decoration: none;
+    color: #313437;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -2rem;
+    background-color: #313437;
+    border-radius: 0 0 1rem 1rem;
+    min-width: 160px;
+}
+#dropdown-content-winkelmand {
+    background-color: #fff;
+    min-width: 20rem;
+    left: -10rem;
+}
+/*.dropdown_content_profile{
+    left: -4rem;
+}*/
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover {
+    color: #F1C765;
+    font-weight: 400;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav_item{
     font-size: 20pt;
+}
+#winkelmand_img{
+    width: 30%;
+    height: fit-content;
+}
+.winkelmand_prijs p{
+    font-size: 10pt;
+}
+.winkelmand_hoeveelheid input{
+    width: 130%;
+}
+.winkelmand_foto{
+    width: 100%;
+    height: fit-content;
+}
+.winkelmand_remove img{
+    width: 80%;
+    height: fit-content;
+}
+.product_prijs, .product_benaming{
+    display: none;
+}
+#default_user_image{
+    crop: rect(20px 0 10px 0);
+    width: 40%;
+    clip-path: circle(50%);
+    object-fit: fill;
+}
+#hamburger{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
     }
-    
-    img.logo {
-    height: 40px;
+    #hamburger img{
+        width: 40%;
     }
-    
-    img.profile {
-    margin: 0.5rem;
-    width: 50px;
-    height: 50px;
-    background: gray;
-    border-radius: 99999px;
-    object-fit: contain;
+    #default_user_image{
+        width: 40%;
     }
-    
+    .big_screen{
+        display: none;
+    }
+
+}
+.knop {
+    background-color: #F1C765;
+    border-radius: 1rem;
+    color: #313438;
+    text-decoration: none;
+    font-family: bebas-neue, sans-serif;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
     
     /* Filter */
-    .filter-menu {
-    margin-top: 1rem;
-    padding: 1rem;
-    width: 100%;
-    border-radius: 1rem;
-    background: #313437;
-    color: white;
+
+    .filter-menu h1{
+        font-family: cheddar-gothic-rough, sans-serif;
+        font-size: 25pt;
     }
     
     .filter-menu-header {
@@ -58,7 +168,9 @@
     gap: 2rem;
     width: max-content;
     }
-    
+    .filter_button{
+        font-size: 20pt;
+    }
     
     
     /* Results */
@@ -80,7 +192,7 @@
     border-radius: 1rem;
     background: white;
     }
-    
+
     /* Products */
     .slider {
     display: flex;

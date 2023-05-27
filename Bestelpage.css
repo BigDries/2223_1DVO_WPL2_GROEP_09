@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, Arial, sans-serif;
+  }
+  
+  body 
+  {
+    width: 100%;
+    margin: 0;
+    background-color: #ECECEC;
+  }
+h1
+{
+    font-family: "cheddar-gothic-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+}
+h2
+{
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35pt;
+}
+h3
+{
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+}
+p
+{
+    font-size: 18pt;
+}
+/*-------------------------------------------------------------------------------------- Nav -------------------------------------------------------------------------------------------------*/
+nav 
+{
+  margin: 25px;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+#logo_homelink
+{
+  width: 60%;
+  height: fit-content;
+}
+nav a
+{
+  text-decoration: none;
+  color: #313437;
+}
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  left: -2rem;
+  background-color: #313437;
+  border-radius: 0 0 1rem 1rem;
+  min-width: 160px;
+}
+.dropdown-content a 
+{
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover 
+{
+  color: #F1C765;
+  font-weight: 400;
+}
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+.nav_item
+{
+  font-size: 20pt;
+  margin-top: 1rem;
+}
+#winkelmand
+{
+  width: 20%;
+  height: fit-content;
+}
+#default_user_image
+{
+  crop: rect(20px 0 10px 0);
+  width: 20%;
+  clip-path: circle(50%);
+  object-fit: fill;
+}
+#hamburger
+{
+  display: none;
+}
+/*-------------------------------------------------------------------------------------- bestelpage ------------------------------------------------------------------------------------------*/
+.box
+{
+    width: 1747px;
+    height: 500px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    
+    margin: 3% 10%;
+}
+
+.col-xl-4 h1
+{
+    margin-left: 210px;
+}
+ 
+.button /* PDF button */
+{
+    background-color: #F1C765;
+    border: none;
+    border-radius: 25px;
+    color: #313437;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    margin-left: 375px; /* plaatst button meer in corner */
+}
+
+.col-1 img
+{
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+
+    background-color: #F3F3F3;
+    padding: 0.25rem;
+    border-radius: 16px;
+}
+
+.Total
+{
+    border: 3px solid #88A1A7;
+    border-radius: 25px;
+}
+
+.Totalnum
+{
+    background-color: #88A1A7;
+    border: 3px solid #88A1A7;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+.Total p 
+{
+    padding-left: 1rem;
+}
+/*-------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
+/*-- footerbox --*/
+.Footer
+{
+  border-radius:  1.563rem 1.563rem 0rem 0rem;
+  padding: 3.125rem;
+  background-color:#313437;
+  color: #fff;
+}
+
+/*-- size busta logo --*/
+.Footer img
+{
+  width: 23rem;
+  height: auto;
+  margin-top: 18%;
+}
+
+/*-- H1 text + underlinement --*/
+.Footer h1
+{
+  font-size: 3.125rem;
+  font-family: cheddar-gothic-rough, sans-serif;
+  /*-- underlinement yellow + placement --*/
+  display: inline-block;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border-bottom: 0.313rem solid #F1C765;
+  padding-bottom: 0.313rem;
+}
+
+/*-- text --*/
+.Footer p
+{
+  font-family: bebas-neue, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*-- icons --*/
+.Footer ul i
+{
+  margin: 2rem;
+  margin-left: -1rem;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+/*-- maps --*/
+.maps_footer
+{
+  width: 31.25rem;
+  height: 18.75rem;
+  border-radius: 1.563rem;
+}
+
+@media screen and (max-width: 415px)
+{ 
+  /*------------------------------------------------------------------------ footer -------------------------------------------------------------------------------------------------------*/
+  .Footer
+  {
+    flex-direction: column;
+  }
+
+  .Footer img
+  {
+    margin-top: 5%;
+    width: 20rem;
+  }
+
+  /* H1 text + underlinement */
+  .Footer h1
+  {
+    font-size: 1.5rem;
+    /*-- underlinement yellow + placement --*/
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-top: 1.563rem;
+  }
+
+  /* text */
+  .Footer p
+  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* icons */
+  .Footer ul i
+  {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .maps_footer
+  {
+    border-radius: 0.5rem;
+    width: 18.75rem;
+    height: 15.625rem;
+  }
+}
+
+/*--------------------------------------------------------------------------------- nav -----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) 
+{
+  #hamburger{
+      display: block;
+  }
+  #hamburger img{
+      width: 40%;
+  }
+  #default_user_image{
+      width: 40%;
+  }
+  .big_screen{
+      display: none;
+  }
+}

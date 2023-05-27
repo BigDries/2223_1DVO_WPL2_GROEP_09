@@ -83,12 +83,12 @@ nav a{
     font-size: 20pt;
 }
 #winkelmand{
-    width: 20%;
+    width: 30%;
     height: fit-content;
 }
 #default_user_image{
     crop: rect(20px 0 10px 0);
-    width: 20%;
+    width: 40%;
     clip-path: circle(50%);
     object-fit: fill;
 }
@@ -139,9 +139,6 @@ nav a{
     top: -101%;
     margin-bottom: -18rem;
     z-index: -1;
-}
-
-#recepten_bord1_slide_out {
     visibility: hidden;
 }
 
@@ -335,26 +332,29 @@ nav a{
 }
 
 /*----------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
-/* footerbox */
-.Footer {
+/*-- footerbox --*/
+.Footer
+{
     border-radius: 0;
     padding: 3.125rem;
-    background-color: #313437;
+    background-color:#313437;
     color: #fff;
 
     text-align: center;
     display: flex;
 }
 
-/* size busta logo */
-.Footer img {
+/*-- size busta logo --*/
+.Footer img
+{
     width: 23rem;
     height: auto;
     margin-top: 18%;
 }
 
-/* H1 text + underlinement */
-.Footer h1 {
+/*-- H1 text + underlinement --*/
+.Footer h1
+{
     font-size: 3.125rem;
     font-family: cheddar-gothic-rough, sans-serif;
     /*-- underlinement yellow + placement --*/
@@ -365,15 +365,17 @@ nav a{
     padding-bottom: 0.313rem;
 }
 
-/* text */
-.Footer p {
+/*-- text --*/
+.Footer p
+{
     font-family: bebas-neue, sans-serif;
     font-size: 1.5rem;
     text-align: center;
 }
 
-/* icons */
-.Footer ul i {
+/*-- icons --*/
+.Footer ul i
+{
     margin: 2rem;
     margin-left: -1rem;
     margin-top: 3rem;
@@ -381,12 +383,58 @@ nav a{
     color: white;
 }
 
-/* maps */
-.maps_footer {
-    width: 500px;
-    height: 300px;
+/*-- maps --*/
+.maps_footer
+{
+    width: 31.25rem;
+    height: 18.75rem;
     border-radius: 1.563rem;
 }
+/*------------------------------------ FOOTER RESPONSIVE -------------------------------*/
+@media screen and (max-width: 415px)
+{ .Footer
+{
+    flex-direction: column;
+}
+
+    .Footer img
+    {
+        margin-top: 5%;
+        width: 20rem;
+    }
+
+    /* H1 text + underlinement */
+    .Footer h1
+    {
+        font-size: 1.5rem;
+        /*-- underlinement yellow + placement --*/
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-top: 1.563rem;
+    }
+
+    /* text */
+    .Footer p
+    {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* icons */
+    .Footer ul i
+    {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .maps_footer
+    {
+        border-radius: 0.5rem;
+        width: 18.75rem;
+        height: 15.625rem;
+    }
+}
+
 
 
 /*---------------------------------- RESPONSIVE -------------------------*/
