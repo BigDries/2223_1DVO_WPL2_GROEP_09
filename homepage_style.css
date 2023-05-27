@@ -30,6 +30,92 @@ body {
   background-color: #ececec;
 }
 
+<<<<<<< Jeziah2
+/*-------------- NAVIGATIE ------------*/
+nav {
+    margin: 25px;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+#logo_homelink{
+    width: 60%;
+    height: fit-content;
+}
+nav a{
+    text-decoration: none;
+    color: #313437;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -2rem;
+    background-color: #313437;
+    border-radius: 0 0 1rem 1rem;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: bebas-neue, sans-serif;
+}
+.dropdown-content a:hover {
+    color: #F1C765;
+    font-weight: 400;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav_item{
+    font-size: 20pt;
+}
+#winkelmand{
+    width: 30%;
+    height: fit-content;
+}
+#default_user_image{
+    crop: rect(20px 0 10px 0);
+    width: 40%;
+    clip-path: circle(50%);
+    object-fit: fill;
+}
+#hamburger{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #hamburger{
+        display: block;
+    }
+    #hamburger img{
+        width: 40%;
+    }
+    #default_user_image{
+        width: 40%;
+    }
+    .big_screen{
+        display: none;
+    }
+
+}
+/*-------------- INTRO ------------*/
+
+.waves {
+    position: absolute;
+    z-index: -1;
+  left: 0;
+    width: 100%;
+    height: auto;
+
+}
 #intro {
     width: 100vw;
     padding-top: 2rem;
@@ -37,12 +123,6 @@ body {
     margin-left: -50vw;
     left: 50%;
     padding-bottom: 10rem;
-.waves {
-    position: absolute;
-    z-index: -1;
-  left: 0;
-    width: 100%;
-    height: auto;
 
 }
 #intro p {
@@ -58,7 +138,13 @@ body {
     height: auto;
     border-radius: 1.75rem;
 }
-
+#intro h2 {
+    margin-left: 10rem;
+    display: inline-block;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 20pt;
+}
+/*-------------- VIDEO ------------*/
 #video {
     width: 100vw;
     padding-top: 2rem;
@@ -82,6 +168,17 @@ body {
     height: auto;
     border-radius: 1.75rem;
 }
+
+#video h2 {
+    margin-left: 10rem;
+    display: inline-block;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 20pt;
+}
+#video h1 {
+    padding-left: 17%;
+}
+/*-------------- Algemeen ------------*/
 .container {
     width: 100%;
 }
@@ -92,29 +189,26 @@ body {
     border-radius: 1rem;
 }
 
-#intro h2 {
-    margin-left: 10rem;
-    display: inline-block;
-    padding: 2rem 5rem 2rem 5rem;
-    font-size: 20pt;
-}
-#video h2 {
-    margin-left: 10rem;
-    display: inline-block;
-    padding: 2rem 5rem 2rem 5rem;
-    font-size: 20pt;
-}
-#video h1 {
-padding-left: 17%;
+#heroimg {
+    z-index: -1;
 }
 #heroimg img {
     width: 70%;
+
 }
 
 #homepageheader {
     background-color: #313437;
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
 
+/*-------------- WatVerkopenWij ------------*/
 #watverkopenwij img {
     width: 15rem;
     height: auto;
@@ -136,14 +230,7 @@ padding-left: 17%;
     font-size: 20pt;
 
 }
-.center {
- display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-}
-
+/*-------------- Vaakbesteld + carousel ------------*/
 .fa-angle-right {
     float: right;
 }
