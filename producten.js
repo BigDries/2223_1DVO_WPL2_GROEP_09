@@ -1,12 +1,10 @@
-if (document.readyState == 'loading') {
+if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
 
 function ready() {
-    let kortePasta = document.getElementsByClassName("korte_pasta");
-    let langePasta = document.getElementsByClassName("lange_pasta");
     let noodles = document.getElementsByClassName("noodles");
     let lasagne = document.getElementsByClassName("lasagne");
     let gevuldePasta = document.getElementsByClassName("gevulde_pasta");
@@ -48,397 +46,210 @@ function ready() {
         console.log(checkboxRijst.checked);
         console.log(checkboxMaaltijden.checked);
 
-
-        if (checkboxKortePasta.checked && checkboxGlutenvrij.checked === false && checkboxVolkPasta.checked === false) {
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("invisible");
-                glutenvrij[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("invisible");
-                volkoren[i].classList.remove("visible");
-            }
-            for (let i = 0; i < kortePasta.length; i++) {
-                kortePasta[i].classList.add("visible");
-                kortePasta[i].classList.remove("invisible");
-            }
-        } else if (checkboxKortePasta.checked && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < kortePasta.length; i++) {
-                kortePasta[i].classList.add("visible");
-                kortePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxKortePasta.checked && checkboxVolkPasta.checked) {
-            for (let i = 0; i < kortePasta.length; i++) {
-                kortePasta[i].classList.add("visible");
-                kortePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        } else if (checkboxKortePasta.checked === false && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < kortePasta.length; i++) {
-                kortePasta[i].classList.add("invisible");
-                kortePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxKortePasta.checked === false && checkboxVolkPasta.checked) {
-            for (let i = 0; i < kortePasta.length; i++) {
-                kortePasta[i].classList.add("invisible");
-                kortePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        }
-
-        if (checkboxLangePasta.checked && checkboxGlutenvrij.checked === false && checkboxVolkPasta.checked === false) {
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("invisible");
-                glutenvrij[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("invisible");
-                volkoren[i].classList.remove("visible");
-            }
-            for (let i = 0; i < langePasta.length; i++) {
-                langePasta[i].classList.add("visible");
-                langePasta[i].classList.remove("invisible");
-            }
-        } else if (checkboxLangePasta.checked && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < langePasta.length; i++) {
-                langePasta[i].classList.add("visible");
-                langePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxLangePasta.checked && checkboxVolkPasta.checked) {
-            for (let i = 0; i < langePasta.length; i++) {
-                langePasta[i].classList.add("visible");
-                langePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        } else if (checkboxLangePasta.checked === false && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < langePasta.length; i++) {
-                langePasta[i].classList.add("invisible");
-                langePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxLangePasta.checked === false && checkboxVolkPasta.checked) {
-            for (let i = 0; i < langePasta.length; i++) {
-                langePasta[i].classList.add("invisible");
-                langePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        }
-
-        if (checkboxNoodles.checked && checkboxGlutenvrij.checked === false && checkboxVolkPasta.checked === false) {
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("invisible");
-                glutenvrij[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("invisible");
-                volkoren[i].classList.remove("visible");
-            }
-            for (let i = 0; i < noodles.length; i++) {
-                noodles[i].classList.add("visible");
-                noodles[i].classList.remove("invisible");
+        if (checkboxKortePasta.checked || checkboxLangePasta.checked || checkboxNoodles.checked || checkboxLasagne.checked || checkboxGevuldePasta.checked || checkboxVolkPasta.checked || checkboxGlutenvrij.checked || checkboxSauzen.checked || checkboxCulinaireSauzen.checked || checkboxLactosevrijeSauzen.checked || checkboxRijst.checked || checkboxMaaltijden.checked) {
+            let producten = document.querySelectorAll(".product_item");
+            for (let i = 0; i < producten.length; i++) {
+                producten[i].classList.add("invisible");
+                producten[i].classList.remove("visible");
             }
 
-        } else if (checkboxNoodles.checked && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < noodles.length; i++) {
-                noodles[i].classList.add("visible");
-                noodles[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxNoodles.checked && checkboxVolkPasta.checked) {
-            for (let i = 0; i < noodles.length; i++) {
-                noodles[i].classList.add("visible");
-                noodles[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        } else if (checkboxNoodles.checked === false && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < noodles.length; i++) {
-                noodles[i].classList.add("invisible");
-                noodles[i].classList.remove("visible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxNoodles.checked === false && checkboxVolkPasta.checked) {
-            for (let i = 0; i < noodles.length; i++) {
-                noodles[i].classList.add("invisible");
-                noodles[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        }
-
-        if (checkboxLasagne.checked && checkboxGlutenvrij.checked === false && checkboxVolkPasta.checked === false) {
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("invisible");
-                glutenvrij[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("invisible");
-                volkoren[i].classList.remove("visible");
-            }
-            for (let i = 0; i < lasagne.length; i++) {
-                lasagne[i].classList.add("visible");
-                lasagne[i].classList.remove("invisible");
+            if (checkboxKortePasta.checked) {
+                let kortePasta = document.querySelectorAll(".korte_pasta");
+                for (let i = 0; i < kortePasta.length; i++) {
+                    kortePasta[i].classList.add("visible");
+                    kortePasta[i].classList.remove("invisible");
+                }
             }
 
-        } else if (checkboxLasagne.checked && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < lasagne.length; i++) {
-                lasagne[i].classList.add("visible");
-                lasagne[i].classList.remove("invisible");
+            if (checkboxLangePasta.checked) {
+                let langePasta = document.getElementsByClassName("lange_pasta");
+                for (let i = 0; i < langePasta.length; i++) {
+                    langePasta[i].classList.add("visible");
+                    langePasta[i].classList.remove("invisible");
+                }
             }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxLasagne.checked && checkboxVolkPasta.checked) {
-            for (let i = 0; i < lasagne.length; i++) {
-                lasagne[i].classList.add("visible");
-                lasagne[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        } else if (checkboxLasagne.checked === false && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < lasagne.length; i++) {
-                lasagne[i].classList.add("invisible");
-                lasagne[i].classList.remove("visible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxLasagne.checked === false && checkboxVolkPasta.checked) {
-            for (let i = 0; i < lasagne.length; i++) {
-                lasagne[i].classList.add("invisible");
-                lasagne[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        }
 
-        if (checkboxGevuldePasta.checked && checkboxGlutenvrij.checked === false && checkboxVolkPasta.checked === false) {
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("invisible");
-                glutenvrij[i].classList.remove("visible");
+            if (checkboxNoodles.checked) {
+                for (let i = 0; i < noodles.length; i++) {
+                    noodles[i].classList.add("visible");
+                    noodles[i].classList.remove("invisible");
+                }
             }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("invisible");
-                volkoren[i].classList.remove("visible");
-            }
-            for (let i = 0; i < gevuldePasta.length; i++) {
-                gevuldePasta[i].classList.add("visible");
-                gevuldePasta[i].classList.remove("invisible");
-            }
-        } else if (checkboxGevuldePasta.checked && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < gevuldePasta.length; i++) {
-                gevuldePasta[i].classList.add("visible");
-                gevuldePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxGevuldePasta.checked && checkboxVolkPasta.checked) {
-            for (let i = 0; i < gevuldePasta.length; i++) {
-                gevuldePasta[i].classList.add("visible");
-                gevuldePasta[i].classList.remove("invisible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        } else if (checkboxGevuldePasta.checked === false && checkboxGlutenvrij.checked) {
-            for (let i = 0; i < gevuldePasta.length; i++) {
-                gevuldePasta[i].classList.add("invisible");
-                gevuldePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < glutenvrij.length; i++) {
-                glutenvrij[i].classList.add("visible");
-                glutenvrij[i].classList.remove("invisible");
-            }
-        } else if (checkboxGevuldePasta.checked === false && checkboxVolkPasta.checked) {
-            for (let i = 0; i < gevuldePasta.length; i++) {
-                gevuldePasta[i].classList.add("invisible");
-                gevuldePasta[i].classList.remove("visible");
-            }
-            for (let i = 0; i < volkoren.length; i++) {
-                volkoren[i].classList.add("visible");
-                volkoren[i].classList.remove("invisible");
-            }
-        }
-    // if (checkboxLangePasta.checked) {
-    //     for (let i = 0; i < langePasta.length; i++) {
-    //         langePasta[i].classList.add("visible");
-    //         langePasta[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < langePasta.length; i++) {
-    //         langePasta[i].classList.add("invisible");
-    //         langePasta[i].classList.remove("visible");
-    //     }
-    // }
 
-    // if (checkboxNoodles.checked) {
-    //     for (let i = 0; i < noodles.length; i++) {
-    //         noodles[i].classList.add("visible");
-    //         noodles[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < noodles.length; i++) {
-    //         noodles[i].classList.add("invisible");
-    //         noodles[i].classList.remove("visible");
-    //     }
-    // }
-    //
-    // if (checkboxLasagne.checked) {
-    //     for (let i = 0; i < lasagne.length; i++) {
-    //         lasagne[i].classList.add("visible");
-    //         lasagne[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < lasagne.length; i++) {
-    //         lasagne[i].classList.add("invisible");
-    //         lasagne[i].classList.remove("visible");
-    //     }
-    // }
-    //
-    // if (checkboxGevuldePasta.checked) {
-    //     for (let i = 0; i < gevuldePasta.length; i++) {
-    //         gevuldePasta[i].classList.add("visible");
-    //         gevuldePasta[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < gevuldePasta.length; i++) {
-    //         gevuldePasta[i].classList.add("invisible");
-    //         gevuldePasta[i].classList.remove("visible");
-    //     }
-    // }
+            if (checkboxLasagne.checked) {
+                for (let i = 0; i < lasagne.length; i++) {
+                    lasagne[i].classList.add("visible");
+                    lasagne[i].classList.remove("invisible");
+                }
+            }
 
-    // if (checkboxVolkPasta.checked) {
-    //     for (let i = 0; i < volkoren.length; i++) {
-    //         volkoren[i].classList.add("visible");
-    //         volkoren[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < volkoren.length; i++) {
-    //         volkoren[i].classList.add("invisible");
-    //         volkoren[i].classList.remove("visible");
-    //     }
-    // }
+            if (checkboxGevuldePasta.checked) {
+                for (let i = 0; i < gevuldePasta.length; i++) {
+                    gevuldePasta[i].classList.add("visible");
+                    gevuldePasta[i].classList.remove("invisible");
+                }
+            }
 
-    // if (checkboxGlutenvrij.checked) {
-    //     for (let i = 0; i < glutenvrij.length; i++) {
-    //         glutenvrij[i].classList.add("visible");
-    //         glutenvrij[i].classList.remove("invisible");
-    //     }
-    // } else {
-    //     for (let i = 0; i < glutenvrij.length; i++) {
-    //         glutenvrij[i].classList.add("invisible");
-    //         glutenvrij[i].classList.remove("visible");
-    //     }
-    // }
+            if (checkboxVolkPasta.checked) {
+                for (let i = 0; i < volkoren.length; i++) {
+                    volkoren[i].classList.add("visible");
+                    volkoren[i].classList.remove("invisible");
+                }
+            }
 
-    if (checkboxSauzen.checked) {
-        for (let i = 0; i < pastaSauzen.length; i++) {
-            pastaSauzen[i].classList.add("visible");
-            pastaSauzen[i].classList.remove("invisible");
-        }
-    } else {
-        for (let i = 0; i < pastaSauzen.length; i++) {
-            pastaSauzen[i].classList.add("invisible");
-            pastaSauzen[i].classList.remove("visible");
+            if (checkboxGlutenvrij.checked) {
+                for (let i = 0; i < glutenvrij.length; i++) {
+                    glutenvrij[i].classList.add("visible");
+                    glutenvrij[i].classList.remove("invisible");
+                }
+            }
+
+            if (checkboxSauzen.checked) {
+                for (let i = 0; i < pastaSauzen.length; i++) {
+                    pastaSauzen[i].classList.add("visible");
+                    pastaSauzen[i].classList.remove("invisible");
+                }
+            }
+
+            if (checkboxCulinaireSauzen.checked) {
+                for (let i = 0; i < culinaireSauzen.length; i++) {
+                    culinaireSauzen[i].classList.add("visible");
+                    culinaireSauzen[i].classList.remove("invisible");
+                }
+            }
+
+            if (checkboxLactosevrijeSauzen.checked) {
+                for (let i = 0; i < lactosevrijeSauzen.length; i++) {
+                    lactosevrijeSauzen[i].classList.add("visible");
+                    lactosevrijeSauzen[i].classList.remove("invisible");
+                }
+            }
+
+            if (checkboxRijst.checked) {
+                for (let i = 0; i < rijst.length; i++) {
+                    rijst[i].classList.add("visible");
+                    rijst[i].classList.remove("invisible");
+                }
+            }
+
+            if (checkboxMaaltijden.checked) {
+                for (let i = 0; i < maaltijd.length; i++) {
+                    maaltijd[i].classList.add("visible");
+                    maaltijd[i].classList.remove("invisible");
+                }
+            }
+
+        } else {
+            let producten = document.querySelectorAll(".product_item");
+            for (let i = 0; i < producten.length; i++) {
+                producten[i].classList.add("visible");
+                producten[i].classList.remove("invisible");
+            }
         }
     }
-
-    if (checkboxLactosevrijeSauzen.checked) {
-        for (let i = 0; i < lactosevrijeSauzen.length; i++) {
-            lactosevrijeSauzen[i].classList.add("visible");
-            lactosevrijeSauzen[i].classList.remove("invisible");
-        }
-    } else {
-        for (let i = 0; i < lactosevrijeSauzen.length; i++) {
-            lactosevrijeSauzen[i].classList.add("invisible");
-            lactosevrijeSauzen[i].classList.remove("visible");
-        }
-    }
-
-    if (checkboxCulinaireSauzen.checked) {
-        for (let i = 0; i < culinaireSauzen.length; i++) {
-            culinaireSauzen[i].classList.add("visible");
-            culinaireSauzen[i].classList.remove("invisible");
-        }
-    } else {
-        for (let i = 0; i < culinaireSauzen.length; i++) {
-            culinaireSauzen[i].classList.add("invisible");
-            culinaireSauzen[i].classList.remove("visible");
-        }
-    }
-
-    if (checkboxRijst.checked) {
-        for (let i = 0; i < rijst.length; i++) {
-            rijst[i].classList.add("visible");
-            rijst[i].classList.remove("invisible");
-        }
-    } else {
-        for (let i = 0; i < rijst.length; i++) {
-            rijst[i].classList.add("invisible");
-            rijst[i].classList.remove("visible");
-        }
-    }
-
-    if (checkboxMaaltijden.checked) {
-        for (let i = 0; i < maaltijd.length; i++) {
-            maaltijd[i].classList.add("visible");
-            maaltijd[i].classList.remove("invisible");
-        }
-    } else {
-        for (let i = 0; i < maaltijd.length; i++) {
-            maaltijd[i].classList.add("invisible");
-            maaltijd[i].classList.remove("visible");
-        }
-    }
-}
 
 }
 
-
+// let products = {
+//     data: [
+//         {
+//             productName: "Penne",
+//             category: "kortePasta",
+//             subcategory: "glutenvrij",
+//             price: "4,49",
+//             image: src = "assets/penne-S.png",
+//         },
+//         {
+//             productName: "Fusilli",
+//             category: "korte_pasta",
+//             subcategory: "glutenvrij",
+//             price: "4,49",
+//             image: src = "/assets/fusilli.png",
+//         },
+//         {
+//             productName: "Farfalle",
+//             category: "korte_pasta",
+//             subcategory: "glutenvrij",
+//             price: "4,49",
+//             image: src = "/assets/farfalle.png",
+//         },
+//         {
+//             productName: "Macaroni",
+//             category: "korte_pasta",
+//             subcategory: "glutenvrij",
+//             price: "4,29",
+//             image: src = "/assets/macaroni.png",
+//         },
+//         {
+//             productName: "Spaghetti",
+//             category: "lange_pasta",
+//             subcategory: "glutenvrij",
+//             price: "1,29",
+//             image: src = "/assets/spaghetti.png",
+//         },
+//         {
+//             productName: "Volkoren Tagliatelle",
+//             category: "lange_pasta",
+//             subcategory: "volkoren",
+//             price: "8,99",
+//             image: src = "/assets/tagii.png",
+//         },
+//         {
+//             productName: "Tagliatelle",
+//             category: "lange_pasta",
+//             subcategory: "glutenvrij",
+//             price: "1,89",
+//             image: src = "/assets/tarwe_noods.png",
+//         },
+//         {
+//             productName: "Noodles",
+//             category: "noodles",
+//             subcategory: "",
+//             price: "4,99",
+//             image: src = "/assets/noodles.png",
+//         },
+//         {
+//             productName: "Lasagne",
+//             category: "lasagne",
+//             subcategory: "glutenvrij",
+//             price: "4,99",
+//             image: src = "/assets/lasagne.png",
+//         },
+//         {
+//             productName: "Capeletti",
+//             category: "gevuld",
+//             subcategory: "glutenvrij",
+//             price: "4,99",
+//             image: src = "/assets/capeletti.png",
+//         },
+//         {
+//             productName: "Volkoren Macaroni",
+//             category: "korte_pasta",
+//             subcategory: "volkoren",
+//             price: "4,99",
+//             image: src = "/assets/vk%20mac.png",
+//         },
+//         {
+//             productName: "Bolognese",
+//             category: "sauzen",
+//             subcategory: "lactosevrij",
+//             price: "4,99",
+//             image: src = "/assets/bolon.png",
+//         },
+//         {
+//             productName: "Carbonara",
+//             category: "sauzen",
+//             subcategory: "",
+//             price: "4,99",
+//             image: src = "/assets/carbonara.png",
+//         },
+//         {
+//             productName: "Rijst",
+//             category: "rijst",
+//             subcategory: "",
+//             price: "4,99",
+//             image: src = "/assets/rijst-S.png",
+//         },
+//     ],
+// };
 
