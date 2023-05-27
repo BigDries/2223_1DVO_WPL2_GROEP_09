@@ -81,6 +81,7 @@ nav a{
 }
 .nav_item{
     font-size: 20pt;
+    padding-top: 1rem;
 }
 #winkelmand{
     width: 30%;
