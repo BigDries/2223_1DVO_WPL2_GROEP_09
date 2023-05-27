@@ -49,6 +49,7 @@ nav a{
     text-decoration: none;
     color: #313437;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -77,6 +78,7 @@ nav a{
 }
 .nav_item{
     font-size: 20pt;
+    padding-top: 1rem;
 }
 #winkelmand{
     width: 30%;
@@ -189,7 +191,7 @@ nav a{
     border-radius: 1rem;
 }
 
-#heroimg {
+#backgr {
     z-index: -1;
 }
 #heroimg img {
