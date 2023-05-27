@@ -88,8 +88,6 @@ nav a{
  margin-top: 1rem;
 }
 .nav_item:hover{
-    font-size: 20pt;
-    margin-top: 1rem;
     text-decoration: underline;
 }
 #winkelmand{
@@ -111,20 +109,23 @@ nav a{
 #hamburger{
     display: none;
 }
-@media screen and (max-width: 768px) {
-    #hamburger{
-        display: block;
+@media screen and (max-width: 1000px) {
+#winkelmand {
+    width: 50%;
+    height: auto;
+}
+.nav_item  {
+    font-size: 20px;
+}
+    #logo_homelink{
+        width: 100%;
+        height: fit-content;
     }
-    #hamburger img{
-        width: 40%;
-    }
-    #default_user_image{
-        width: 40%;
-    }
-    .big_screen{
-        display: none;
-    }
+}
+@media screen and (max-width: 576px) {
+    #logo_homelink {
 
+    }
 }
 .waves {
     position: absolute;
