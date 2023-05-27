@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: roboto, Arial, sans-serif;
+
 }
 
 h1 {
@@ -26,8 +27,7 @@ p {
 }
 
 body {
-    width: 100%;
-    margin: 0;
+  background-color: #ececec;
 }
 
 #intro {
@@ -37,8 +37,6 @@ body {
     margin-left: -50vw;
     left: 50%;
     padding-bottom: 10rem;
-
-}
 .waves {
     position: absolute;
     z-index: -1;
@@ -134,7 +132,7 @@ padding-left: 17%;
 #watverkopenwij h2 {
 
     display: inline-block;
-    padding: 2rem 5rem 2rem 5rem;
+    padding: 2rem 5rem;
     font-size: 20pt;
 
 }
@@ -199,7 +197,11 @@ padding-left: 17%;
 .recepten_carousel::-webkit-scrollbar{
     display: none;
 }
-
+#mediaContainer {
+    position: relative;
+    width: 640px;
+    height: 360px;
+}
 @media screen and (max-width: 1200px) {
     #intro p {
         width: 90%;
@@ -219,8 +221,6 @@ padding-left: 17%;
         margin-left: 2rem;
     }
 }
-@media screen and (max-width: 567px) 
-{
     #intro p {
         font-size: 15px;
     }
@@ -247,46 +247,3 @@ padding-left: 17%;
         margin-top: -1rem;
     }
 
-    /*--------------------------------------- footer --------------------------------------------*/
-    .Footer
-    {
-        flex-direction: column;
-    }
-
-    .Footer img
-    {
-        margin-top: 5%;
-        width: 20rem;
-    }
-
-    /* H1 text + underlinement */
-    .Footer h1
-    {
-        font-size: 1.5rem;
-        /*-- underlinement yellow + placement --*/
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-        margin-top: 1.563rem;
-    }
-
-    /* text */
-    .Footer p
-    {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    /* icons */
-    .Footer ul i
-    {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .maps_footer
-    {
-        border-radius: 0.5rem;
-        width: 18.75rem;
-        height: 15.625rem;
-    }
-}
