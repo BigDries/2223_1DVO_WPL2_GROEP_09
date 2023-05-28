@@ -17,12 +17,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-left: 29rem;
 }
 
 form {
     border-radius: 25px;
     background-color: #DCDBDB;
-    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 15px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -93,7 +96,7 @@ button {
     height: 80px;
     margin-right: 10px;
 }
-
+/*
 @media screen and (max-width: 900px) {
     form {
         padding: 10px;
@@ -131,12 +134,17 @@ button {
 
 /* TELEFOON FORMAAT */
 @media screen and (max-width: 760px) {
+
     body {
-        overflow: hidden;
+        background-image: url("assets/busta.png");
+        background-size: 105%;
+        background-repeat: no-repeat;
     }
 
+
     .formtotaal {
-        margin: 5rem;
+        margin-left: 3rem;
+        margin-top: 5rem;
         height: calc(100vh - 10rem);
         display: flex;
         justify-content: center;
@@ -183,9 +191,119 @@ button {
 
 
 /* IPAD FORMAAT */
-/*
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1024px)  {
+    body {
+        background-image: url("assets/bustaipad-01.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
     .formtotaal {
-        margin: 5rem 10rem;
+        margin-left: 14rem;
+        margin-top: 5rem;
+        height: calc(100vh - 10rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 30px;
+        font-size: 18px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    label {
+        padding: 1rem;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #forgotpassword {
+        padding-left: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+        margin-right: 5px;
     }
 }
+
+
+/*
+@media screen and (max-width: 1024px) {
+
+    body {
+        background-image: url("assets/bustaipad-01.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+
+    .formtotaal {
+        margin-top: 5rem;
+        margin-left: 10rem;
+        height: calc(100vh - 10rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 3rem 10rem 3rem 10rem;
+        font-size: 16px;
+        max-width: 20rem;
+        width: 100%;
+    }
+
+    label {
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 1.3rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 8px;
+    }
+
+    #forgotpassword {
+        padding-left: 0.5rem;
+        padding-bottom: 10px;
+        font-size: 1rem;
+
+    }
+
+    .image-container {
+        margin-top: 10px;
+    }
+
+    .image-container img {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+}
+
