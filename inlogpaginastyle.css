@@ -96,41 +96,7 @@ button {
     height: 80px;
     margin-right: 10px;
 }
-/*
-@media screen and (max-width: 900px) {
-    form {
-        padding: 10px;
-        font-size: 16px;
-    }
 
-    label {
-        padding: 0.5rem;
-    }
-
-    input {
-        padding: 8px;
-    }
-
-    button[type="submit"] {
-        width: 200px;
-        padding: 8px;
-    }
-
-    #forgotpassword {
-        padding-left: 0.5rem;
-        padding-bottom: 10px;
-    }
-
-    .image-container {
-        margin-top: 10px;
-    }
-
-    .image-container img {
-        width: 60px;
-        height: 60px;
-        margin-right: 5px;
-    }
-}
 
 /* TELEFOON FORMAAT */
 @media screen and (max-width: 760px) {
