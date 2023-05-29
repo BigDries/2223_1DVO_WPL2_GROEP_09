@@ -28,16 +28,21 @@ p {
 body {
     background-image: url("assets/bustabackground.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    position: absolute;
+    background-size: cover;
+    background-position: center;
 }
-
+#login {
+    color: black;
+    text-decoration: none;
+}
+#login:hover {
+    color: #f1c765;
+}
 .formtotaal {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-left: 46rem;
 }
 
 form {
@@ -94,6 +99,7 @@ button {
     background-color: #313437;
     color: #f1c765;
     text-decoration-line: underline;
+    text-decoration-color: #f1c765;
 }
 
 #forgotpassword {
