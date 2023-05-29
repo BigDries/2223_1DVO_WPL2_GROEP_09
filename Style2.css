@@ -171,11 +171,9 @@ nav a{
         font-size: 20pt;
     }
     .visible{
-        visibility: visible;
         display: block;
     }
     .invisible{
-        visibility: hidden;
         display: none;
     }
     
@@ -223,9 +221,54 @@ nav a{
     align-items: center;
     width: max-content;
     }
-    
-    
-    /* Footer */
+
+
+/*--------------------------------------- Buttons -----------------------------*/
+.product_item{
+    display: block;
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+.rij_buttons{
+    display: block;
+    margin: auto;
+}
+
+.info_button {
+    background-color: #bb6148;
+    border: 0;
+    margin: 0.25rem auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.voegtoe_button {
+    background-color: #f1c765;
+    border: 0;
+    margin: 0.25rem auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 90%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+
+
+/* Footer */
     .footer {
     margin-top: 1rem;
     padding: 1rem;
@@ -263,7 +306,6 @@ nav a{
     flex-direction: column;
     align-items: center;
     }
-/*-------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
 /* footerbox */
 .Footer
 {
@@ -325,30 +367,19 @@ nav a{
 #map {
     margin-left: 5%;
 }
+
 @media screen and (max-width: 567px) {
-    /*--------------------------------------- footer -------------------------*/
-    #default_user_image {
-        float: right;
-        margin-top: 0.5rem;
-    }
-    #logo_homelink {
-        width: 120%;
-        height: auto;
-    }
-    .Footer
-    {
+    .Footer {
         flex-direction: column;
     }
 
-    .Footer img
-    {
+    .Footer img {
         margin-top: 5%;
         width: 20rem;
     }
 
     /* H1 text + underlinement */
-    .Footer h1
-    {
+    .Footer h1 {
         font-size: 1.5rem;
         /*-- underlinement yellow + placement --*/
         padding-left: 0.3rem;
@@ -357,25 +388,23 @@ nav a{
     }
 
     /* text */
-    .Footer p
-    {
+    .Footer p {
         font-size: 1.5rem;
         text-align: center;
     }
 
     /* icons */
-    .Footer ul i
-    {
+    .Footer ul i {
         margin-top: 1rem;
         font-size: 1.5rem;
     }
 
-    .maps_footer
-    {
+    .maps_footer {
         border-radius: 0.5rem;
         width: 300px;
         height: 250px;
     }
+
     #map {
         margin-left: 0;
     }
