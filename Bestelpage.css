@@ -112,8 +112,8 @@ nav a
 /*-------------------------------------------------------------------------------------- bestelpage ------------------------------------------------------------------------------------------*/
 .box
 {
-    width: 1747px;
-    height: 500px;
+    width: 80%;
+    height: auto;
     padding: 25px;
     border-radius: 25px;
     background-color: #ffffff;
@@ -138,7 +138,7 @@ nav a
   display: inline-block;
   font-size: 16px;
 
-  margin-left: 375px; /* plaatst button meer in corner */
+  margin-left: 60%; /* plaatst button meer in corner */
 }
 
 .col-1 img
@@ -227,55 +227,23 @@ nav a
   border-radius: 1.563rem;
 }
 
-@media screen and (max-width: 700px)
-{
-  /*------------------------------------------------------------------------ footer -------------------------------------------------------------------------------------------------------*/
-
-  /*-- bestel page --*/
-  .box
-  {
-    width: 250px;
-    height: 150px;
-  }
-
-  .col-1 img
-  {
-    width: 30px;
-    height: 30px;
-    margin: 2px;
-  }
-
-  .box p
-  {
-    font-size: 7px;
-  }
-
-  .button /* PDF button */
-  {
-    margin-left: 100px; /* plaatst button meer in corner */
-    border-radius: 15px;
-    font-size: 10px;
-  }
-}
-
 @media screen and (max-width: 1200px)
 {
-  .container h1
-  {
-    font-size: 30px;
-  }
-
-  .box
-  {
-    width: 850px;
-    height: 400px;
-  }
-
   .col-1 img
   {
     width: 50px;
     height: 50px;
     margin: 5px;
+  }
+
+  h1
+  {
+    font-size: 30px;
+  }
+
+  .box h2
+  {
+    font-size: 25px;
   }
 
   .box p
@@ -285,8 +253,23 @@ nav a
 
   .button /* PDF button */
   {
-    margin-left: 100px; /* plaatst button meer in corner */
     border-radius: 15px;
+    font-size: 12px;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .button /* PDF button */
+  {
+    border-radius: 10px;
+    font-size: 10px;
+    margin-left: 5%;
+  }
+
+  .box p
+  {
     font-size: 12px;
   }
 }
