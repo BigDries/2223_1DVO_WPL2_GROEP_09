@@ -319,6 +319,14 @@ nav a{
 }
 @media screen and (max-width: 567px) {
     /*--------------------------------------- footer -------------------------*/
+    #default_user_image {
+        float: right;
+        margin-top: 0.5rem;
+    }
+    #logo_homelink {
+        width: 120%;
+        height: auto;
+    }
     .Footer
     {
         flex-direction: column;
