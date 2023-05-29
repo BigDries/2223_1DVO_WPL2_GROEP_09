@@ -109,7 +109,14 @@ nav a{
 }
 
 
-
+#zwart {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    background-color: #313538;
+    z-index: -1;
+}
 #intro {
     width: 100vw;
     padding-top: 2rem;
