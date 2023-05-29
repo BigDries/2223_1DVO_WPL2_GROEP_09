@@ -112,8 +112,8 @@ nav a
 /*-------------------------------------------------------------------------------------- bestelpage ------------------------------------------------------------------------------------------*/
 .box
 {
-    width: 1747px;
-    height: 500px;
+    width: 80%;
+    height: auto;
     padding: 25px;
     border-radius: 25px;
     background-color: #ffffff;
@@ -123,52 +123,52 @@ nav a
 
 .col-xl-4 h1
 {
-    margin-left: 210px;
+  margin-left: 210px;
 }
  
 .button /* PDF button */
 {
-    background-color: #F1C765;
-    border: none;
-    border-radius: 25px;
-    color: #313437;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: #F1C765;
+  border: none;
+  border-radius: 25px;
+  color: #313437;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 
-    margin-left: 375px; /* plaatst button meer in corner */
+  margin-left: 60%; /* plaatst button meer in corner */
 }
 
 .col-1 img
 {
-    width: 75px;
-    height: 75px;
-    margin: 5px;
+  width: 75px;
+  height: 75px;
+  margin: 5px;
 
-    background-color: #F3F3F3;
-    padding: 0.25rem;
-    border-radius: 16px;
+  background-color: #F3F3F3;
+  padding: 0.25rem;
+  border-radius: 16px;
 }
 
 .Total
 {
-    border: 3px solid #88A1A7;
-    border-radius: 25px;
+  border: 3px solid #88A1A7;
+  border-radius: 25px;
 }
 
 .Totalnum
 {
-    background-color: #88A1A7;
-    border: 3px solid #88A1A7;
-    border-radius: 16px;
-    color: #ffffff;
+  background-color: #88A1A7;
+  border: 3px solid #88A1A7;
+  border-radius: 16px;
+  color: #ffffff;
 }
 
 .Total p 
 {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 /*-------------------------------------------------------------------------------------- footer ----------------------------------------------------------------------------------------------*/
 /*-- footerbox --*/
@@ -227,65 +227,49 @@ nav a
   border-radius: 1.563rem;
 }
 
-@media screen and (max-width: 415px)
-{ 
-  /*------------------------------------------------------------------------ footer -------------------------------------------------------------------------------------------------------*/
-  .Footer
+@media screen and (max-width: 1200px)
+{
+  .col-1 img
   {
-    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
   }
 
-  .Footer img
+  h1
   {
-    margin-top: 5%;
-    width: 20rem;
+    font-size: 30px;
   }
 
-  /* H1 text + underlinement */
-  .Footer h1
+  .box h2
   {
-    font-size: 1.5rem;
-    /*-- underlinement yellow + placement --*/
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    margin-top: 1.563rem;
+    font-size: 25px;
   }
 
-  /* text */
-  .Footer p
+  .box p
   {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 15px;
   }
 
-  /* icons */
-  .Footer ul i
+  .button /* PDF button */
   {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .maps_footer
-  {
-    border-radius: 0.5rem;
-    width: 18.75rem;
-    height: 15.625rem;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-left: 40%;
   }
 }
 
-/*--------------------------------------------------------------------------------- nav -----------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 700px)
 {
-  #hamburger{
-      display: block;
+  .button /* PDF button */
+  {
+    border-radius: 10px;
+    font-size: 10px;
+    margin-left: 5%;
   }
-  #hamburger img{
-      width: 40%;
-  }
-  #default_user_image{
-      width: 40%;
-  }
-  .big_screen{
-      display: none;
+
+  .box p
+  {
+    font-size: 12px;
   }
 }
