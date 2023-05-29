@@ -65,11 +65,7 @@ nav a{
     border-radius: 0 0 1rem 1rem;
     min-width: 160px;
 }
-#dropdown-content-winkelmand {
-    background-color: #fff;
-    min-width: 20rem;
-    left: -10rem;
-}
+
 /*.dropdown_content_profile{
     left: -4rem;
 }*/
@@ -89,6 +85,12 @@ nav a{
 }
 .nav_item{
     font-size: 20pt;
+}
+/*------------ WINKELMAND ---------------*/
+#dropdown-content-winkelmand {
+    background-color: #fff;
+    min-width: 20rem;
+    left: -10rem;
 }
 #winkelmand_img{
     width: 30%;
