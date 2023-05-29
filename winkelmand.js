@@ -35,11 +35,11 @@ function addToCartClicked(event) {
     let title = shopItem.getElementsByClassName('item_title')[0].innerText;
     let price = document.getElementsByClassName('item-prijs')[0];
     let imageSrc = document.getElementsByClassName('item_afbeelding')[0];
-    addItemToCart(title, price, imageSrc);
+    addItemToCart();
     updateCartTotal();
 }
 
-function addItemToCart(title, price, imageSrc) {
+function addItemToCart() {
     let cartItems = document.getElementsByClassName('cart-items')[0];
     let cartRow = document.createElement('div');
     cartRow.classList.add("row", "pt-3", "pb-3", "winkelmand_rij");
@@ -49,14 +49,13 @@ function addItemToCart(title, price, imageSrc) {
     cartImage.classList.add("col-2", "winkelmand_foto", "align-items-center");
     cartRow.appendChild(cartImage);
     let cartImageFile = document.getElementsByClassName("item_afbeelding")[0];
-    cartImageFile.style.width= "20%";
     cartImage.appendChild(cartImageFile);
 
     let cartName = document.createElement("div");
     cartName.classList.add("col-3", "winkelmand_naam", "align-items-center");
     cartRow.appendChild(cartName);
     let cartNameItem = document.getElementsByClassName("item_title")[0];
-    cartNameItem.style.fontFamily= "\"roboto\", sans-serif";
+    cartNameItem.style.fontFamily= "roboto, sans-serif";
     cartNameItem.style.fontSize= "12pt";
     cartName.appendChild(cartNameItem);
 
@@ -73,24 +72,30 @@ function addItemToCart(title, price, imageSrc) {
     }
 
     let cartPrice = document.createElement("div");
-    cartPrice.innerHTML = "<div class=\"col-2 winkelmand_prijs align-items-center\">"+"</div>";
+    cartPrice.classList.add("col-2", "winkelmand_prijs", "align-items-center");
     cartRow.appendChild(cartPrice);
-    let cartPriceNumber = document.getElementById("item_prijs").value;
-    cartPrice.appendChild(cartPriceNumber);
+    let cartPriceNumber = document.getElementById("item_prijs");
+    let numberValue= document.createTextNode(cartPriceNumber.innerText);
+    console.log(cartPriceNumber);
+    console.log(numberValue);
+    //cartPrice.appendChild(cartPriceNumber);
+    cartPrice.appendChild(numberValue);
+
 
     let winkelmandRemoveDiv = document.createElement("div");
-    winkelmandRemoveDiv.innerHTML= "<div class=\"col-2 winkelmand_remove align-items-center\"></div>";
+    winkelmandRemoveDiv.classList.add("col-2", "winkelmand_remove", "align-items-center");
     cartRow.appendChild(winkelmandRemoveDiv);
     let winkelmandRemoveButton = document.createElement("img");
-    winkelmandRemoveButton.innerHTML = "<img src=\"assets/delete.png\" alt=\"delete\">";
+    winkelmandRemoveButton.src= "assets/delete.png";
     winkelmandRemoveDiv.appendChild(winkelmandRemoveButton);
-    for (let i = 0; i < winkelmandRemoveButton.length; i++) {
-        let button = winkelmandRemoveButton[i]
+    for (let i = 0; i < winkelmandRemoveDiv.length; i++) {
+        let button = winkelmandRemoveDiv[i]
         button.addEventListener('click', removeCartItem)
     }
 
     cartRow.classList.add('cart-row')
 
+    let title= document.getElementsByClassName("winkelmand_naam")[0];
     let cartItemNames = cartItems.getElementsByClassName('winkelmand_naam')
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText === title) {
