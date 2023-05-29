@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, Arial, sans-serif;
+}
+
+h1 {
+    font-family: "cheddar-gothic-rough", sans-serif;
+    font-size: 50pt;
+}
+
+h2 {
+    font-family: "bebas neue", sans-serif;
+    font-size: 35pt;
+}
+
+h3 {
+    font-family: "bebas neue", sans-serif;
+    font-size: 25pt;
+}
+
+p {
+    font-family: "roboto", sans-serif;
+    font-size: 25pt;
+}
+
+body {
+    background-image: url("assets/bustabackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#login {
+    color: black;
+    text-decoration: none;
+}
+#login:hover {
+    color: #f1c765;
+}
+.formtotaal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    border-radius: 25px;
+    background-color: #DCDBDB;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    color: #000000;
+    background-color: #DCDBDB;
+    padding: 1rem;
+}
+
+input {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #f1c765;
+    color: #000000;
+}
+
+.formtotaal button[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    width: 270px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.formtotaal button[type="submit"]:hover {
+    display: block;
+    margin: 10px auto;
+    width: 270px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #313437;
+    color: #f1c765;
+    text-decoration-line: underline;
+    text-decoration-color: #f1c765;
+}
+
+#forgotpassword {
+    color: black;
+    padding-top: 0.5rem;
+    padding-bottom: 30px;
+    padding-left: 9.3rem;
+    font-size: 12px;
+    text-decoration-line: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+/* TELEFOON FORMAAT */
+@media screen and (max-width: 760px) {
+
+    body {
+        background-image: url("assets/busta.png");
+        background-size: 105%;
+        background-repeat: no-repeat;
+    }
+
+
+    .formtotaal {
+        margin-left: 3rem;
+        margin-top: 5rem;
+        height: calc(100vh - 10rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 20px;
+        font-size: 16px;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    label {
+        padding: 0.5rem;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #forgotpassword {
+        padding-left: 0.5rem;
+        padding-bottom: 10px;
+    }
+
+    .image-container {
+        margin-top: 10px;
+    }
+
+    .image-container img {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+}
+
+
+
+/* IPAD FORMAAT */
+@media screen and (min-width: 760px) and (max-width: 1024px)  {
+    body {
+        background-image: url("assets/bustaipad-01.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .formtotaal {
+        margin-left: 14rem;
+        margin-top: 5rem;
+        height: calc(100vh - 10rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 30px;
+        font-size: 18px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    label {
+        padding: 1rem;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #forgotpassword {
+        padding-left: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+        margin-right: 5px;
+    }
+}
